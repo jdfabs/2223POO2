@@ -4,8 +4,7 @@
  */
 package com.mycompany.projetopoo2_jumanji;
 import java.util.*;
-import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
+import java.io.*;
 /**
  *
  * @author vigab
@@ -19,13 +18,12 @@ public class Zoo {
     
 
 
-public static void main(String[] args){
+public static void main(String[] args ){
         
         //criação do Zoo
         Zoo newZoo = new Zoo();
         
-        //chamando a função para iniciar a aplicação
-        newZoo.startMenu();        
+        newZoo.startMenu(); //chamando a função para iniciar a aplicação      
     }
 public void startMenu(){
         
@@ -130,10 +128,20 @@ public void startMenu(){
                             }
                         }
         }
+    
 }
 //fazer os métodos aqui
 
-
+/*public void ficheiro(){
+    File tiposAnimais = new File("C:\\Users\\vigab\\OneDrive\\Documents\\GitHub\\2223POO2\\Animais.txt");
+        if (tiposAnimais.exists()){
+            System.out.println("Nome: " + tiposAnimais.getName());
+            System.out.println("Tamanho: "+ tiposAnimais.length());
+        }
+        else{
+            System.out.println("O ficheiro não existe");
+        }
+}*/
 public void Metodo2(){
     for(Animal animal : animais){
         System.out.println(animal.getNome());
