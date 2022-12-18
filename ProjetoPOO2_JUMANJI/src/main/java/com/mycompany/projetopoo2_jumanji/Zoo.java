@@ -15,7 +15,7 @@ public class Zoo {
     private Random rand = new Random();
     private List<Animal> animais = new ArrayList<>();
     private List<Instalacao> instalacoes = new ArrayList();
-    
+    private List<Especie> especies = new ArrayList();
     
 
 
@@ -148,8 +148,10 @@ public void Metodo4(){
 }
 
 public void AdicionarEspecies(){
-    
-    
+    Especie especie = new Especie("Rato", 10, 1, 3);
+    especies.add(especie);
+    especie = new Especie("Boi", 5, 2, 13);
+    especies.add(especie);
     
 }
 

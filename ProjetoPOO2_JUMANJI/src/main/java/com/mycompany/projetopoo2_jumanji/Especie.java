@@ -18,5 +18,8 @@ public class Especie {
     private int raridade;
     private int esperacaVida;
     private List<Carateristica> carateristicas = new ArrayList<>(); 
+    public Especie(String nome, int atratividadeBase, int raridade, int esperacaVida){
+        
+    }
     
 }
