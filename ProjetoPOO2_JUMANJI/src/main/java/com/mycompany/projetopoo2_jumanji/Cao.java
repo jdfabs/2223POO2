@@ -8,6 +8,10 @@ package com.mycompany.projetopoo2_jumanji;
  *
  * @author jdfab
  */
-public class Voador extends Especie {
-    
+public class Cao extends Terrestre {
+    public Cao() {
+        atratividadeBase = 7;
+        raridade = 1;
+        esperacaVida = 18;
+    }
 }

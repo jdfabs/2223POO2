@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author vigab
  */
-public abstract class Animal {
+public class Animal {
     protected int id;
     protected String nome;
     protected int idade;
@@ -20,10 +20,26 @@ public abstract class Animal {
     protected Instalacao instalacao;  
     
 
-   public Animal() {}
+   public Animal(int id, String nome, int idade, Especie especie) {
+       this.id = id;
+       this.nome = nome;
+       this.idade = idade;
+       this.especie = especie;
+       
+   
+   }
     
     public String getNome(){
         return nome;
+    }
+    public int getId(){
+        return id;
+    }
+    public Especie getEspecie(){
+        return especie;
+    }
+    public int getIdade(){
+        return idade;
     }
 
 

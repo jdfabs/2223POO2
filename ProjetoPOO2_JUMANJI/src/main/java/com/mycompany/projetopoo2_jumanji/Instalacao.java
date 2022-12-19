@@ -11,4 +11,14 @@ package com.mycompany.projetopoo2_jumanji;
  */
 public class Instalacao {
     
+    private int lotacao = 0;
+    private double custosRacao = 0;
+    private double custosCuidadores = 0;
+    private double custoManutencao = 100;
+    private Animal animal;
+    
+    
+    public Instalacao(int lotacao){
+        this.lotacao = lotacao;
+    }
 }

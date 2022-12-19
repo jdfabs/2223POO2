@@ -8,6 +8,10 @@ package com.mycompany.projetopoo2_jumanji;
  *
  * @author jdfab
  */
-public class Voador extends Especie {
-    
+public class Rato extends Terrestre{
+    public Rato() {
+        atratividadeBase = 2;
+        raridade = 2;
+        esperacaVida = 5;
+    }   
 }

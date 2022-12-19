@@ -4,16 +4,10 @@
  */
 package com.mycompany.projetopoo2_jumanji;
 
-import com.mycompany.projetopoo2_jumanji.Animal;
-
 /**
  *
  * @author jdfab
  */
-public class Terrestre extends Animal  {
-    
-    public Terrestre(){
-        
-    }
+public class Terrestre extends Especie {
     
 }

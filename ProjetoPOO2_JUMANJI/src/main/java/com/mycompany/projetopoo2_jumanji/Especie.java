@@ -13,13 +13,17 @@ import java.util.List;
  * @author jdfab
  */
 public class Especie {
-    private String nome;
-    private int atratividadeBase;
-    private int raridade;
-    private int esperacaVida;
-    private List<Carateristica> carateristicas = new ArrayList<>(); 
-    public Especie(String nome, int atratividadeBase, int raridade, int esperacaVida){
+    protected int atratividadeBase;
+    protected int raridade;
+    protected int esperacaVida = 10;
+    protected List<Carateristica> carateristicas = new ArrayList<>(); 
+    public Especie(){
         
     }
-    
+    public int getEsperancaVida(){
+        return esperacaVida;
+    }
+    public String getEspecieString(){
+        return this.getClass().getSimpleName();
+    }
 }
