@@ -13,6 +13,7 @@ public class Vaca extends Terrestre{
         atratividadeBase = 4;
         raridade = 4;
         esperacaVida = 25;
+        apetiteReprodutivo = 85;
         carateristica = "Artiodactyla";
     }
 }

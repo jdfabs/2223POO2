@@ -13,6 +13,7 @@ public class Macaco extends Terrestre {
         atratividadeBase = 3;
         raridade = 7;
         esperacaVida = 20;
+        apetiteReprodutivo = 90;
         carateristica = "Primates";
     }
 }

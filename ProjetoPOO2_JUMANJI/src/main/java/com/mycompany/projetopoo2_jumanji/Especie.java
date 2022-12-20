@@ -17,7 +17,9 @@ public class Especie {
     protected String carateristica;
     protected int raridade;
     protected int esperacaVida = 10;
-    protected List<Carateristica> carateristicas = new ArrayList<>(); 
+    protected int apetiteReprodutivo = 10;
+    //protected List<Carateristica> carateristicas = new ArrayList<>(); 
+    protected List<Mutacao> mutacoes = new ArrayList<>();
     public Especie(){
         
     }

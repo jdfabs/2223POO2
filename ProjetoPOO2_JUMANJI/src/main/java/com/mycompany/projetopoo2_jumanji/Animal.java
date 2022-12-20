@@ -18,6 +18,7 @@ public class Animal {
     protected Especie especie ;
     protected List<Mutacao> mutacoes = new ArrayList<>();
     protected Instalacao instalacao;  
+    protected Mutacao mutacao;
     
 
    public Animal(int id, String nome, int idade, Especie especie) {
@@ -47,13 +48,18 @@ public class Animal {
     public Instalacao getInstalacao(){
         return instalacao;
     }
+    public Mutacao getMutacao(){
+        return mutacao;
+    }
     public void setInstalacao(Instalacao instalacao){
         this.instalacao = instalacao;
     }
     public void setInstalacao(){
         this.instalacao = null;
     }
-
+    public void setMutacao(Mutacao mutacao){
+        this.mutacao = mutacao;
+    }
 
 
 }

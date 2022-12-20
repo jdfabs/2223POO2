@@ -13,6 +13,7 @@ public class Serpente extends Terrestre {
         atratividadeBase = 7;
         raridade = 8;
         esperacaVida = 8;
+        apetiteReprodutivo = 25;
         carateristica = "Squamata";
     }
 }

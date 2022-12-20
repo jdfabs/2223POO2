@@ -13,6 +13,7 @@ public class Galinha extends Terrestre {
         atratividadeBase = 3;
         raridade = 1;
         esperacaVida = 3;
+        apetiteReprodutivo = 75;
         carateristica = "Galliformes";
     }
 }

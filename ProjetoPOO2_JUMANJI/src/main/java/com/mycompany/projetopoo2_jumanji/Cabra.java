@@ -13,6 +13,7 @@ public class Cabra extends Terrestre{
         atratividadeBase = 5;
         raridade = 1;
         esperacaVida = 13;
+        apetiteReprodutivo = 75;
         carateristica = "Artiodactyla";
     }
 }

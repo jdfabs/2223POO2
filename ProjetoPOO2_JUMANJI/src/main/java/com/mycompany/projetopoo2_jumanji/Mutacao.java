@@ -9,6 +9,9 @@ package com.mycompany.projetopoo2_jumanji;
  * @author jdfab
  */
 public class Mutacao {
+
     private String nome;
     private int modAtract;
+
+
 }

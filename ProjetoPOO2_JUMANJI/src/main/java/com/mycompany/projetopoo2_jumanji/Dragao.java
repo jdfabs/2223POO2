@@ -13,6 +13,7 @@ public class Dragao extends Voador {
         atratividadeBase = 10;
         raridade = 10;
         esperacaVida = 277;
+        apetiteReprodutivo = 40;
         carateristica = "Fake";
     }
 }

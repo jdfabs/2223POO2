@@ -500,7 +500,6 @@ public void AdicionarListaAnimais(Animal animal){
         }
         return nome[0];
     }
-    
 
     public void CalendarioChines() {
         int opcao = 1996;
@@ -695,7 +694,31 @@ public void AdicionarListaAnimais(Animal animal){
     }
 
     public void FamiliaAnimal() {
-
+        System.out.println("Animais presentes no ZOO:");
+        for (Animal animal : animais) {
+            System.out.print(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getEspecieString() + " Idade: " + animal.getIdade()+ " ");
+            if(animal.getInstalacao()!=null){
+                System.out.print("Lotação da Instalação: " + animal.getInstalacao().getLotacao());
+            }
+            System.out.println();
+        }
+        System.out.println("Instalações existentes no ZOO:");
+        for (Instalacao instalacao : instalacoes) {
+            
+            if(instalacao.getAnimal()== null){
+                System.out.println("Id: "+ instalacao.getId()+ ".");
+                System.out.println("Lotação: "+instalacao.getLotacao() + ".");
+                System.out.println("Esta instalação não possui nenhum animal ");
+            }
+            else{
+                System.out.println("Id: "+ instalacao.getId()+ ".");
+                System.out.println("Lotação: "+instalacao.getLotacao() + ".");
+                System.out.println("Nome: " + instalacao.getAnimal().getNome() + ".");
+                System.out.println("Espécie: " + instalacao.getAnimal().getEspecie().getEspecieString() + ".");
+            }
+            
+        }
+        
     }
 
     public void Obituário() {

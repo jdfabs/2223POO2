@@ -13,6 +13,7 @@ public class Cao extends Terrestre {
         atratividadeBase = 7;
         raridade = 1;
         esperacaVida = 18;
+        apetiteReprodutivo = 90;
         carateristica = "Carnivora";
     }
 }

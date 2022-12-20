@@ -13,6 +13,7 @@ public class Tigre extends Terrestre{
         atratividadeBase = 9;
         raridade = 9;
         esperacaVida = 30;
+        apetiteReprodutivo = 35;
         carateristica = "Carnivora";
     }
 }
