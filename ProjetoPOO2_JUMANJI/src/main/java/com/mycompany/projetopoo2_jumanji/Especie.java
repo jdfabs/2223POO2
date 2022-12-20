@@ -27,4 +27,10 @@ public class Especie {
     public String getEspecieString(){
         return this.getClass().getSimpleName();
     }
+    public int getAtratividadeBase(){
+        return atratividadeBase;
+    }
+    public void AumentaAtratividade(){
+        atratividadeBase += 5;
+    }
 }

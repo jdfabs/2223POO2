@@ -10,7 +10,7 @@ package com.mycompany.projetopoo2_jumanji;
  * @author jdfab
  */
 public class Instalacao {
-    
+    private int id;
     private int lotacao = 0;
     private double custosRacao = 0;
     private double custosCuidadores = 0;
@@ -18,8 +18,12 @@ public class Instalacao {
     private Animal animal;
     
     
-    public Instalacao(int lotacao){
+    public Instalacao(int id, int lotacao){
+        this.id=id;
         this.lotacao = lotacao;
+    }
+    public int getId(){
+        return id;
     }
     public int getLotacao(){
         return lotacao;
@@ -33,4 +37,5 @@ public class Instalacao {
     public void setAnimal(){
         this.animal = null;
     }
+   
 }
