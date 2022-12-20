@@ -26,9 +26,20 @@ public static void main(String[] args ){
         //criação do Zoo
         Zoo newZoo = new Zoo();
         
-        newZoo.startMenu(); //chamando a função para iniciar a aplicação      
+        newZoo.startMenu(); //chamando a função para iniciar a aplicação  
+        
     }
 public void startMenu(){
+    
+        AdquirirAnimal();
+        AdquirirAnimal();
+        AdquirirAnimal();
+        AdquirirAnimal();
+        AdquirirAnimal();
+        AdquirirAnimal();
+        AdquirirAnimal();
+        AdquirirAnimal();
+        AdquirirAnimal();
         
         int opcao = 0;
         boolean sair = false;
@@ -91,6 +102,7 @@ public void startMenu(){
                             }
                             case 6 ->{
                                 //listAnimals();
+                                Metodo2();
                                 break;
                             }
                             case 7 ->{
@@ -245,7 +257,7 @@ public void AdicionarListaAnimais(Animal animal){
                     }
                     
                     if(indice == 1 ||indice == 2 || indice == 3){
-                        Instalacao instalacao = new Instalacao(lotacao[indice]);
+                        Instalacao instalacao = new Instalacao(lotacao[indice-1]);
                         instalacoes.add(instalacao);
                     }
                     else {
@@ -256,12 +268,14 @@ public void AdicionarListaAnimais(Animal animal){
     
     public void ColocarAnimalEmInstalacao() {
         String opcao = "";
-        Animal animalEscolhido;
-        int id;
+        Animal animalEscolhido = null;
+        int idAnimal;
+        Instalacao instalacaoEscolhida;
+        int idInstalacao;
         System.out.println("Insira o id do Animal a mover: ");        
         opcao = scan.next();
         try{
-            id = Integer.parseInt(opcao);
+            idAnimal = Integer.parseInt(opcao);
         }
         catch (Exception e){
             System.out.println("Id invalido");  
@@ -269,18 +283,52 @@ public void AdicionarListaAnimais(Animal animal){
             return;
         }
         boolean animalEncontrado = false;
-        for(Animal animal: animais){
-            if (id ==  animal.getId()){
+        for(Animal animal : animais){
+            System.out.println("DEBUG: " + idAnimal + " " + animal.getId());
+            if (idAnimal ==  animal.getId()){
+                
                 animalEscolhido = animal;
-            }
-            else{
-                System.out.println("Não existe animal com este ID");  
-                ColocarAnimalEmInstalacao();
+                break;
             }
         }
-        System.out.println("Insira o id da Instalação: ");        
-        opcao = scan.next();
+        if(animalEscolhido == null){
+            System.out.println("Não existe animal com este ID");  
+                ColocarAnimalEmInstalacao();
+                return;
+        }
+        idInstalacao = 0;
+        instalacaoEscolhida = null;
+        while (instalacaoEscolhida == null) {
+            System.out.println("Escolha uma das instalações: ");
+            int i = 0;
+            for (Instalacao instalacao : instalacoes) {
+                i++;
+               System.out.print(i + ") Lotação: "+ instalacao.getLotacao());
+               if(instalacao.getAnimal() != null){
+                   System.out.print(" Animal: "+(instalacao.getAnimal()).getNome()+" Especie: " + (instalacao.getAnimal()).getEspecieString());
+               }
+               System.out.println();
+            }
+            opcao = scan.next();
+            try {
+                idInstalacao = Integer.parseInt(opcao);
+                instalacaoEscolhida = instalacoes.get(idInstalacao-1);
+            } catch (Exception e) {
+                System.out.println("Id invalido");
+            }
+
+            
+        }
+        if(instalacaoEscolhida.getAnimal()!= null){
+            instalacaoEscolhida.getAnimal().setInstalacao();
+        }        
+        instalacaoEscolhida.setAnimal(animalEscolhido);
         
+        if(animalEscolhido.getInstalacao()!= null){
+            animalEscolhido.getInstalacao().setAnimal();
+        } 
+        animalEscolhido.setInstalacao(instalacaoEscolhida);
+
        
     }
     

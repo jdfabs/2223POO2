@@ -41,6 +41,18 @@ public class Animal {
     public int getIdade(){
         return idade;
     }
+    public String getEspecieString(){
+        return this.especie.getEspecieString();
+    }
+    public Instalacao getInstalacao(){
+        return instalacao;
+    }
+    public void setInstalacao(Instalacao instalacao){
+        this.instalacao = instalacao;
+    }
+    public void setInstalacao(){
+        this.instalacao = null;
+    }
 
 
 }

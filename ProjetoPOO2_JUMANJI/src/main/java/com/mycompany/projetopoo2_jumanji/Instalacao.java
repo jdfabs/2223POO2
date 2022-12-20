@@ -21,4 +21,16 @@ public class Instalacao {
     public Instalacao(int lotacao){
         this.lotacao = lotacao;
     }
+    public int getLotacao(){
+        return lotacao;
+    }
+    public Animal getAnimal(){
+        return animal;
+    }
+    public void setAnimal(Animal animal){
+        this.animal = animal;
+    }
+    public void setAnimal(){
+        this.animal = null;
+    }
 }
