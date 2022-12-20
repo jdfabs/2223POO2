@@ -14,5 +14,6 @@ public class Porco extends Terrestre {
         atratividadeBase = 10;
         raridade = 1;
         esperacaVida = 20;
+        carateristica = "Artiodactyla";
     }
 }

@@ -98,7 +98,7 @@ public void startMenu(){
                                 break;
                             }
                             case 7 ->{
-                                //listGeneticAnimals();
+                                ListarAnimaisComCarateristica();
                                 break;
                             }
                             case 8 ->{
@@ -518,7 +518,30 @@ public void AdicionarListaAnimais(Animal animal){
     }
 
     public void ListarAnimaisComCarateristica() {
-
+        String opcao = "";
+        System.out.println("Carateristicas disponiveis: Rodentia, Artiodactyla, Carnivora, Lagomorpha, Fake, Squamata, Perissodactyla, Artiodactyla, Primates, Galliformes, Carnivora, Artiodactyla");
+        System.out.println("Ordem do animal que deseja:                               ");
+        opcao = scan.next().toLowerCase();
+        
+        Especie especie = CriaEspecieDeCarateristica(opcao.toLowerCase());
+        if (especie == null) {
+            System.out.println("Opção Invalida,");
+            ListarAnimaisComCarateristica();
+        } else {
+            
+            for (Animal animal : animais) {
+                
+                if (animal.getEspecie().carateristica.toLowerCase().equals(opcao.toLowerCase()) ) {
+                    
+                    System.out.print(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getEspecieString() + " Idade: " + animal.getIdade() + " ");
+                    if (animal.getInstalacao() != null) {
+                        System.out.print("Lotação da Instalação: " + animal.getInstalacao().getLotacao());
+                    }
+                    System.out.println();
+                }
+                
+            }
+        }
     }
 
     public void ListarAnimaisComMutacao() {

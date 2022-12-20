@@ -13,5 +13,6 @@ public class Coelho extends Terrestre {
         atratividadeBase = 7;
         raridade = 2;
         esperacaVida = 7;
+        carateristica = "Lagomorpha";
     }
 }

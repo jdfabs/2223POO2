@@ -13,5 +13,6 @@ public class Rato extends Terrestre{
         atratividadeBase = 2;
         raridade = 2;
         esperacaVida = 5;
+        carateristica = "Rodentia";
     }   
 }

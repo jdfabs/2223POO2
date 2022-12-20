@@ -14,6 +14,7 @@ import java.util.List;
  */
 public class Especie {
     protected int atratividadeBase;
+    protected String carateristica;
     protected int raridade;
     protected int esperacaVida = 10;
     protected List<Carateristica> carateristicas = new ArrayList<>(); 

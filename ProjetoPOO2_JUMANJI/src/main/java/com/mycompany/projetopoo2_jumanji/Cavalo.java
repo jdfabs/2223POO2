@@ -13,5 +13,6 @@ public class Cavalo extends Terrestre {
         atratividadeBase = 3;
         raridade = 4;
         esperacaVida = 30;
+        carateristica = "Perissodactyla";
     }
 }
