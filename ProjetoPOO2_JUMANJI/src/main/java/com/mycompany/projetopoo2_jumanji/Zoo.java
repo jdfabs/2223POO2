@@ -19,6 +19,7 @@ public class Zoo {
     private List<Instalacao> instalacoes = new ArrayList();
     private List<Especie> especies = new ArrayList();
     
+    
 
 
 public static void main(String[] args ){
@@ -101,7 +102,10 @@ public void startMenu(){
                                 break;
                             }
                             case 6 ->{
+<<<<<<< Updated upstream
                                 //listAnimals();
+=======
+>>>>>>> Stashed changes
                                 Metodo2();
                                 break;
                             }
@@ -147,16 +151,6 @@ public void startMenu(){
 }
 //fazer os métodos aqui
 
-/*public void ficheiro(){
-    File tiposAnimais = new File("C:\\Users\\vigab\\OneDrive\\Documents\\GitHub\\2223POO2\\Animais.txt");
-        if (tiposAnimais.exists()){
-            System.out.println("Nome: " + tiposAnimais.getName());
-            System.out.println("Tamanho: "+ tiposAnimais.length());
-        }
-        else{
-            System.out.println("O ficheiro não existe");
-        }
-}*/
 public void Metodo2(){
     for(Animal animal : animais){
         System.out.println(animal.getNome()+" id: "+ animal.getId() + " Especie: " + animal.getEspecie().getEspecieString() + " Idade: " + animal.getIdade());
@@ -179,14 +173,27 @@ public void AdicionarListaAnimais(Animal animal){
 
 
     public void AdquirirAnimal() {
+        int id;
+        List<Animal> animaisOpcoes = new ArrayList();
+        for (int i = 1; i <= 3; i++) {
+            int raridade = (int) ((Math.pow(Math.random(), 4) * 10) + 1);
+            Especie especie = CriaEspecieDeRaridade(raridade);
 
-        int raridade = (int) ((Math.pow(Math.random(), 4) * 10) + 1);
-        System.out.println(raridade);
-        Especie especie = CriaEspecieDeRaridade(raridade);
+            int idade = (int) (Math.random() * especie.getEsperancaVida());
+            Animal animal = new Animal(animais.size(), GetRandomNameFromFile(), idade, especie);
 
-        int idade = (int) (Math.random() * especie.getEsperancaVida());
-        Animal animal = new Animal(animais.size(), GetRandomNameFromFile(), idade, especie);
-        AdicionarListaAnimais(animal);
+            System.out.println("opção nº" + i + ": " + animal.getId() + ", " + animal.getEspecie().getEspecieString());
+            animaisOpcoes.add(animal);
+        }
+        System.out.println("Qual animal é que deseja adquirir?");
+        int opcao = 0;
+        try {
+            opcao = scan.nextInt();
+            AdicionarListaAnimais(animaisOpcoes.get(opcao - 1));
+        } catch (Exception e) {
+            System.out.println("Invalid input!");
+            scan.nextLine();
+        }
     }
 
     public void AdquirirAnimalComCarateristica() {
@@ -332,9 +339,6 @@ public void AdicionarListaAnimais(Animal animal){
        
     }
     
-    
-   
-
     public Especie CriaEspecieDeRaridade(int raridade) {
         Especie especie = null;
         int random = 0;
@@ -517,7 +521,7 @@ public void AdicionarListaAnimais(Animal animal){
     
 
     public void CalendarioChines() {
-
+        
     }
 
     public void ListarAnimais() {
