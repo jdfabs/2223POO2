@@ -32,15 +32,6 @@ public static void main(String[] args ){
     }
 public void startMenu(){
     
-        AdquirirAnimal();
-        AdquirirAnimal();
-        AdquirirAnimal();
-        AdquirirAnimal();
-        AdquirirAnimal();
-        AdquirirAnimal();
-        AdquirirAnimal();
-        AdquirirAnimal();
-        AdquirirAnimal();
         
         int opcao = 0;
         boolean sair = false;
@@ -102,11 +93,8 @@ public void startMenu(){
                                 break;
                             }
                             case 6 ->{
-<<<<<<< Updated upstream
-                                //listAnimals();
-=======
->>>>>>> Stashed changes
-                                Metodo2();
+
+                                ListarAnimais();
                                 break;
                             }
                             case 7 ->{
@@ -513,11 +501,6 @@ public void AdicionarListaAnimais(Animal animal){
         }
         return nome[0];
     }
-
-
-
-    
-
     
 
     public void CalendarioChines() {
@@ -525,7 +508,13 @@ public void AdicionarListaAnimais(Animal animal){
     }
 
     public void ListarAnimais() {
-
+        for (Animal animal : animais) {
+            System.out.print(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getEspecieString() + " Idade: " + animal.getIdade()+ " ");
+            if(animal.getInstalacao()!=null){
+                System.out.print("Lotação da Instalação: " + animal.getInstalacao().getLotacao());
+            }
+            System.out.println();
+        }
     }
 
     public void ListarAnimaisComCarateristica() {
