@@ -16,8 +16,10 @@ public class Animal {
     protected String nome;
     protected int idade;
     protected Especie especie ;
-    protected List<Mutacao> mutacoes = new ArrayList<>();
     protected Instalacao instalacao;  
+    protected List<Mutacao> mutacoes = new ArrayList<>();
+    
+   
     
     
 
@@ -26,22 +28,23 @@ public class Animal {
        this.nome = nome;
        this.idade = idade;
        this.especie = especie;
-       
-   
    }
-    
-    public String getNome(){
-        return nome;
-    }
-    public int getId(){
+   
+   
+     public int getId(){
         return id;
     }
-    public Especie getEspecie(){
-        return especie;
+    public String getNome(){
+        return nome;
     }
     public int getIdade(){
         return idade;
     }
+   
+    public Especie getEspecie(){
+        return especie;
+    }
+
     public String getEspecieString(){
         return this.especie.getEspecieString();
     }
@@ -54,6 +57,10 @@ public class Animal {
     }
     public void setInstalacao(){
         this.instalacao = null;
+    }
+    
+    public List<Mutacao> getMutacoesLista(){
+        return mutacoes;
     }
 
 

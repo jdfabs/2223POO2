@@ -13,5 +13,10 @@ public class Mutacao {
     private String nome;
     private int modAtract;
 
+    public String getNome() {
+        return nome;
+    }
 
 }
+
+

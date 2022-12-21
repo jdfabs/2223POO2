@@ -19,6 +19,7 @@ public class Zoo {
     private List<Instalacao> instalacoes = new ArrayList();
     private List<Especie> especies = new ArrayList();
     private List<Carateristica> carateristicas = new ArrayList();
+    private List<Mutacao> mutacoes = new ArrayList();
     private int ano;
     
 
@@ -141,6 +142,18 @@ public void startMenu(){
                                 sair = true;
                                 break;
                             }
+                            case 20 ->{
+                                PrintAnimal();
+                                break;
+                            }
+                            case 21 ->{
+                                PrintEspecie();
+                                break;
+                            }
+                            case 22 ->{
+                                PrintCarateristicas();
+                                break;
+                            }
                         }
         }
     
@@ -148,13 +161,23 @@ public void startMenu(){
 //fazer os métodos aqui
 
 
-public void Metodo2(){
+public void PrintAnimal(){
     for(Animal animal : animais){
         System.out.println(animal.getNome()+" id: "+ animal.getId() + " Especie: " + animal.getEspecie().getEspecieString() + " Idade: " + animal.getIdade());
     }
-
-    
 }
+public void PrintEspecie(){
+    for(Especie especie : especies){
+        System.out.println(especie.getNome());
+    }    
+}
+public void PrintCarateristicas(){
+    for(Carateristica carateristica : carateristicas){
+        System.out.println(carateristica.getNome());
+    }
+}
+
+
 public void Metodo3(){
     especies.add(new Especie(2, "Jonny", 3, 10, this))    ;
 }
@@ -792,10 +815,10 @@ public void AdicionarListaAnimais(Animal animal){
 
     }
     
-    public void SalvarFicheiro(List<Especie> lista) {
+    public void SalvarEspecies() {
         try {
             FileWriter writer = new FileWriter("Especies.txt");
-            for (Especie especie : lista) {
+            for (Especie especie : especies) {
                 writer.write(especie.getAtratividadeBase() + " ");
                 writer.write(especie.getNome() + " ");
                 writer.write(especie.getRaridade() + " ");
@@ -810,5 +833,232 @@ public void AdicionarListaAnimais(Animal animal){
         } catch (IOException e) {
             System.out.println("Erro 001");
         }       
+    }
+    
+    
+    
+     public void CarregarAnimais() {        
+        String[] linha;
+        Animal animal;
+        Especie especieFinal;
+        
+        try {
+            File ficheiro = new File("Animais.txt");
+            Scanner reader = new Scanner(ficheiro);
+            while (reader.hasNextLine()) {
+                String dados = reader.nextLine();
+                linha  = dados.split(" ");
+                try{
+                    
+                    int id = Integer.parseInt(linha[0]); 
+                    int idade = Integer.parseInt(linha[2]); 
+                    int instalacaoId = Integer.parseInt(linha[4]); 
+                    for(Especie especie: especies){
+                        if(especie.getEspecieString().equals(linha[3])){
+                            especieFinal = especie;
+                        }
+                    }                   
+                    animal = new Animal(id, linha[1], idade, especieFinal);
+                    for(Instalacao instalacao: instalacoes){
+                        if(instalacao.getId() == instalacaoId){
+                            animal.setInstalacao(instalacao);
+                            instalacao.setAnimal(animal);
+                        }
+                    }
+                    
+                    
+                    if(linha.length > 5){
+                        for(int i = 6; i <=linha.length; i++){
+                            for(Mutacao mutacao: mutacoes){
+                                if(mutacao.getNome().toLowerCase().equals(linha[i].toLowerCase())){
+                                    animal.getMutacoesLista().add(mutacao);
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                catch(Exception e){
+                    System.out.println("Ficheiro corrupto, Cancelado");
+                    return;
+                }        
+                
+               
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            return;
+        }
+
+    }
+    
+    public void SalvarAnimais() {
+        try {
+            FileWriter writer = new FileWriter("Especies.txt");
+            for (Animal animal : animais) {
+                writer.write(animal.getId() + " ");
+                writer.write(animal.getNome() + " ");
+                writer.write(animal.getIdade() + " ");
+                writer.write(animal.getEspecieString() + " ");
+                writer.write(animal.getInstalacao().getId() + " ");
+                for (Mutacao mutacao : animal.getMutacoesLista()) {
+                    writer.write(mutacao.getNome() + " ");
+                }
+                writer.write("\n");
+            }
+            writer.close();
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("Erro 001");
+        }
+    }
+
+    public void CarregarCarateristicas() {
+        String[] linha;
+        Animal animal;
+        Especie especieFinal;
+
+        try {
+            File ficheiro = new File("Animais.txt");
+            Scanner reader = new Scanner(ficheiro);
+            while (reader.hasNextLine()) {
+                String dados = reader.nextLine();
+                linha = dados.split(" ");
+                try {
+
+                    int id = Integer.parseInt(linha[0]);
+                    int idade = Integer.parseInt(linha[2]);
+                    int instalacaoId = Integer.parseInt(linha[4]);
+                    for (Especie especie : especies) {
+                        if (especie.getEspecieString().equals(linha[3])) {
+                            especieFinal = especie;
+                        }
+                    }
+                    animal = new Animal(id, linha[1], idade, especieFinal);
+                    for (Instalacao instalacao : instalacoes) {
+                        if (instalacao.getId() == instalacaoId) {
+                            animal.setInstalacao(instalacao);
+                            instalacao.setAnimal(animal);
+                        }
+                    }
+
+                    if (linha.length > 5) {
+                        for (int i = 6; i <= linha.length; i++) {
+                            for (Mutacao mutacao : mutacoes) {
+                                if (mutacao.getNome().toLowerCase().equals(linha[i].toLowerCase())) {
+                                    animal.getMutacoesLista().add(mutacao);
+                                }
+                            }
+                        }
+                    }
+
+                } catch (Exception e) {
+                    System.out.println("Ficheiro corrupto, Cancelado");
+                    return;
+                }
+
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            return;
+        }
+
+    }
+
+    public void SalvarCarateristicas() {
+        try {
+            FileWriter writer = new FileWriter("Especies.txt");
+            for (Animal animal : animais) {
+                writer.write(animal.getId() + " ");
+                writer.write(animal.getNome() + " ");
+                writer.write(animal.getIdade() + " ");
+                writer.write(animal.getEspecieString() + " ");
+                writer.write(animal.getInstalacao().getId() + " ");
+                for (Mutacao mutacao : animal.getMutacoesLista()) {
+                    writer.write(mutacao.getNome() + " ");
+                }
+                writer.write("\n");
+            }
+            writer.close();
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("Erro 001");
+        }
+    }
+
+    public void CarregarMutacoes() {
+        String[] linha;
+        Animal animal;
+        Especie especieFinal;
+
+        try {
+            File ficheiro = new File("Animais.txt");
+            Scanner reader = new Scanner(ficheiro);
+            while (reader.hasNextLine()) {
+                String dados = reader.nextLine();
+                linha = dados.split(" ");
+                try {
+
+                    int id = Integer.parseInt(linha[0]);
+                    int idade = Integer.parseInt(linha[2]);
+                    int instalacaoId = Integer.parseInt(linha[4]);
+                    for (Especie especie : especies) {
+                        if (especie.getEspecieString().equals(linha[3])) {
+                            especieFinal = especie;
+                        }
+                    }
+                    animal = new Animal(id, linha[1], idade, especieFinal);
+                    for (Instalacao instalacao : instalacoes) {
+                        if (instalacao.getId() == instalacaoId) {
+                            animal.setInstalacao(instalacao);
+                            instalacao.setAnimal(animal);
+                        }
+                    }
+
+                    if (linha.length > 5) {
+                        for (int i = 6; i <= linha.length; i++) {
+                            for (Mutacao mutacao : mutacoes) {
+                                if (mutacao.getNome().toLowerCase().equals(linha[i].toLowerCase())) {
+                                    animal.getMutacoesLista().add(mutacao);
+                                }
+                            }
+                        }
+                    }
+
+                } catch (Exception e) {
+                    System.out.println("Ficheiro corrupto, Cancelado");
+                    return;
+                }
+
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            return;
+        }
+
+    }
+
+    public void SalvarMutacoes() {
+        try {
+            FileWriter writer = new FileWriter("Especies.txt");
+            for (Animal animal : animais) {
+                writer.write(animal.getId() + " ");
+                writer.write(animal.getNome() + " ");
+                writer.write(animal.getIdade() + " ");
+                writer.write(animal.getEspecieString() + " ");
+                writer.write(animal.getInstalacao().getId() + " ");
+                for (Mutacao mutacao : animal.getMutacoesLista()) {
+                    writer.write(mutacao.getNome() + " ");
+                }
+                writer.write("\n");
+            }
+            writer.close();
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("Erro 001");
+        }
     }
 }
