@@ -65,6 +65,9 @@ public class Animal {
     public List<Mutacao> getMutacoesLista(){
         return mutacoes;
     }
+    public void incrementaIdade(){
+        idade++;
+    }
     
     public double calculaPreco(){
         double preco = 50;

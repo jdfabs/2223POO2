@@ -20,9 +20,10 @@ public class Zoo {
     private List<Especie> especies = new ArrayList();
     private List<Carateristica> carateristicas = new ArrayList();
     private List<Mutacao> mutacoes = new ArrayList();
-    private int ano;
-    private double saldo = 100000000;
-    
+    private int ano = 2000;
+    private double saldo = 1000000;
+    private double rendimento = 0;
+    private double saldoUsado = 0;
 
 
 public static void main(String[] args ){
@@ -41,9 +42,7 @@ public void startMenu(){
         LoadShit();
         while(!sair){
             System.out.println("==================================================");
-            //System.out.println("                                                  ");
-            System.out.println("     Bem vindo ao Zoo da UMa                      ");
-            //System.out.println("                                                  ");
+            System.out.println("     Bem vindo ao Zoo da UMa Ano: "+ ano +"   Saldo: "+ saldo + ". ");
             System.out.println("==================================================");
             System.out.println("1.Adquirir animal aleatório                       ");
             System.out.println("2.Adquirir animal com caraterística genética      ");
@@ -80,7 +79,6 @@ public void startMenu(){
                             }
                             case 2 ->{
                                 AdquirirAnimalComCarateristica();
-                                //SalvarFicheiro(especies);
                                 break;
                             }
                             case 3 ->{
@@ -117,7 +115,7 @@ public void startMenu(){
                                 break;
                             }
                             case 11 ->{
-                                //obituary();
+                                Obituario();
                                 break;
                             }
                             case 12 ->{
@@ -125,7 +123,7 @@ public void startMenu(){
                                 break;
                             }
                             case 13 ->{
-                                //accountingPeriod();
+                                PeriodoContabilistico();
                                 break;
                             }
                             case 14 ->{
@@ -354,7 +352,7 @@ public void Metodo2(){
 
                 AdicionarListaAnimais(animaisOpcoes.get(opcao - 1));
                 saldo -= animaisOpcoes.get(opcao - 1).calculaPreco();
-
+                saldoUsado += animaisOpcoes.get(opcao - 1).calculaPreco();
             }
             
         } catch (Exception e) {
@@ -387,8 +385,10 @@ public void Metodo2(){
             int idade = (int) (Math.random() * possiveisEspecies.get(randomEspecie).getEsperancaVida());
             Animal animal = new Animal(animais.size(), GetRandomNameFromFile(), idade, possiveisEspecies.get(randomEspecie));
             if (saldo >= animal.calculaPreco()) {
+                System.out.println("Animal adquirido: "+ animal.getEspecie().getNome() + " custo: "+ animal.calculaPreco());
                 AdicionarListaAnimais(animal);
                 saldo -= animal.calculaPreco();
+                saldoUsado += animal.calculaPreco();
             }
         }
         else{
@@ -452,6 +452,7 @@ public void Metodo2(){
             Instalacao instalacao = new Instalacao(instalacoes.size(), lotacao[indice - 1], -1);
             instalacoes.add(instalacao);
             saldo -= preco[indice-1];
+            saldoUsado += preco[indice-1];
         } else {
 
         }
@@ -534,19 +535,11 @@ public void Metodo2(){
     
 
     public void CalendarioChines() {
-        /*int opcao;
+        int opcao;
         System.out.println("Insira o Ano:");
-        try{
-            ano = scan.nextInt();
-        }
-        catch(Exception e){
-            System.out.println("Ano invalido!");
-            CalendarioChines();
-            return;
-        }
         opcao = (ano % 12) + 1;
-        
-        
+        String animal1 ="";
+        int atratividade = 0;
         switch (opcao) {
             case 1 -> {
                 for (Animal animal : animais) {
@@ -674,7 +667,7 @@ public void Metodo2(){
                 System.out.println("blablabla");
             }
         }   
-        System.out.println("A atratividade dos " + animal1+"s aumentou para " + atratividade);*/
+        System.out.println("A atratividade dos " + animal1+"s aumentou para " + atratividade);
     }
 
     
@@ -703,7 +696,7 @@ public void Metodo2(){
         opcao = scan.nextInt();
         for (Animal animal : animais) {
             for (Carateristica carateristicaAnimal : animal.getEspecie().getCarateristicas()) {
-                if (carateristicaAnimal.equals(carateristicas.get(opcao - 1))) {
+                if (carateristicaAnimal.equals(carateristicas.get(opcao))) {
                     System.out.println(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getNome() + " Idade: " + animal.getIdade());
                 }
             }
@@ -772,8 +765,13 @@ public void Metodo2(){
           
     }
 
-    public void Obituário() {
+    public void Obituario() {
+        
+            
+            
+        
 
+        
     }
 
     public void Historico() {
@@ -781,7 +779,12 @@ public void Metodo2(){
     }
 
     public void PeriodoContabilistico() {
-
+        System.out.println("Este ano foi gasto: "+ saldoUsado + " euros.");
+        
+        
+        probMorrer();
+        ano++;
+        aumentaIdade();
     }
 
     public void Jumanji() {
@@ -1095,6 +1098,38 @@ public void Metodo2(){
     }
 
     //      METODOS AUXILIARES
+    public void probMorrer(){
+        int diferencaEsperancaVida = 0;
+        for(Animal animais: animais){
+            diferencaEsperancaVida = animais.getEspecie().getEsperancaVida() - animais.getIdade();
+            if(diferencaEsperancaVida <= 0){
+                if( (Math.random() * 100)+1 <= 80){
+                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
+                    
+                }  
+            }
+            if(diferencaEsperancaVida <= 5){
+                if( (Math.random() * 100)+1 <= 40){
+                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
+                }  
+            }
+            if(diferencaEsperancaVida <= 10){
+                if( (Math.random() * 100)+1 <= 20){
+                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
+                }  
+            }
+            if(diferencaEsperancaVida >= 15){
+                if( (Math.random() * 100)+1 <= 5){
+                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
+                }  
+            }
+        }
+    }
+    public void aumentaIdade(){
+        for(Animal animais: animais){
+            animais.incrementaIdade();
+        }
+    }
     public String GetRandomNameFromFile() {
         int numNomes = 0;
         String[] nome = new String[10];
