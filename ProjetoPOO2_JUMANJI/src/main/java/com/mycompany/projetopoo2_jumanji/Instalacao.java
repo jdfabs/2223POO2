@@ -16,14 +16,19 @@ public class Instalacao {
     private double custosCuidadores = 0;
     private double custoManutencao = 100;
     private Animal animal;
+    private int animalId;
     
     
-    public Instalacao(int id, int lotacao){
+    public Instalacao(int id, int lotacao, int animalId){
         this.id=id;
         this.lotacao = lotacao;
+        this.animalId = animalId;
     }
     public int getId(){
         return id;
+    }
+    public int getAnimalId(){
+        return animalId;
     }
     public int getLotacao(){
         return lotacao;

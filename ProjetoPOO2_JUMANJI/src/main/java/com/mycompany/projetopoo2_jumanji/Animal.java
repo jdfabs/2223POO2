@@ -46,7 +46,7 @@ public class Animal {
     }
 
     public String getEspecieString(){
-        return this.especie.getEspecieString();
+        return this.especie.getNome();
     }
     public Instalacao getInstalacao(){
         return instalacao;

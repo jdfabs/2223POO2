@@ -1,3 +1,1 @@
-2 Jonny 3 10 Pequeno 
-2 Jonny 3 10 Grande Preto 
-Files in Java might be tricky, but it is fun enough!
+5 Jonnies 10 20 

@@ -31,6 +31,14 @@ public class Especie {
         this.zoo = zoo;
         setupCarateristicas();
     }
+    public Especie(int atratividade, String nome, int raridade, int esperancaVida, Zoo zoo, boolean semSetup) {
+        this.atratividadeBase = atratividade;
+        this.nome = nome;
+        this.raridade = raridade;
+        this.esperacaVida = esperancaVida;
+        this.zoo = zoo;
+        
+    }
     
     public void setupCarateristicas() {
         //Imprime carateristicas disponieis        
