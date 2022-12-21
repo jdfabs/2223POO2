@@ -18,6 +18,7 @@ public class Zoo {
     private List<Animal> animais = new ArrayList<>();
     private List<Instalacao> instalacoes = new ArrayList();
     private List<Especie> especies = new ArrayList();
+    private List<Carateristica> carateristicas = new ArrayList();
     private int ano;
     
 
@@ -31,6 +32,12 @@ public static void main(String[] args ){
         
     }
 public void startMenu(){
+    
+    carateristicas.add(new Carateristica("Pequeno"));
+    carateristicas.add(new Carateristica("Grande"));
+    carateristicas.add(new Carateristica("Preto"));
+    carateristicas.add(new Carateristica("Branco"));
+    
     
         
         int opcao = 0;
@@ -72,11 +79,13 @@ public void startMenu(){
             }
             switch(opcao){
                             case 1 ->{
-                                AdquirirAnimal();
+                                //AdquirirAnimal();
+                                Metodo3();
                                 break;
                             }
                             case 2 ->{
-                                AdquirirAnimalComCarateristica();
+                                //AdquirirAnimalComCarateristica();
+                                SalvarFicheiro(especies);
                                 break;
                             }
                             case 3 ->{
@@ -138,6 +147,7 @@ public void startMenu(){
 }
 //fazer os métodos aqui
 
+
 public void Metodo2(){
     for(Animal animal : animais){
         System.out.println(animal.getNome()+" id: "+ animal.getId() + " Especie: " + animal.getEspecie().getEspecieString() + " Idade: " + animal.getIdade());
@@ -146,7 +156,7 @@ public void Metodo2(){
     
 }
 public void Metodo3(){
-    System.out.println("Metodo 3");
+    especies.add(new Especie(2, "Jonny", 3, 10, this))    ;
 }
 public void Metodo4(){
     System.out.println("Metodo 4");
@@ -328,7 +338,7 @@ public void AdicionarListaAnimais(Animal animal){
     
     public Especie CriaEspecieDeRaridade(int raridade) {
         Especie especie = null;
-        int random = 0;
+        /*int random = 0;
         while (especie == null) {
             switch (raridade) {
                 case 1:
@@ -400,14 +410,14 @@ public void AdicionarListaAnimais(Animal animal){
                     especie = new Porco();
                     break;
             }
-        }
+        }*/
 
         return especie;
     }
 
     public Especie CriaEspecieDeCarateristica(String carateristica) {
         Especie especie = null;
-        int random = 0;
+        /*int random = 0;
 
         switch (carateristica) {
             case "rodentia":
@@ -464,7 +474,7 @@ public void AdicionarListaAnimais(Animal animal){
             default:
                 especie = null;
                 break;
-        }
+        }*/
 
         return especie;
     }
@@ -736,5 +746,69 @@ public void AdicionarListaAnimais(Animal animal){
     public void Jumanji() {
 
     }
+    
+    public List<Carateristica> getCarateristicas() {
+        return carateristicas;
+    }
 
+    public void CarregarEspecies() {        
+        String[] linha;
+        Especie especie;
+        
+        try {
+            File ficheiro = new File("Especies.txt");
+            Scanner reader = new Scanner(ficheiro);
+            while (reader.hasNextLine()) {
+                String dados = reader.nextLine();
+                linha  = dados.split(" ");
+                try{
+                    int atratividade = Integer.parseInt(linha[0]); 
+                    int raridade = Integer.parseInt(linha[2]); 
+                    int esperancaVida = Integer.parseInt(linha[3]);
+                    especie = new Especie(atratividade, linha[1], raridade, esperancaVida, this);
+                    if(linha.length > 3){
+                        for(int i = 4; i <=linha.length; i++){
+                            for(Carateristica carateristica: carateristicas){
+                                if(carateristica.getNome().toLowerCase().equals(linha[i].toLowerCase())){
+                                    especie.getCarateristicas().add(carateristica);
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                catch(Exception e){
+                    System.out.println("Ficheiro corrupto, Cancelado");
+                    return;
+                }        
+                
+               
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            return;
+        }
+
+    }
+    
+    public void SalvarFicheiro(List<Especie> lista) {
+        try {
+            FileWriter writer = new FileWriter("Especies.txt");
+            for (Especie especie : lista) {
+                writer.write(especie.getAtratividadeBase() + " ");
+                writer.write(especie.getNome() + " ");
+                writer.write(especie.getRaridade() + " ");
+                writer.write(especie.getEsperancaVida() + " ");
+                for(Carateristica carateristica : especie.getCarateristicas()){
+                    writer.write(carateristica.getNome() + " ");
+                }
+                writer.write("\n");
+            }
+            writer.close();
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("Erro 001");
+        }       
+    }
 }

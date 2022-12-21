@@ -12,4 +12,12 @@ public class Carateristica {
     private String nome;
     private double custos;
     private String Abilidade;
+    
+    public Carateristica(String nome){
+     this.nome = nome;   
+    }
+    
+    public String getNome(){
+        return nome;
+    }
 }
