@@ -1,1 +1,12 @@
-5 Jonnies 10 20 
+1 Rato 1 2 Noturno Nada Corre Herbivero Pequeno Roedor 
+3 Vaca 2 20 Grande Corre Herbivero Artiodactyla 
+9 Tigre 9 16 Grande Nada Corre Carnivoro Panthera 
+6 Coelho 3 4 Pequeno Herbivero 
+7 Serpente 5 20 Pequeno 
+8 Cavalo 6 14 Grande Perissodactyla Herbivero 
+5 Cabra 3 10 Grande Herbivero Perissodactyla 
+7 Macaco 8 16 Grande Corre Carnivoro Herbivero Primate 
+3 Galo 2 4 Pequeno Corre Herbivero Galliformes 
+4 Cão 1 16 Pequeno Corre Nada Herbivero Pequeno Carnivora 
+2 Porco 2 12 Grande Carnivoro Herbivero Artiodactyla 
+10 Dragão 10 255 Grande Fake Noturno Corre Carnivoro Herbivero Voador 

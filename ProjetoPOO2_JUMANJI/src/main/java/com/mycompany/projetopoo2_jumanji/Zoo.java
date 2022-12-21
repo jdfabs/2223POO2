@@ -21,6 +21,7 @@ public class Zoo {
     private List<Carateristica> carateristicas = new ArrayList();
     private List<Mutacao> mutacoes = new ArrayList();
     private int ano;
+    private double saldo = 100000000;
     
 
 
@@ -31,12 +32,13 @@ public static void main(String[] args ){
         
         newZoo.startMenu(); //chamando a função para iniciar a aplicação  
         
+        
     }
 public void startMenu(){
 
         int opcao = 0;
         boolean sair = false;
-
+        LoadShit();
         while(!sair){
             System.out.println("==================================================");
             //System.out.println("                                                  ");
@@ -77,7 +79,7 @@ public void startMenu(){
                                 break;
                             }
                             case 2 ->{
-                                //AdquirirAnimalComCarateristica();
+                                AdquirirAnimalComCarateristica();
                                 //SalvarFicheiro(especies);
                                 break;
                             }
@@ -103,7 +105,7 @@ public void startMenu(){
                                 break;
                             }
                             case 8 ->{
-                                //listMutatedAnimals();
+                                ListarAnimaisComMutacao();
                                 break;
                             }
                             case 9 ->{
@@ -111,7 +113,7 @@ public void startMenu(){
                                 break;
                             }
                             case 10 ->{
-                                //animalFamily();
+                                FamiliaAnimal();
                                 break;
                             }
                             case 11 ->{
@@ -135,7 +137,7 @@ public void startMenu(){
                                 break;
                             }
                             case 20 ->{
-                                PrintAnimal();
+                                 AdicionarCarateristicaAEspecie();
                                 break;
                             }
                             case 21 ->{
@@ -147,7 +149,7 @@ public void startMenu(){
                                 break;
                             }
                             case 23 ->{
-                                SaveShit();
+                                PrintInstalacoes();
                                 break;
                             }
                             case 24 ->{
@@ -155,9 +157,31 @@ public void startMenu(){
                                 break;
                             }
                             case 25 ->{
-                                Metodo3();
+                                SaveShit();
                                 break;
                             }
+                            case 30 ->{
+                                AdicionarCarateristica();
+                                break;
+                            }
+                            case 31 ->{
+                                AdicionarEspecie();
+                                break;
+                            }
+                            case 32 ->{
+                                AdicionarMutacao();
+                                break;
+                            }
+                            case 33 ->{
+                                AdicionarCarateristicaAEspecie();
+                                break;
+                            }
+                            case 34 ->{
+                                AdicionarMutacaoAAnimal();
+                                break;
+                            }
+                            
+                            
                         }
         }
     
@@ -165,107 +189,213 @@ public void startMenu(){
 //fazer os métodos aqui
 
 
-public void PrintAnimal(){
-    CarregarAnimais();
-    for(Animal animal : animais){
-        System.out.println(animal.getNome()+" id: "+ animal.getId() + " Especie: " + animal.getEspecie().getNome() + " Idade: " + animal.getIdade());
+
+
+    public void AdicionarCarateristica() {
+        String nome;
+        double custos;
+        String abilidade;
+
+        System.out.println("Nome:");
+        nome = scan.next();
+        System.out.println("custos:");
+        custos = (Double) (scan.nextDouble());
+        System.out.println("abilidade:");
+        abilidade = scan.next();
+
+        Carateristica carateristica = new Carateristica(nome, custos, abilidade);
+        carateristicas.add(carateristica);
     }
-}
-public void PrintEspecie(){
-    for(Especie especie : especies){
-        System.out.println(especie.getNome());
-    }    
-}
-public void PrintCarateristicas(){
-    for(Carateristica carateristica : carateristicas){
-        System.out.println(carateristica.getNome());
+
+    public void AdicionarEspecie() {
+        int atratividade;
+        String nome;
+        int raridade;
+        int esperancaVida;
+
+        System.out.println("atratividade:");
+        atratividade = scan.nextInt();
+        System.out.println("nome:");
+        nome = scan.next();
+        System.out.println("raridade:");
+        raridade = scan.nextInt();
+         System.out.println("esperancaVida:");
+        esperancaVida = scan.nextInt();
+
+
+        Especie especie = new Especie(atratividade, nome, raridade,esperancaVida,this,true);
+        especies.add(especie);
     }
-}
-public void SaveShit(){
-    SalvarEspecies();
-    
-    SalvarMutacoes();
-    SalvarInstalacoes();
-    SalvarCarateristicas();
-}
-public void LoadShit(){
-    CarregarCarateristicas();    
-    CarregarEspecies();       
-    CarregarMutacoes();
-    CarregarInstalacoes();    
-    CarregarAnimais();
-    
-}
 
-
-public void Metodo3(){
-    especies.add(new Especie(5, "Os_Jonnies", 10, 20, this));
-   
-    animais.add(new Animal(0, "jony1", 10,especies.get(0)));
-    animais.add(new Animal(1, "jony2", 11,especies.get(0)));
-    animais.add(new Animal(2, "jony3", 12,especies.get(0)));
-    animais.add(new Animal(3, "jony4", 13,especies.get(0)));
-    
-    instalacoes.add(new Instalacao(0, 200, -1));
-    instalacoes.add(new Instalacao(1, 200, -1));
-    instalacoes.add(new Instalacao(2, 200, -1));
-    instalacoes.add(new Instalacao(3, 200, -1));
-    
-    mutacoes.add(new Mutacao("MutacaoA", 2));
-    mutacoes.add(new Mutacao("MutacaoB", 2));
-    mutacoes.add(new Mutacao("MutacaoC", 2));
-    mutacoes.add(new Mutacao("MutacaoD", 2));
-    
-}
-public void Metodo4(){
-    System.out.println("Metodo 4");
-}
-
-
-public void AdicionarListaAnimais(Animal animal){
-        animais.add(animal);
+    public void AdicionarMutacao() {
+        String nome;
+        int modAtract;
         
+
+        System.out.println("Nome:");
+        nome = scan.next();
+        System.out.println("modAtract:");
+        modAtract = scan.nextInt();       
+
+        Mutacao mutacao = new Mutacao(nome, modAtract);
+        mutacoes.add(mutacao);
+    }
+    
+    public void AdicionarCarateristicaAEspecie(){
+        for(Especie especie: especies){
+            System.out.println("1- " + especie.getNome());
+        }
+        int opcao;
+        opcao = scan.nextInt();
+        if(opcao <= especies.size()){
+            System.out.println(especies.get(opcao-1).getNome());
+            int i = 0;
+            for (Carateristica carateristica : carateristicas) {
+                System.out.println(i + "- " + carateristica.getNome());
+                i++;
+
+            }
+            System.out.println("001");
+            int opcao2;
+            opcao2 = scan.nextInt();
+            System.out.println("002");
+            System.out.println(carateristicas.size());
+            System.out.println(opcao2);
+            if (opcao2 < carateristicas.size()) {
+                System.out.println("002");
+                especies.get(opcao - 1).adicionaCarateristica(carateristicas.get(opcao2));
+                System.out.println("003");
+            }
+        }
+    }
+     public void AdicionarMutacaoAAnimal(){
+         int i = 0;
+        for(Animal animal: animais){
+            System.out.println(i+"- " + animal.getNome());
+            i++;
+        }
+        int opcao;
+        opcao = scan.nextInt();
+        if(opcao <= animais.size()){
+            System.out.println(animais.get(opcao).getNome());
+            i = 0;
+            for (Mutacao mutacao : mutacoes) {
+                System.out.println(i + "- " + mutacao.getNome());
+                i++;
+
+            }
+            int opcao2;
+            opcao2 = scan.nextInt();
+
+            if (opcao2 < mutacoes.size()) {
+                System.out.println("002");
+                animais.get(opcao).addMutacao(mutacoes.get(opcao2));
+                System.out.println("003");
+            }
+        }
     }
 
 
+
+
+public void Metodo1(){
+
+    System.out.println("Metodo 1");
+}
+public void Metodo2(){
+    System.out.println("Metodo 2");
+}
+
+
+
+//      METODOS MENU PRINCIPAL
     public void AdquirirAnimal() {
         int id;
+        Animal animal;
+        int raridade ;
+        
+        
+        
         List<Animal> animaisOpcoes = new ArrayList();
+        
         for (int i = 1; i <= 3; i++) {
-            int random = (int) (Math.random() * 12);
-            Especie especie = CriaEspecieDeRaridade(random);
-
-            int idade = (int) (Math.random() * especie.getEsperancaVida());
-            Animal animal = new Animal(animais.size(), GetRandomNameFromFile(), idade, especie);
-
-            System.out.println("opção nº" + i + ": " + animal.getEspecie().getNome()+ ", idade: "+ animal.getIdade());
-            animaisOpcoes.add(animal);
+            raridade = (int) (Math.pow(Math.random(), 4) * 9 + 1);
+            System.out.println(raridade);
+            List<Especie> especieOpcoes = new ArrayList();
+            while (especieOpcoes.isEmpty()) {
+                for (Especie especie : especies) {
+                    if (especie.getRaridade() == raridade) {
+                        especieOpcoes.add(especie);
+                    }
+                    
+                }
+                raridade--;
+            }
+            
+            int randomEspecie = (int) (Math.random() * (especieOpcoes.size()-1));
+            int idade = (int) (Math.random() * especieOpcoes.get(randomEspecie).getEsperancaVida());   
+            try{
+            animal = new Animal(animais.size(),GetRandomNameFromFile(), idade, especieOpcoes.get(randomEspecie));
+            animaisOpcoes.add(animal );
+            System.out.println("opção nº" + i + ": "+ animal.getNome()+", " + especieOpcoes.get(randomEspecie).getNome() + ", idade: "+ animal.getIdade() + " Preço: " + animal.calculaPreco());
+            }
+            catch(Exception e){
+                System.out.println("especie invalida");
+            }       
+            
         }
         System.out.println("Qual animal é que deseja adquirir?");
         int opcao = 0;
+
         try {
             opcao = scan.nextInt();
-            AdicionarListaAnimais(animaisOpcoes.get(opcao - 1));
+           
+            if(saldo >= animaisOpcoes.get(opcao - 1).calculaPreco()){
+
+                AdicionarListaAnimais(animaisOpcoes.get(opcao - 1));
+                saldo -= animaisOpcoes.get(opcao - 1).calculaPreco();
+
+            }
+            
         } catch (Exception e) {
             System.out.println("Invalid input!");
             scan.nextLine();
         }
+
     }
 
     public void AdquirirAnimalComCarateristica() {
-        String opcao = "";
-        System.out.println("Carateristicas disponiveis: Rodentia, Artiodactyla, Carnivora, Lagomorpha, Fake, Squamata, Perissodactyla, Artiodactyla, Primates, Galliformes, Carnivora, Artiodactyla");
-        System.out.println("Ordem do animal que deseja:                               ");
-        opcao = scan.next();
-        Especie especie = CriaEspecieDeCarateristica(opcao.toLowerCase());
-        if (especie == null) {
-            System.out.println("Opção Invalida,");
-            AdquirirAnimalComCarateristica();
-        } else {
-            int idade = (int) (Math.random() * especie.getEsperancaVida());
-            Animal animal = new Animal(animais.size(), GetRandomNameFromFile(), idade, especie);
-            AdicionarListaAnimais(animal);
+        int opcao;        
+        List<Especie> possiveisEspecies = new ArrayList<>();
+        int i = 0;
+        for (Carateristica carateristica : carateristicas) {
+            System.out.println(i + ") " + carateristica.getNome());
+             i++;
         }
+        System.out.println("Selecione o numero carateristica que quer:");
+        opcao = scan.nextInt();       
+
+        for (Especie especie : especies) {
+            for (Carateristica carateristicaProcura : especie.getCarateristicas()) {
+                if (carateristicaProcura.equals(carateristicas.get(opcao))) {
+                    possiveisEspecies.add(especie);
+                }
+            }
+        }
+        if (!possiveisEspecies.isEmpty()) {
+            int randomEspecie = (int) (Math.random() * (possiveisEspecies.size() - 1));
+            int idade = (int) (Math.random() * possiveisEspecies.get(randomEspecie).getEsperancaVida());
+            Animal animal = new Animal(animais.size(), GetRandomNameFromFile(), idade, possiveisEspecies.get(randomEspecie));
+            if (saldo >= animal.calculaPreco()) {
+                AdicionarListaAnimais(animal);
+                saldo -= animal.calculaPreco();
+            }
+        }
+        else{
+            System.out.println("Não existem especies com estas carateristicas");
+        }
+
+        
 
     }
     
@@ -273,60 +403,59 @@ public void AdicionarListaAnimais(Animal animal){
         String opcao = "";
         System.out.println("Tamanho da instalação [Pequena, Media, Grande]: ");
         opcao = scan.next();
-        
+
         int lotacao[] = new int[3];
         double preco[] = new double[3];
-        switch(opcao){
+        switch (opcao) {
             case "pequena":
                 System.out.println("Resultado do concurso:");
-                for (int i=0;i<3;i++){
+                for (int i = 0; i < 3; i++) {
                     lotacao[i] = (int) ((Math.random() * 75) + 25);
-                    preco[i] = (double) (lotacao[i]*((Math.random() * 250)+500));
-                    System.out.println("Empresa " + (i+1) + " - Lotação:" + lotacao[i] + " Preço: " + preco[i] );
+                    preco[i] = (double) (lotacao[i] * ((Math.random() * 250) + 500));
+                    System.out.println("Empresa " + (i + 1) + " - Lotação:" + lotacao[i] + " Preço: " + preco[i]);
                 }
                 break;
-                
+
             case "media":
                 System.out.println("Resultado do concurso:");
-                for (int i=0;i<3;i++){
+                for (int i = 0; i < 3; i++) {
                     lotacao[i] = (int) ((Math.random() * 150) + 100);
-                    preco[i] = (double) (lotacao[i]*((Math.random() * 250)+500));
-                    System.out.println("Empresa " + (i+1) + " - Lotação:" + lotacao[i] + " Preço: " + preco[i] );
+                    preco[i] = (double) (lotacao[i] * ((Math.random() * 250) + 500));
+                    System.out.println("Empresa " + (i + 1) + " - Lotação:" + lotacao[i] + " Preço: " + preco[i]);
                 }
                 break;
-                
+
             case "grande":
                 System.out.println("Resultado do concurso:");
-                for (int i=0;i<3;i++){
+                for (int i = 0; i < 3; i++) {
                     lotacao[i] = (int) ((Math.random() * 250) + 250);
-                    preco[i] = (double) (lotacao[i]*((Math.random() * 250)+500));
-                    System.out.println("Empresa " + (i+1) + " - Lotação:" + lotacao[i] + " Preço: " + preco[i] );
+                    preco[i] = (double) (lotacao[i] * ((Math.random() * 250) + 500));
+                    System.out.println("Empresa " + (i + 1) + " - Lotação:" + lotacao[i] + " Preço: " + preco[i]);
                 }
                 break;
             default:
-                System.out.println("Seleção invalida" );
+                System.out.println("Seleção invalida");
                 ConstruirInstalacao();
                 return;
-                
+
         }
-        System.out.println("Escolha o numero da empresa ou quaquer outra chave para cancelar:" );                
-                    opcao = scan.next(); 
-                    int indice = 0;
-                    try{
-                        indice = Integer.parseInt(opcao);
-                    }
-                    catch(Exception e){
-                        System.out.println("Construção de Instalação cancelada.");
-                    }
-                    
-                    if(indice == 1 ||indice == 2 || indice == 3){
-                        Instalacao instalacao = new Instalacao(instalacoes.size(),lotacao[indice-1]);
-                        instalacoes.add(instalacao);
-                    }
-                    else {
-                        
-                    }          
-           
+        System.out.println("Escolha o numero da empresa ou quaquer outra chave para cancelar:");
+        opcao = scan.next();
+        int indice = 0;
+        try {
+            indice = Integer.parseInt(opcao);
+        } catch (Exception e) {
+            System.out.println("Construção de Instalação cancelada.");
+        }
+
+        if ((indice == 1 || indice == 2 || indice == 3) && saldo >= preco[indice-1]) {
+            Instalacao instalacao = new Instalacao(instalacoes.size(), lotacao[indice - 1], -1);
+            instalacoes.add(instalacao);
+            saldo -= preco[indice-1];
+        } else {
+
+        }
+
     }
     
     public void ColocarAnimalEmInstalacao() {
@@ -335,6 +464,16 @@ public void AdicionarListaAnimais(Animal animal){
         int idAnimal;
         Instalacao instalacaoEscolhida;
         int idInstalacao;
+        for(Animal animal: animais){
+            System.out.print("id: " + animal.getId() + " Nome: " + animal.getNome() + " Especie:" + animal.getEspecieString() );
+            if(animal.getInstalacao() != null){
+                System.out.println(" Instalação: " + animal.getInstalacao().getId());
+            }
+            else{
+                System.out.println();
+            }
+            
+        } 
         System.out.println("Insira o id do Animal a mover: ");        
         opcao = scan.next();
         try{
@@ -390,161 +529,24 @@ public void AdicionarListaAnimais(Animal animal){
         if(animalEscolhido.getInstalacao()!= null){
             animalEscolhido.getInstalacao().setAnimal();
         } 
-        animalEscolhido.setInstalacao(instalacaoEscolhida);
-
-       
+        animalEscolhido.setInstalacao(instalacaoEscolhida);       
     }
     
-    public Especie CriaEspecieDeRaridade(int random) {
-        Especie especie = null;
-        while (especie == null) {
-            switch (random) {
-                case 0:
-                    especie = new Especie(5, "rato", 1, 4, this);
-                    break;
-                case 1:
-                    especie = new Especie(10, "vaca", 3, 8, this);
-                    break;
-                case 2:
-                    especie = new Especie(75, "tigre", 8, 14, this);
-                    break;
-                case 3:
-                    especie = new Especie(20, "coelho", 2, 6, this);
-                    break;
-                case 4:
-                    especie = new Especie(100, "dragão", 10, 69, this);
-                    break;
-                case 5:
-                    especie = new Especie(80, "serpente", 6, 18, this);
-                    break;
-                case 6:
-                    especie = new Especie(50, "cavalo", 4, 13, this);
-                    break;
-                case 7:
-                    especie = new Especie(25, "cabra", 3, 5, this);
-                    break;
-                case 8:
-                    especie = new Especie(60, "macaco", 5, 8, this);
-                    break;
-                case 9:
-                    especie = new Especie(10, "galinha", 2, 5, this);
-                    break;
-                case 10:
-                    especie = new Especie(40, "cão", 4, 15, this);
-                    break;
-                case 11:
-                    especie = new Especie(25, "porco", 3, 10, this);
-                    break;
-                default:
-                    especie = new Especie(2,"cão", 5,15,this);
-                    break;
-            }
-        }
-
-        return especie;
-    }
-
-    public Especie CriaEspecieDeCarateristica(String carateristica) {
-        Especie especie = null;
-        /*int random = 0;
-
-        switch (carateristica) {
-            case "rodentia":
-                especie = new Rato();
-                break;
-
-            case "artiodactyla":
-                random = (int) (Math.random() * 2);
-                switch (random) {
-                    case 0:
-                        especie = new Vaca();
-                        break;
-                    case 1:
-                        especie = new Cabra();
-                        break;
-                    case 2:
-                        especie = new Porco();
-                        break;
-                }
-
-                break;
-            case "carnivora":
-                random = (int) (Math.random() * 2);
-                switch (random) {
-                    case 0:
-                        especie = new Tigre();
-                        break;
-                    case 1:
-                        especie = new Cao();
-                        break;
-
-                }
-
-                break;
-            case "lagomorpha":
-
-                especie = new Coelho();
-
-            case "fake":
-                especie = new Dragao();
-                break;
-            case "squamata":
-                especie = new Serpente();
-                break;
-            case "perissodactyla":
-                especie = new Cavalo();
-                break;
-            case "primates":
-                especie = new Macaco();
-                break;
-            case "galliformes":
-                especie = new Galinha();
-                break;
-            default:
-                especie = null;
-                break;
-        }*/
-
-        return especie;
-    }
-
-    public String GetRandomNameFromFile() {
-        int numNomes = 0;
-        String[] nome = new String[10];
-        String linha = "";
-        Scanner reader;
-        int rand = 0;
-        try {
-            File ficheiro = new File("Nomes.txt");
-            reader = new Scanner(ficheiro);
-            while (reader.hasNextLine()) {
-                reader.nextLine();
-                numNomes++;
-            }
-            reader.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
-        }
-        rand = (int) (Math.random() * numNomes);
-        try {
-            File ficheiro = new File("Nomes.txt");
-            reader = new Scanner(ficheiro);
-            for (int i = 0; i < rand; i++) {
-                linha = reader.nextLine();
-            }
-            nome = linha.split(" ", 2)[0].split(",", 2);
-            reader.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
-        }
-        return nome[0];
-    }
 
     public void CalendarioChines() {
-        int opcao = 1996;
-        int atratividade = 0;
-        String animal1 = "";
+        /*int opcao;
+        System.out.println("Insira o Ano:");
+        try{
+            ano = scan.nextInt();
+        }
+        catch(Exception e){
+            System.out.println("Ano invalido!");
+            CalendarioChines();
+            return;
+        }
         opcao = (ano % 12) + 1;
+        
+        
         switch (opcao) {
             case 1 -> {
                 for (Animal animal : animais) {
@@ -672,70 +674,101 @@ public void AdicionarListaAnimais(Animal animal){
                 System.out.println("blablabla");
             }
         }   
-        System.out.println("A atratividade dos " + animal1+"s aumentou para " + atratividade);
+        System.out.println("A atratividade dos " + animal1+"s aumentou para " + atratividade);*/
     }
 
-    public void ListarAnimais() {
+    
+    public void ListarAnimais() {   
         for (Animal animal : animais) {
-            System.out.print("Nome: "+animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getNome() + " Idade: " + animal.getIdade()+ " ");
-            if(animal.getInstalacao()!=null){
-                System.out.print("Lotação da Instalação: " + animal.getInstalacao().getLotacao());
+            System.out.print(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getNome() + " Idade: " + animal.getIdade());
+            if(!animal.getMutacoesLista().isEmpty()){
+                System.out.print(" Mutações: ");
+                for(Mutacao mutacao: animal.getMutacoesLista()){
+                    System.out.print(mutacao.getNome()+ " ");
+                }
             }
             System.out.println();
         }
     }
 
     public void ListarAnimaisComCarateristica() {
-        /*String opcao = "";
-        System.out.println("Carateristicas disponiveis: Rodentia, Artiodactyla, Carnivora, Lagomorpha, Fake, Squamata, Perissodactyla, Artiodactyla, Primates, Galliformes, Carnivora, Artiodactyla");
-        System.out.println("Ordem do animal que deseja:                               ");
-        opcao = scan.next().toLowerCase();
-        
-        Especie especie = CriaEspecieDeCarateristica(opcao.toLowerCase());
-        if (especie == null) {
-            System.out.println("Opção Invalida,");
-            ListarAnimaisComCarateristica();
-        } else {
+        int opcao;             
+        int i =0;
+        for(Carateristica carateristica: carateristicas){
             
-            for (Animal animal : animais) {
-                
-                if (animal.getEspecie().getCarateristicas().toLowerCase().equals(opcao.toLowerCase()) ) {
-                    
-                    System.out.print(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getNome() + " Idade: " + animal.getIdade() + " ");
-                    if (animal.getInstalacao() != null) {
-                        System.out.print("Lotação da Instalação: " + animal.getInstalacao().getLotacao());
-                    }
-                    System.out.println();
+            System.out.println(i+") " + carateristica.getNome());
+            i++;
+        }
+        System.out.println("Selecione o numero carateristica que quer:");
+        opcao = scan.nextInt();
+        for (Animal animal : animais) {
+            for (Carateristica carateristicaAnimal : animal.getEspecie().getCarateristicas()) {
+                if (carateristicaAnimal.equals(carateristicas.get(opcao - 1))) {
+                    System.out.println(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getNome() + " Idade: " + animal.getIdade());
                 }
-                
             }
-        }*/
+        }
     }
 
     public void ListarAnimaisComMutacao() {
-
+        int opcao;
+        boolean encontrado = false;
+        int i =1;
+        for(Mutacao mutacao: mutacoes){
+            System.out.println(i+") " + mutacao.getNome());
+            i++;
+        }
+        System.out.println("Selecione o numero da Mutação que quer:");
+        opcao = scan.nextInt();
+        for (Animal animal : animais) {            
+            for (Mutacao mutacaoAnimal : animal.getMutacoesLista()) {
+                if (mutacaoAnimal.equals(mutacoes.get(opcao - 1))) {
+                    encontrado = true;
+                    System.out.println(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getNome() + " Idade: " + animal.getIdade());
+                }
+            }
+        }
+        if(!encontrado){
+            System.out.println("Não Existem animais com esta Mutação");
+        }       
     }
 
     public void ListarInstalacoes() {
         System.out.println("Instalações do zoo: ");
+        
         for (Instalacao instalacao : instalacoes) {
-            
+            System.out.print("id: " + instalacao.getId() + " Lotação:" + instalacao.getLotacao());
             if(instalacao.getAnimal()== null){
-                System.out.println("Id: "+ instalacao.getId()+ ".");
-                System.out.println("Lotação: "+instalacao.getLotacao() + ".");
-                System.out.println("Esta instalação não possui nenhum animal ");
+                System.out.println(" - Esta instalação não possui nenhum animal ");
             }
             else{
-                System.out.println("Id: "+ instalacao.getId()+ ".");
-                System.out.println("Lotação: "+instalacao.getLotacao() + ".");
-                System.out.println("Nome: " + instalacao.getAnimal().getNome() + ".");
-                System.out.println("Espécie: " + instalacao.getAnimal().getEspecie().getNome() + ".");
+                System.out.println(" - Nome: " + instalacao.getAnimal().getNome() + " Espécie: " + instalacao.getAnimal().getEspecie().getNome());
             }
-            
         }
     }
 
     public void FamiliaAnimal() {
+        System.out.println("Instalações:");
+        for(Instalacao instalacao: instalacoes){
+            System.out.print("id: " + instalacao.getId() + " Lotação: "+ instalacao.getLotacao() );
+            if(instalacao.getAnimal()!= null){
+                System.out.print(" - Animal - Nome: " +instalacao.getAnimal().getNome() + " id:" + instalacao.getAnimal().getId() );
+            }
+            else{
+                System.out.println();
+            }
+        }
+        System.out.println("Animais");
+        PrintAnimal() ;
+        
+        System.out.println("Especies:");
+        PrintEspecie();
+        
+        System.out.println("Carateristicas:");
+        PrintCarateristicas();
+        
+        
+        
           
     }
 
@@ -754,59 +787,75 @@ public void AdicionarListaAnimais(Animal animal){
     public void Jumanji() {
 
     }
-    
-    public List<Carateristica> getCarateristicas() {
-        return carateristicas;
+
+    //      METODOS PARA CARREGAR / SALVAR
+    public void SaveShit() {
+        SalvarEspecies();
+        SalvarAnimais();
+        SalvarMutacoes();
+        SalvarInstalacoes();
+        SalvarCarateristicas();
     }
 
-    public void CarregarEspecies() {        
+    public void LoadShit() {
+        CarregarCarateristicas();
+        CarregarEspecies();
+        CarregarMutacoes();
+        CarregarInstalacoes();
+        CarregarAnimais();
+
+    }
+
+    public void CarregarEspecies() {
         String[] linha;
         Especie especie;
-        
+
         try {
             File ficheiro = new File("Especies.txt");
             Scanner reader = new Scanner(ficheiro);
             while (reader.hasNextLine()) {
                 String dados = reader.nextLine();
-                linha  = dados.split(" ");
-                try{
+                linha = dados.split(" ");
+                try {
                     int atratividade = Integer.parseInt(linha[0]);
-                    
-                    int raridade = Integer.parseInt(linha[2]); 
-                    
+
+                    int raridade = Integer.parseInt(linha[2]);
+
                     int esperancaVida = Integer.parseInt(linha[3]);
-                    
+
                     especie = new Especie(atratividade, linha[1], raridade, esperancaVida, this, true);
-                    if(linha.length > 4){
-                        for(int i = 4; i <=linha.length; i++){
-                            for(Carateristica carateristica: carateristicas){
-                                if(carateristica.getNome().toLowerCase().equals(linha[i].toLowerCase())){
+                    if (linha.length > 4) {
+
+                        for (int i = 4; i < linha.length; i++) {
+
+                            for (Carateristica carateristica : carateristicas) {
+                                if (carateristica.getNome().equals(linha[i])) {
                                     especie.getCarateristicas().add(carateristica);
                                 }
                             }
                         }
-                        
+
                     }
-                    especies.add(especie);
-                        System.out.println("Especies ok");
-                    
-                }
-                catch(Exception e){
+
+                    System.out.println("Especies ok");
+
+                } catch (Exception e) {
                     System.out.println("Ficheiro corrupto, Cancelado");
                     return;
-                }        
-                
-               
+                }
+
+                especies.add(especie);
+
             }
             reader.close();
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
-            reader.close();
+
             return;
         }
- 
+
     }
-    
+
     public void SalvarEspecies() {
         try {
             FileWriter writer = new FileWriter("Especies.txt");
@@ -815,7 +864,7 @@ public void AdicionarListaAnimais(Animal animal){
                 writer.write(especie.getNome() + " ");
                 writer.write(especie.getRaridade() + " ");
                 writer.write(especie.getEsperancaVida() + " ");
-                for(Carateristica carateristica : especie.getCarateristicas()){
+                for (Carateristica carateristica : especie.getCarateristicas()) {
                     writer.write(carateristica.getNome() + " ");
                 }
                 writer.write("\n");
@@ -824,66 +873,57 @@ public void AdicionarListaAnimais(Animal animal){
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
             System.out.println("Erro 001");
-        }       
-    }    
-    
-    
-     public void CarregarAnimais() {        
+        }
+    }
+
+    public void CarregarAnimais() {
         String[] linha;
         Animal animal;
         Especie especieFinal = null;
-        
+
         try {
             File ficheiro = new File("Animais.txt");
             Scanner reader = new Scanner(ficheiro);
-            while (reader.hasNextLine()) {                
-                String dados = reader.nextLine(); 
-                linha  = dados.split(" ");
-                
-                System.out.println(especies.get(0).getNome());
-                System.out.println(linha[3]);
-                
-                try{
-                    int id = Integer.parseInt(linha[0]); 
-                    int idade = Integer.parseInt(linha[2]); 
+            while (reader.hasNextLine()) {
+                String dados = reader.nextLine();
+                linha = dados.split(" ");
+
+                try {
+                    int id = Integer.parseInt(linha[0]);
+                    int idade = Integer.parseInt(linha[2]);
                     int instalacaoId = Integer.parseInt(linha[4]);
-                     
-                    System.out.println("001");
-                    for(Especie especie: especies){
-                        if(especie.getNome().equals(linha[3]) ){
+
+                    for (Especie especie : especies) {
+                        if (especie.getNome().equals(linha[3])) {
                             especieFinal = especie;
                         }
-                    }   
-                    System.out.println("002");
+                    }
                     animal = new Animal(id, linha[1], idade, especieFinal);
-                    for(Instalacao instalacao: instalacoes){
-                        if(instalacao.getId() == instalacaoId){
+                    for (Instalacao instalacao : instalacoes) {
+                        if (instalacao.getId() == instalacaoId) {
                             animal.setInstalacao(instalacao);
                             instalacao.setAnimal(animal);
                         }
                     }
-                    System.out.println("003");
-                    
-                    
-                    if(linha.length > 5){
-                        for(int i = 6; i <=linha.length; i++){
-                            for(Mutacao mutacao: mutacoes){
-                                if(mutacao.getNome().toLowerCase().equals(linha[i].toLowerCase())){
+
+                    if (linha.length > 5) {
+                        for (int i = 6; i <= linha.length; i++) {
+                            for (Mutacao mutacao : mutacoes) {
+                                if (mutacao.getNome().toLowerCase().equals(linha[i].toLowerCase())) {
                                     animal.getMutacoesLista().add(mutacao);
                                 }
                             }
                         }
                     }
-                    animais.add(animal);
+
                     System.out.println("Animais ok");
-                    
-                }
-                catch(Exception e){
+
+                } catch (Exception e) {
                     System.out.println("Ficheiro corrupto, Cancelado");
                     return;
-                }        
-                
-               
+                }
+                animais.add(animal);
+
             }
             reader.close();
         } catch (FileNotFoundException e) {
@@ -892,7 +932,7 @@ public void AdicionarListaAnimais(Animal animal){
         }
 
     }
-    
+
     public void SalvarAnimais() {
         try {
             FileWriter writer = new FileWriter("Animais.txt");
@@ -901,24 +941,23 @@ public void AdicionarListaAnimais(Animal animal){
                 writer.write(animal.getNome() + " ");
                 writer.write(animal.getIdade() + " ");
                 writer.write(animal.getEspecieString() + " ");
-                if(animal.getInstalacao() != null){
+                if (animal.getInstalacao() != null) {
                     writer.write(animal.getInstalacao().getId() + " ");
+                } else {
+                    writer.write("-1 ");
                 }
-                else {
-                    writer.write( "-1 ");
-                }
-                
+
                 for (Mutacao mutacao : animal.getMutacoesLista()) {
                     writer.write(mutacao.getNome() + " ");
                 }
                 writer.write("\n");
             }
             writer.close();
-            System.out.println("Successfully wrote to the file.");
+            System.out.println("Successfully wrote ANIMAIS to the file.");
         } catch (IOException e) {
             System.out.println("Erro 001");
         }
-    }        
+    }
 
     public void CarregarCarateristicas() {
         String[] linha;
@@ -962,8 +1001,7 @@ public void AdicionarListaAnimais(Animal animal){
         } catch (IOException e) {
             System.out.println("Erro 001");
         }
-    }        
-    
+    }
 
     public void CarregarMutacoes() {
         String[] linha;
@@ -1007,8 +1045,7 @@ public void AdicionarListaAnimais(Animal animal){
         } catch (IOException e) {
             System.out.println("Erro 001");
         }
-    }   
-    
+    }
 
     public void CarregarInstalacoes() {
         String[] linha;
@@ -1024,7 +1061,7 @@ public void AdicionarListaAnimais(Animal animal){
                     int id = Integer.parseInt(linha[0]);
                     int lotacao = Integer.parseInt(linha[1]);
                     int animalId = Integer.parseInt(linha[2]);
-  
+
                     instalacao = new Instalacao(id, lotacao, animalId);
                     instalacoes.add(instalacao);
                     System.out.println("Instalacoes ok");
@@ -1047,7 +1084,7 @@ public void AdicionarListaAnimais(Animal animal){
             for (Instalacao instalacao : instalacoes) {
                 writer.write(instalacao.getId() + " ");
                 writer.write(instalacao.getLotacao() + " ");
-                writer.write(instalacao.getAnimalId()+ " ");
+                writer.write(instalacao.getAnimalId() + " ");
                 writer.write("\n");
             }
             writer.close();
@@ -1055,5 +1092,76 @@ public void AdicionarListaAnimais(Animal animal){
         } catch (IOException e) {
             System.out.println("Erro 001");
         }
+    }
+
+    //      METODOS AUXILIARES
+    public String GetRandomNameFromFile() {
+        int numNomes = 0;
+        String[] nome = new String[10];
+        String linha = "";
+        Scanner reader;
+        int rand = 0;
+        try {
+            File ficheiro = new File("Nomes.txt");
+            reader = new Scanner(ficheiro);
+            while (reader.hasNextLine()) {
+                reader.nextLine();
+                numNomes++;
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+        }
+        rand = (int) (Math.random() * numNomes);
+        try {
+            File ficheiro = new File("Nomes.txt");
+            reader = new Scanner(ficheiro);
+            for (int i = 0; i < rand; i++) {
+                linha = reader.nextLine();
+            }
+            nome = linha.split(" ", 2)[0].split(",", 2);
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+        }
+        return nome[0];
+    }
+
+    public void PrintAnimal() {
+        for (Animal animal : animais) {
+            System.out.println(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getNome() + " Idade: " + animal.getIdade());
+        }
+    }
+
+    public void PrintEspecie() {
+        for (Especie especie : especies) {
+            System.out.print(especie.getNome());
+            for(Carateristica carateristica: especie.getCarateristicas()){
+                System.out.print(" " + carateristica.getNome());
+            }
+            System.out.println();
+        }
+    }
+
+    public void PrintCarateristicas() {
+        for (Carateristica carateristica : carateristicas) {
+            System.out.println(carateristica.getNome());
+        }
+    }
+
+    public void PrintInstalacoes() {
+        for (Instalacao instalacao : instalacoes) {
+            System.out.println(instalacao.getId() + " Lotação:" + instalacao.getLotacao());
+        }
+    }
+    
+    public void AdicionarListaAnimais(Animal animal){
+        animais.add(animal);
+        
+    }
+
+    // GETS E SETS
+    public List<Carateristica> getCarateristicas() {
+        return carateristicas;
     }
 }

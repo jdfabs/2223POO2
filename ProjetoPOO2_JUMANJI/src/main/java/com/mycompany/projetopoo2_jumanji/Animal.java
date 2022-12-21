@@ -58,9 +58,22 @@ public class Animal {
     public void setInstalacao(){
         this.instalacao = null;
     }
+    public void addMutacao(Mutacao mutacao){
+        this.mutacoes.add(mutacao);
+    }
     
     public List<Mutacao> getMutacoesLista(){
         return mutacoes;
+    }
+    
+    public double calculaPreco(){
+        double preco = 50;
+        preco *= especie.getAtratividadeBase();
+        preco *= especie.getRaridade();
+        preco *= especie.getEsperancaVida()-idade;
+        preco *= especie.getAtratividadeBase();
+        
+        return preco;
     }
 
 

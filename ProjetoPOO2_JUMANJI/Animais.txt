@@ -1,4 +1,5 @@
-0 jony1 10 Jonnies -1 
-1 jony2 11 Jonnies -1 
-2 jony3 12 Jonnies -1 
-3 jony4 13 Jonnies -1 
+0 jony1 10 Vaca -1 
+1 jony2 11 Vaca -1 
+2 jony3 12 Vaca -1 
+3 jony4 13 Vaca -1 
+4 Patachou 1 Coelho -1 
