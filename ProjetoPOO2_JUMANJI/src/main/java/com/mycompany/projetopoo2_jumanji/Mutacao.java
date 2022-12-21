@@ -12,9 +12,15 @@ public class Mutacao {
 
     private String nome;
     private int modAtract;
-
+public Mutacao(String nome, int modAtract){
+    this.nome = nome;
+    this.modAtract = modAtract;
+}
     public String getNome() {
         return nome;
+    }
+    public int getModAtract() {
+        return modAtract;
     }
 
 }

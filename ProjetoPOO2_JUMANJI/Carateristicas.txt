@@ -1,0 +1,4 @@
+Pequeno 0.0 comer_pouco 
+Grande 0.0 comer_muito 
+Preto 0.0 dificil_de_ver_a_noite 
+Branco 0.0 facil_ver_a_noite 
