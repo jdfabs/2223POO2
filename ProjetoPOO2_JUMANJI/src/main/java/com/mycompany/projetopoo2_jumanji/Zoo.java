@@ -26,7 +26,8 @@ public class Zoo {
     private int ano = 2000;
     private double saldo = 1000000;
     private double rendimento = 0;
-    private double saldoUsado = 0;
+    private double saldoUsadoAnimais = 0;
+    private double saldoUsadoInstalacoes = 0;
 
     public static void main(String[] args) {
 
@@ -262,8 +263,8 @@ public class Zoo {
             if (saldo >= animaisOpcoes.get(opcao - 1).calculaPreco()) {
                 AdicionarListaAnimais(animaisOpcoes.get(opcao - 1));
                 saldo -= animaisOpcoes.get(opcao - 1).calculaPreco();
-                saldoUsado += animaisOpcoes.get(opcao - 1).calculaPreco();
-
+                saldoUsadoAnimais += animaisOpcoes.get(opcao - 1).calculaPreco();
+                
                 ArrayList<String> dados = new ArrayList<>();
                 dados.add("Nome:");
                 dados.add(animaisOpcoes.get(opcao - 1).getNome());
@@ -314,7 +315,7 @@ public class Zoo {
                 System.out.println("Animal adquirido: " + animal.getEspecie().getNome() + " custo: " + animal.calculaPreco());
                 AdicionarListaAnimais(animal);
                 saldo -= animal.calculaPreco();
-                saldoUsado += animal.calculaPreco();
+                saldoUsadoAnimais += animal.calculaPreco();
 
                 ArrayList<String> dados = new ArrayList<>();
                 dados.add("Nome:");
@@ -389,8 +390,10 @@ public class Zoo {
         if ((indice == 1 || indice == 2 || indice == 3) && saldo >= preco[indice - 1]) {
             Instalacao instalacao = new Instalacao(instalacoes.size(), lotacao[indice - 1], -1);
             instalacoes.add(instalacao);
+            saldo -= preco[indice-1];
+            saldoUsadoInstalacoes += preco[indice-1];
+        } else {
             saldo -= preco[indice - 1];
-            saldoUsado += preco[indice - 1];
 
             ArrayList<String> dados = new ArrayList<>();
             dados.add("ID:");
@@ -746,16 +749,56 @@ public class Zoo {
     }
 
     public void PeriodoContabilistico() {
-        System.out.println("Este ano foi gasto: " + saldoUsado + " euros.");
-
-        probMorrer();
+        double custoTotal = 0;
+        List<Animal> animaisBebes = new ArrayList();
+        List<Animal> animaisMortos = new ArrayList();
+        Animal bebe;
+        for (Animal animal : animais) {
+            if (animal.CheckVida()) {
+                //animal.AdicionarObito(animal);
+                animaisMortos.add(animal);
+            }
+            if (animal.CheckNascimento()) {
+                bebe = new Animal(1, GetRandomNameFromFile(), 0, animal.getEspecie());
+                animaisBebes.add(bebe);
+            }
+        }
+        System.out.println("Nascimentos: ");
+        for (int i = 0; i < animaisBebes.size(); i++) {
+            AdicionarListaAnimais(animaisBebes.get(i));
+            System.out.println("Nome: " + animaisBebes.get(i).getNome() + ". Espécie: " + animaisBebes.get(i).getEspecie().getNome());
+        }
+        System.out.println("Óbitos:");
+        for (int i = 0; i < animaisMortos.size(); i++) {
+            animais.remove(animaisMortos.get(i));
+            System.out.println("Nome: " + animaisMortos.get(i).getNome() + ". Espécie: " + animaisMortos.get(i).getEspecie().getNome() + ". Idade: " + animaisMortos.get(i).getIdade());
+        }
         ano++;
         aumentaIdade();
+        System.out.println("Este ano foi gasto em aquisições de animais: " + saldoUsadoAnimais + " euros.");
+        System.out.println("Este ano foi gasto em construções de instalações: " + saldoUsadoInstalacoes + " euros.");
+        System.out.println("Este ano foi gasto na manutenção do zoo: " + custosManutencao() + " euros.");
+        custoTotal = saldoUsadoAnimais + saldoUsadoInstalacoes + custosManutencao();
+        System.out.println("Custo total deste ano: " + custoTotal);
+        saldo -= custoTotal;
     }
 
     public void Jumanji() {
 
     }
+    public double custosManutencao() {
+        double custosManutencao = 0;
+        for (Instalacao instalacao : instalacoes) {
+            custosManutencao += instalacao.getCustoManutencao() * instalacao.getLotacao();
+            if (instalacao.getAnimal() != null) {
+                custosManutencao += instalacao.getCustoRacao() * (instalacao.getAnimal().getEspecie().getRaridade());
+                custosManutencao += instalacao.getCustoCuidadores() * (instalacao.getAnimal().getEspecie().getRaridade());
+            }
+        }
+        return custosManutencao;
+    }
+    
+    
 
     //      METODOS PARA CARREGAR / SALVAR
     public void SaveShit() {
