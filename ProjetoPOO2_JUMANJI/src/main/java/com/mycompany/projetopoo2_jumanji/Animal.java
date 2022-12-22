@@ -82,32 +82,13 @@ public class Animal {
         return preco;
     }
     
-    public void probMorrer(){
-        int diferencaEsperancaVida = 0;
-        for(Animal animais: animais){
-            diferencaEsperancaVida = animais.getEspecie().getEsperancaVida() - animais.getIdade();
-            if(diferencaEsperancaVida <= 0){
-                if( (Math.random() * 100)+1 <= 80){
-                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
-                    
-                }  
-            }
-            if(diferencaEsperancaVida <= 5){
-                if( (Math.random() * 100)+1 <= 40){
-                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
-                }  
-            }
-            if(diferencaEsperancaVida <= 10){
-                if( (Math.random() * 100)+1 <= 20){
-                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
-                }  
-            }
-            if(diferencaEsperancaVida >= 15){
-                if( (Math.random() * 100)+1 <= 5){
-                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
-                }  
-            }
-        }
+    public boolean CheckVida(){
+        
+        int esperancaVida = this.getEspecie().getEsperancaVida();
+        double racioIdadeEsperancaVida = (double)(idade/esperancaVida);
+        double probMorrer = (Math.pow(((racioIdadeEsperancaVida-(0.5))*(0.7)),2)+.05);
+        double random = Math.random();            
+        return probMorrer > random;        
     }
     
     public void AdicionarObito(Animal animal) {
