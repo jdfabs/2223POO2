@@ -12,8 +12,8 @@ package com.mycompany.projetopoo2_jumanji;
 public class Instalacao {
     private int id;
     private int lotacao = 0;
-    private double custosRacao = 0;
-    private double custosCuidadores = 0;
+    private double custoRacao = 50;
+    private double custoCuidadores = 25;
     private double custoManutencao = 100;
     private Animal animal;
     private int animalId;
@@ -35,6 +35,15 @@ public class Instalacao {
     }
     public Animal getAnimal(){
         return animal;
+    }
+    public double getCustoRacao(){
+        return custoRacao;
+    }
+    public double getCustoCuidadores(){
+        return custoCuidadores;
+    }
+    public double getCustoManutencao(){
+        return custoManutencao;
     }
     public void setAnimal(Animal animal){
         this.animal = animal;

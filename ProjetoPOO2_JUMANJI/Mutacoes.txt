@@ -1,4 +1,4 @@
 MutacaoA 2 
-MutacaoB 2 
-MutacaoC 2 
-MutacaoD 2 
+MutacaoB 5 
+MutacaoC 7 
+MutacaoD 1 

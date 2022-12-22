@@ -90,6 +90,11 @@ public class Animal {
         double random = Math.random();            
         return probMorrer > random;        
     }
+    public boolean CheckNascimento(){
+        return true;
+    }
+    
+    
     
     public void AdicionarObito(Animal animal) {
         try {
@@ -108,7 +113,7 @@ public class Animal {
             }
             
 
-            System.out.println("Animal adicionado aos obitos");
+            //System.out.println("RIP: "+animal.getNome()+ ". Espécie: " +animal.getEspecie().getNome()+ ".Tinha "+ animal.getIdade()+ " anos.");
             pw.flush();
             pw.close();
             bw.close();
