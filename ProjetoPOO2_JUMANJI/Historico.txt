@@ -12,3 +12,81 @@ COMPRA Nome: Glukoza Id: 6 Idade: 1 Especie: Rato Mutacoes:
 CONTRUÇÃO ID: 4 Lotação: 65 
 CONTRUÇÃO ID: 5 Lotação: 197 
 MOVER ID_animal: 3 Nova_Instalação: 4 
+MORTE Nome: jony3 Id: 2 Idade: 13 Especie: Vaca Mutacoes: 
+MORTE Nome: Adamo Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Speak Id: 1 Idade: 2 Especie: Vaca Mutacoes: 
+MORTE Nome: Necro Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Karunas Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+COMPRA Nome: Steno Id: 5 Idade: 0 Especie: Coelho Mutacoes: 
+COMPRA Nome: Harpo Id: 6 Idade: 3 Especie: Coelho Mutacoes: 
+MOVER ID_animal: 4 Nova_Instalação: 4 
+MORTE Nome: Patachou Id: 4 Idade: 1 Especie: Coelho Mutacoes: 
+MORTE Nome: jony2 Id: 1 Idade: 12 Especie: Vaca Mutacoes: 
+MORTE Nome: Yusa Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: jony1 Id: 0 Idade: 12 Especie: Vaca Mutacoes: 
+MORTE Nome: Shifty Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: jony3 Id: 2 Idade: 15 Especie: Vaca Mutacoes: 
+MORTE Nome: Atlantis Id: 1 Idade: 2 Especie: Vaca Mutacoes: 
+MORTE Nome: Madhushree Id: 1 Idade: 2 Especie: Vaca Mutacoes: 
+MORTE Nome: Chiquito Id: 1 Idade: 2 Especie: Vaca Mutacoes: 
+MORTE Nome: Scialpi Id: 1 Idade: 2 Especie: Vaca Mutacoes: 
+MORTE Nome: Harper Id: 1 Idade: 2 Especie: Coelho Mutacoes: 
+MORTE Nome: Kyo Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Sailorine Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Vamba Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Tal Id: 1 Idade: 1 Especie: Coelho Mutacoes: 
+MORTE Nome: K'Maro Id: 1 Idade: 1 Especie: Coelho Mutacoes: 
+MORTE Nome: Aaliyah Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+COMPRA Nome: Rekha Id: 5 Idade: 2 Especie: Galo Mutacoes: 
+COMPRA Nome: Jayamala Id: 6 Idade: 5 Especie: Serpente Mutacoes: 
+MOVER ID_animal: 6 Nova_Instalação: 5 
+MOVER ID_animal: 4 Nova_Instalação: 2 
+MORTE Nome: Rekha Id: 5 Idade: 2 Especie: Galo Mutacoes: 
+MOVER ID_animal: 1 Nova_Instalação: 0 
+MORTE Nome: jony4 Id: 3 Idade: 14 Especie: Vaca Mutacoes: 
+MORTE Nome: Jayamala Id: 6 Idade: 6 Especie: Serpente Mutacoes: 
+MORTE Nome: Urvashi Id: 1 Idade: 1 Especie: Serpente Mutacoes: 
+MORTE Nome: Vishnuvardhan Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Kunchacko Id: 1 Idade: 3 Especie: Serpente Mutacoes: 
+MORTE Nome: Coba Id: 1 Idade: 2 Especie: Coelho Mutacoes: 
+MORTE Nome: Amandititita Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Speech Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Azu Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Ryback Id: 1 Idade: 1 Especie: Coelho Mutacoes: 
+MORTE Nome: Ginger Id: 1 Idade: 4 Especie: Vaca Mutacoes: 
+MORTE Nome: Roya Id: 1 Idade: 3 Especie: Vaca Mutacoes: 
+MORTE Nome: Rufus Id: 1 Idade: 2 Especie: Coelho Mutacoes: 
+MORTE Nome: Camané Id: 1 Idade: 2 Especie: Vaca Mutacoes: 
+MORTE Nome: misono Id: 1 Idade: 2 Especie: Vaca Mutacoes: 
+MORTE Nome: Tinashe Id: 1 Idade: 2 Especie: Vaca Mutacoes: 
+MORTE Nome: Mohombi Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Cadenet Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Sylvester Id: 1 Idade: 1 Especie: Coelho Mutacoes: 
+MORTE Nome: K Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Escoria Id: 1 Idade: 1 Especie: Coelho Mutacoes: 
+MORTE Nome: Emilia Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Erfan Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Tzuki Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Michel'le Id: 1 Idade: 1 Especie: Serpente Mutacoes: 
+MORTE Nome: Kafani Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Wendy Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: jony2 Id: 1 Idade: 11 Especie: Vaca Mutacoes: 
+MORTE Nome: jony3 Id: 2 Idade: 12 Especie: Vaca Mutacoes: 
+MORTE Nome: jony4 Id: 3 Idade: 13 Especie: Vaca Mutacoes: 
+MOVER ID_animal: 1 Nova_Instalação: 1 
+MOVER ID_animal: 4 Nova_Instalação: 3 
+MORTE Nome: Kennedy Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+COMPRA Nome: Natalia Id: 13 Idade: 3 Especie: Serpente Mutacoes: 
+MORTE Nome: Priyamani Id: 1 Idade: 2 Especie: Vaca Mutacoes: 
+MORTE Nome: Natalia Id: 13 Idade: 4 Especie: Serpente Mutacoes: 
+MORTE Nome: LE Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Sriman Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Mareko Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+MORTE Nome: Shad Id: 1 Idade: 1 Especie: Vaca Mutacoes: 
+COMPRA Nome: Kidd Id: 0 Idade: 1 Especie: Coelho Mutacoes: MutacaoA MutacaoB MutacaoD 
+COMPRA Nome: Kyo Id: 1 Idade: 0 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoC 
+COMPRA Nome: Chrisanthos Id: 0 Idade: 1 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoC 
+COMPRA Nome: Pras Id: 1 Idade: 0 Especie: Galo Mutacoes: MutacaoA MutacaoB MutacaoD 
+COMPRA Nome: Gotye Id: 2 Idade: 1 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+COMPRA Nome: Sangeetha Id: 3 Idade: 1 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+COMPRA Nome: Bussunda Id: 4 Idade: 7 Especie: Cavalo Mutacoes: MutacaoA MutacaoB MutacaoD 

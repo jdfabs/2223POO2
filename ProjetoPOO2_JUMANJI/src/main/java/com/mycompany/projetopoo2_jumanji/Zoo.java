@@ -28,6 +28,7 @@ public class Zoo {
     private double rendimento = 0;
     private double saldoUsadoAnimais = 0;
     private double saldoUsadoInstalacoes = 0;
+    private int animalId = 0;
 
     public static void main(String[] args) {
 
@@ -246,7 +247,7 @@ public class Zoo {
             int randomEspecie = (int) (Math.random() * (especieOpcoes.size() - 1));
             int idade = (int) (Math.random() * especieOpcoes.get(randomEspecie).getEsperancaVida());
             try {
-                animal = new Animal(animais.size(), GetRandomNameFromFile(), idade, especieOpcoes.get(randomEspecie));
+                animal = new Animal(this.getAnimalId(), GetRandomNameFromFile(), idade, especieOpcoes.get(randomEspecie));
                 animaisOpcoes.add(animal);
                 System.out.println("opção nº" + i + ": " + animal.getNome() + ", " + especieOpcoes.get(randomEspecie).getNome() + ", idade: " + animal.getIdade() + " Preço: " + animal.calculaPreco());
             } catch (Exception e) {
@@ -262,6 +263,8 @@ public class Zoo {
 
             if (saldo >= animaisOpcoes.get(opcao - 1).calculaPreco()) {
                 AdicionarListaAnimais(animaisOpcoes.get(opcao - 1));
+                incrementaAnimalId();
+                probMutacoes(animaisOpcoes.get(opcao-1));
                 saldo -= animaisOpcoes.get(opcao - 1).calculaPreco();
                 saldoUsadoAnimais += animaisOpcoes.get(opcao - 1).calculaPreco();
                 
@@ -310,10 +313,12 @@ public class Zoo {
         if (!possiveisEspecies.isEmpty()) {
             int randomEspecie = (int) (Math.random() * (possiveisEspecies.size() - 1));
             int idade = (int) (Math.random() * possiveisEspecies.get(randomEspecie).getEsperancaVida());
-            Animal animal = new Animal(animais.size(), GetRandomNameFromFile(), idade, possiveisEspecies.get(randomEspecie));
+            Animal animal = new Animal(this.getAnimalId(), GetRandomNameFromFile(), idade, possiveisEspecies.get(randomEspecie));
             if (saldo >= animal.calculaPreco()) {
                 System.out.println("Animal adquirido: " + animal.getEspecie().getNome() + " custo: " + animal.calculaPreco());
                 AdicionarListaAnimais(animal);
+                incrementaAnimalId();
+                probMutacoes(animal);
                 saldo -= animal.calculaPreco();
                 saldoUsadoAnimais += animal.calculaPreco();
 
@@ -749,17 +754,19 @@ public class Zoo {
     }
 
     public void PeriodoContabilistico() {
-        double custoTotal = 0;
+        double custoAnual = 0;
         List<Animal> animaisBebes = new ArrayList();
         List<Animal> animaisMortos = new ArrayList();
         Animal bebe;
         for (Animal animal : animais) {
             if (animal.CheckVida()) {
-                //animal.AdicionarObito(animal);
+                animal.AdicionarObito(this);
                 animaisMortos.add(animal);
             }
             if (animal.CheckNascimento()) {
-                bebe = new Animal(1, GetRandomNameFromFile(), 0, animal.getEspecie());
+                bebe = new Animal(this.getAnimalId(), GetRandomNameFromFile(), 0, animal.getEspecie());
+                incrementaAnimalId();
+                probMutacoes(bebe);
                 animaisBebes.add(bebe);
             }
         }
@@ -771,16 +778,22 @@ public class Zoo {
         System.out.println("Óbitos:");
         for (int i = 0; i < animaisMortos.size(); i++) {
             animais.remove(animaisMortos.get(i));
+            if( animaisMortos.get(i).getInstalacao() != null){
+                animaisMortos.get(i).getInstalacao().setAnimal();
+            }
             System.out.println("Nome: " + animaisMortos.get(i).getNome() + ". Espécie: " + animaisMortos.get(i).getEspecie().getNome() + ". Idade: " + animaisMortos.get(i).getIdade());
         }
         ano++;
         aumentaIdade();
+        System.out.println("Custos");
         System.out.println("Este ano foi gasto em aquisições de animais: " + saldoUsadoAnimais + " euros.");
         System.out.println("Este ano foi gasto em construções de instalações: " + saldoUsadoInstalacoes + " euros.");
         System.out.println("Este ano foi gasto na manutenção do zoo: " + custosManutencao() + " euros.");
-        custoTotal = saldoUsadoAnimais + saldoUsadoInstalacoes + custosManutencao();
-        System.out.println("Custo total deste ano: " + custoTotal);
-        saldo -= custoTotal;
+        custoAnual = saldoUsadoAnimais + saldoUsadoInstalacoes + custosManutencao();
+        System.out.println("Custo total deste ano: " + custoAnual);
+        saldo -= custoAnual;
+        saldoUsadoAnimais = 0;
+        saldoUsadoInstalacoes = 0;
     }
 
     public void Jumanji() {
@@ -796,6 +809,13 @@ public class Zoo {
             }
         }
         return custosManutencao;
+    }
+    public void probMutacoes(Animal animal){
+        for(Mutacao mutacao: mutacoes){
+            if(1+ Math.random()* 100 < 90){
+                animal.addMutacao(mutacao);
+            }         
+        }
     }
     
     
@@ -1318,5 +1338,11 @@ public class Zoo {
 
     public int getAno() {
         return ano;
+    }
+    public int getAnimalId(){
+        return animalId;
+    }
+    public void incrementaAnimalId(){
+        animalId++;
     }
 }
