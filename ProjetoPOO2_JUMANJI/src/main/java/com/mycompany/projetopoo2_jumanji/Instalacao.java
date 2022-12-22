@@ -27,12 +27,27 @@ public class Instalacao {
     public int getId(){
         return id;
     }
+     public String getIdString(){
+         Integer idInt = id;
+         return idInt.toString();
+     }
     public int getAnimalId(){
         return animalId;
     }
     public int getLotacao(){
         return lotacao;
     }
+    public int getAnimalID(){
+        return animalId;
+    }
+    public void setAnimalID(int id){
+        animalId = id;
+    }
+    
+     public String getLotacaoString(){
+         Integer lotacaoInt = lotacao;
+         return lotacaoInt.toString();
+     }
     public Animal getAnimal(){
         return animal;
     }

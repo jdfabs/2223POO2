@@ -3,16 +3,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.projetopoo2_jumanji;
+
 import java.util.*;
 import java.io.*;
 import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.Scanner; // Import the Scanner class to read text files
+
 /**
  *
  * @author vigab
  */
 public class Zoo {
+
     private Scanner scan = new Scanner(System.in);
     private Random rand = new Random();
     private List<Animal> animais = new ArrayList<>();
@@ -23,27 +26,25 @@ public class Zoo {
     private int ano = 2000;
     private double saldo = 1000000;
     private double rendimento = 0;
-    private double saldoUsadoAnimais = 0;
-    private double saldoUsadoInstalacoes = 0;
+    private double saldoUsado = 0;
 
+    public static void main(String[] args) {
 
-public static void main(String[] args ){
-        
         //criação do Zoo
         Zoo newZoo = new Zoo();
-        
+
         newZoo.startMenu(); //chamando a função para iniciar a aplicação  
-        
-        
+
     }
-public void startMenu(){
+
+    public void startMenu() {
 
         int opcao = 0;
         boolean sair = false;
         LoadShit();
-        while(!sair){
+        while (!sair) {
             System.out.println("==================================================");
-            System.out.println("     Bem vindo ao Zoo da UMa Ano: "+ ano +"   Saldo: "+ saldo + ". ");
+            System.out.println("     Bem vindo ao Zoo da UMa Ano: " + ano + "   Saldo: " + saldo + ". ");
             System.out.println("==================================================");
             System.out.println("1.Adquirir animal aleatório                       ");
             System.out.println("2.Adquirir animal com caraterística genética      ");
@@ -60,204 +61,225 @@ public void startMenu(){
             System.out.println("13.Período contabilístico                         ");
             System.out.println("14.Jumanji                                        ");
             System.out.println("15.Sair da aplicação                              ");
-            System.out.println("                                                  ");          
+            System.out.println("                                                  ");
             /*System.out.println("1.Metodo teste 1                             ");
             System.out.println("2.Metodo teste 2    ");
             System.out.println("3.Metodo teste 3                   ");
             System.out.println("4.Metodo teste 4                               ");*/
-            
-            System.out.println("O que deseja fazer:                               ");           
+
+            System.out.println("O que deseja fazer:                               ");
             try {
                 opcao = scan.nextInt();
             } catch (Exception e) {
                 System.out.println("Invalid input!");
                 scan.nextLine();
             }
-            switch(opcao){
-                            case 1 ->{
-                                AdquirirAnimal();     
-                                break;
-                            }
-                            case 2 ->{
-                                AdquirirAnimalComCarateristica();
-                                break;
-                            }
-                            case 3 ->{
-                                ConstruirInstalacao();
-                                break;
-                            }
-                            case 4 ->{
-                                ColocarAnimalEmInstalacao();
-                                break;
-                            }
-                            case 5 ->{
-                                CalendarioChines();
-                                break;
-                            }
-                            case 6 ->{
+            switch (opcao) {
+                case 1 -> {
+                    AdquirirAnimal();
+                    break;
+                }
+                case 2 -> {
+                    AdquirirAnimalComCarateristica();
+                    break;
+                }
+                case 3 -> {
+                    ConstruirInstalacao();
+                    break;
+                }
+                case 4 -> {
+                    ColocarAnimalEmInstalacao();
+                    break;
+                }
+                case 5 -> {
+                    CalendarioChines();
+                    break;
+                }
+                case 6 -> {
 
-                                ListarAnimais();
-                                break;
-                            }
-                            case 7 ->{
-                                ListarAnimaisComCarateristica();
-                                break;
-                            }
-                            case 8 ->{
-                                ListarAnimaisComMutacao();
-                                break;
-                            }
-                            case 9 ->{
-                                ListarInstalacoes();
-                                break;
-                            }
-                            case 10 ->{
-                                FamiliaAnimal();
-                                break;
-                            }
-                            case 11 ->{
-                                Obituario();
-                                break;
-                            }
-                            case 12 ->{
-                                //Historic();
-                                break;
-                            }
-                            case 13 ->{
-                                PeriodoContabilistico();
-                                break;
-                            }
-                            case 14 ->{
-                                //Jumanji();
-                                break;
-                            }
-                            case 15 ->{
-                                sair = true;
-                                break;
-                            }
-                            case 20 ->{
-                                 AdicionarCarateristicaAEspecie();
-                                break;
-                            }
-                            case 21 ->{
-                                PrintEspecie();
-                                break;
-                            }
-                            case 22 ->{
-                                PrintCarateristicas();
-                                break;
-                            }
-                            case 23 ->{
-                                PrintInstalacoes();
-                                break;
-                            }
-                            case 24 ->{
-                                LoadShit();
-                                break;
-                            }
-                            case 25 ->{
-                                SaveShit();
-                                break;
-                            }
-                            case 30 ->{
-                                AdicionarCarateristica();
-                                break;
-                            }
-                            case 31 ->{
-                                AdicionarEspecie();
-                                break;
-                            }
-                            case 32 ->{
-                                AdicionarMutacao();
-                                break;
-                            }
-                            case 33 ->{
-                                AdicionarCarateristicaAEspecie();
-                                break;
-                            }
-                            case 34 ->{
-                                AdicionarMutacaoAAnimal();
-                                break;
-                            }
-                            case 35 ->{
-                                AdicionarObituario(animais.get(0));
-                                break;
-                            }
-                            
-                            
-                        }
+                    ListarAnimais();
+                    break;
+                }
+                case 7 -> {
+                    ListarAnimaisComCarateristica();
+                    break;
+                }
+                case 8 -> {
+                    ListarAnimaisComMutacao();
+                    break;
+                }
+                case 9 -> {
+                    ListarInstalacoes();
+                    break;
+                }
+                case 10 -> {
+                    FamiliaAnimal();
+                    break;
+                }
+                case 11 -> {
+                    ListarObituarios();
+                    break;
+                }
+                case 12 -> {
+                    Historico();
+                    break;
+                }
+                case 13 -> {
+                    PeriodoContabilistico();
+                    break;
+                }
+                case 14 -> {
+                    //Jumanji();
+                    break;
+                }
+                case 15 -> {
+                    sair = true;
+                    break;
+                }
+                case 20 -> {
+                    AdicionarCarateristicaAEspecie();
+                    break;
+                }
+                case 21 -> {
+                    PrintEspecie();
+                    break;
+                }
+                case 22 -> {
+                    PrintCarateristicas();
+                    break;
+                }
+                case 23 -> {
+                    PrintInstalacoes();
+                    break;
+                }
+                case 24 -> {
+                    LoadShit();
+                    break;
+                }
+                case 25 -> {
+                    SaveShit();
+                    break;
+                }
+                case 30 -> {
+                    AdicionarCarateristica();
+                    break;
+                }
+                case 31 -> {
+                    AdicionarEspecie();
+                    break;
+                }
+                case 32 -> {
+                    AdicionarMutacao();
+                    break;
+                }
+                case 33 -> {
+                    AdicionarCarateristicaAEspecie();
+                    break;
+                }
+                case 34 -> {
+                    AdicionarMutacaoAAnimal();
+                    break;
+                }
+                case 35 -> {
+                    animais.get(0).AdicionarObito(this);
+                    break;
+                }
+
+            }
         }
-    
-}
+
+    }
 //fazer os métodos aqui
 
+    public void GuardaRegistoHistorico(String tipo, ArrayList<String> dados) {
+        try {
+            FileWriter fw = new FileWriter("Historico.txt", true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter pw = new PrintWriter(bw);
+            fw.write("\n" + tipo + " ");
 
+            for (String dado : dados) {
+                fw.write(dado + " ");
+            }
+            System.out.println("Registo Acidionado");
+            pw.flush();
+            pw.close();
+            bw.close();
+            fw.close();
+        } catch (Exception o) {
+            System.out.println("Erro a adicionar registo ao historico");
+        }
+    }
 
+    public void Metodo1() {
 
+        System.out.println("Metodo 1");
+    }
 
-
-
-
-
-public void Metodo1(){
-
-    System.out.println("Metodo 1");
-}
-public void Metodo2(){
-    System.out.println("Metodo 2");
-}
-
-
+    public void Metodo2() {
+        System.out.println("Metodo 2");
+    }
 
 //      METODOS MENU PRINCIPAL
     public void AdquirirAnimal() {
         int id;
         Animal animal;
-        int raridade ;
-        
-        
-        
+        int raridade;
+
         List<Animal> animaisOpcoes = new ArrayList();
-        
+
         for (int i = 1; i <= 3; i++) {
             raridade = (int) (Math.pow(Math.random(), 4) * 9 + 1);
-            System.out.println(raridade);
+
             List<Especie> especieOpcoes = new ArrayList();
             while (especieOpcoes.isEmpty()) {
                 for (Especie especie : especies) {
                     if (especie.getRaridade() == raridade) {
                         especieOpcoes.add(especie);
                     }
-                    
+
                 }
                 raridade--;
             }
-            
-            int randomEspecie = (int) (Math.random() * (especieOpcoes.size()-1));
-            int idade = (int) (Math.random() * especieOpcoes.get(randomEspecie).getEsperancaVida());   
-            try{
-            animal = new Animal(animais.size(),GetRandomNameFromFile(), idade, especieOpcoes.get(randomEspecie));
-            animaisOpcoes.add(animal );
-            System.out.println("opção nº" + i + ": "+ animal.getNome()+", " + especieOpcoes.get(randomEspecie).getNome() + ", idade: "+ animal.getIdade() + " Preço: " + animal.calculaPreco());
-            }
-            catch(Exception e){
+
+            int randomEspecie = (int) (Math.random() * (especieOpcoes.size() - 1));
+            int idade = (int) (Math.random() * especieOpcoes.get(randomEspecie).getEsperancaVida());
+            try {
+                animal = new Animal(animais.size(), GetRandomNameFromFile(), idade, especieOpcoes.get(randomEspecie));
+                animaisOpcoes.add(animal);
+                System.out.println("opção nº" + i + ": " + animal.getNome() + ", " + especieOpcoes.get(randomEspecie).getNome() + ", idade: " + animal.getIdade() + " Preço: " + animal.calculaPreco());
+            } catch (Exception e) {
                 System.out.println("especie invalida");
-            }       
-            
+            }
+
         }
         System.out.println("Qual animal é que deseja adquirir?");
         int opcao = 0;
 
         try {
             opcao = scan.nextInt();
-           
-            if(saldo >= animaisOpcoes.get(opcao - 1).calculaPreco()){
 
+            if (saldo >= animaisOpcoes.get(opcao - 1).calculaPreco()) {
                 AdicionarListaAnimais(animaisOpcoes.get(opcao - 1));
                 saldo -= animaisOpcoes.get(opcao - 1).calculaPreco();
-                saldoUsadoAnimais += animaisOpcoes.get(opcao - 1).calculaPreco();
+                saldoUsado += animaisOpcoes.get(opcao - 1).calculaPreco();
+
+                ArrayList<String> dados = new ArrayList<>();
+                dados.add("Nome:");
+                dados.add(animaisOpcoes.get(opcao - 1).getNome());
+                dados.add("Id:");
+                dados.add(animaisOpcoes.get(opcao - 1).getIdString());
+                dados.add("Idade:");
+                dados.add(animaisOpcoes.get(opcao - 1).getIdadeString());
+                dados.add("Especie:");
+                dados.add(animaisOpcoes.get(opcao - 1).getEspecie().getNome());
+                dados.add("Mutacoes:");
+                for (Mutacao mutacao : animaisOpcoes.get(opcao - 1).getMutacoesLista()) {
+                    dados.add(mutacao.getNome());
+                }
+                GuardaRegistoHistorico("COMPRA", dados);
             }
-            
+
         } catch (Exception e) {
             System.out.println("Invalid input!");
             scan.nextLine();
@@ -266,15 +288,16 @@ public void Metodo2(){
     }
 
     public void AdquirirAnimalComCarateristica() {
-        int opcao;        
+        int opcao;
+        System.out.println("001");
         List<Especie> possiveisEspecies = new ArrayList<>();
         int i = 0;
         for (Carateristica carateristica : carateristicas) {
             System.out.println(i + ") " + carateristica.getNome());
-             i++;
+            i++;
         }
         System.out.println("Selecione o numero carateristica que quer:");
-        opcao = scan.nextInt();       
+        opcao = scan.nextInt();
 
         for (Especie especie : especies) {
             for (Carateristica carateristicaProcura : especie.getCarateristicas()) {
@@ -288,18 +311,32 @@ public void Metodo2(){
             int idade = (int) (Math.random() * possiveisEspecies.get(randomEspecie).getEsperancaVida());
             Animal animal = new Animal(animais.size(), GetRandomNameFromFile(), idade, possiveisEspecies.get(randomEspecie));
             if (saldo >= animal.calculaPreco()) {
-                System.out.println("Animal adquirido: "+ animal.getEspecie().getNome() + " custo: "+ animal.calculaPreco());
+                System.out.println("Animal adquirido: " + animal.getEspecie().getNome() + " custo: " + animal.calculaPreco());
                 AdicionarListaAnimais(animal);
                 saldo -= animal.calculaPreco();
-                saldoUsadoAnimais += animal.calculaPreco();
+                saldoUsado += animal.calculaPreco();
+
+                ArrayList<String> dados = new ArrayList<>();
+                dados.add("Nome:");
+                dados.add(animal.getNome());
+                dados.add("Id:");
+                dados.add(animal.getIdString());
+                dados.add("Idade:");
+                dados.add(animal.getIdadeString());
+                dados.add("Especie:");
+                dados.add(animal.getEspecie().getNome());
+                dados.add("Mutacoes:");
+                for (Mutacao mutacao : animal.getMutacoesLista()) {
+                    dados.add(mutacao.getNome());
+                }
+                GuardaRegistoHistorico("COMPRA", dados);
             }
-        }
-        else{
+        } else {
             System.out.println("Não existem especies com estas carateristicas");
-        }     
+        }
 
     }
-    
+
     public void ConstruirInstalacao() {
         String opcao = "";
         System.out.println("Tamanho da instalação [Pequena, Media, Grande]: ");
@@ -349,56 +386,59 @@ public void Metodo2(){
             System.out.println("Construção de Instalação cancelada.");
         }
 
-        if ((indice == 1 || indice == 2 || indice == 3) && saldo >= preco[indice-1]) {
+        if ((indice == 1 || indice == 2 || indice == 3) && saldo >= preco[indice - 1]) {
             Instalacao instalacao = new Instalacao(instalacoes.size(), lotacao[indice - 1], -1);
             instalacoes.add(instalacao);
-            saldo -= preco[indice-1];
-            saldoUsadoInstalacoes += preco[indice-1];
-        } else {
+            saldo -= preco[indice - 1];
+            saldoUsado += preco[indice - 1];
 
+            ArrayList<String> dados = new ArrayList<>();
+            dados.add("ID:");
+            dados.add(instalacao.getIdString());
+            dados.add("Lotação:");
+            dados.add(instalacao.getLotacaoString());
+            GuardaRegistoHistorico("CONTRUÇÃO", dados);
         }
 
     }
-    
+
     public void ColocarAnimalEmInstalacao() {
         String opcao = "";
         Animal animalEscolhido = null;
         int idAnimal;
         Instalacao instalacaoEscolhida;
         int idInstalacao;
-        for(Animal animal: animais){
-            System.out.print("id: " + animal.getId() + " Nome: " + animal.getNome() + " Especie:" + animal.getEspecieString() );
-            if(animal.getInstalacao() != null){
+        for (Animal animal : animais) {
+            System.out.print("id: " + animal.getId() + " Nome: " + animal.getNome() + " Especie:" + animal.getEspecieString());
+            if (animal.getInstalacao() != null) {
                 System.out.println(" Instalação: " + animal.getInstalacao().getId());
-            }
-            else{
+            } else {
                 System.out.println();
             }
-            
-        } 
-        System.out.println("Insira o id do Animal a mover: ");        
-        opcao = scan.next();
-        try{
-            idAnimal = Integer.parseInt(opcao);
+
         }
-        catch (Exception e){
-            System.out.println("Id invalido");  
+        System.out.println("Insira o id do Animal a mover: ");
+        opcao = scan.next();
+        try {
+            idAnimal = Integer.parseInt(opcao);
+        } catch (Exception e) {
+            System.out.println("Id invalido");
             ColocarAnimalEmInstalacao();
             return;
         }
         boolean animalEncontrado = false;
-        for(Animal animal : animais){
+        for (Animal animal : animais) {
             System.out.println("DEBUG: " + idAnimal + " " + animal.getId());
-            if (idAnimal ==  animal.getId()){
-                
+            if (idAnimal == animal.getId()) {
+
                 animalEscolhido = animal;
                 break;
             }
         }
-        if(animalEscolhido == null){
-            System.out.println("Não existe animal com este ID");  
-                ColocarAnimalEmInstalacao();
-                return;
+        if (animalEscolhido == null) {
+            System.out.println("Não existe animal com este ID");
+            ColocarAnimalEmInstalacao();
+            return;
         }
         idInstalacao = 0;
         instalacaoEscolhida = null;
@@ -407,39 +447,65 @@ public void Metodo2(){
             int i = 0;
             for (Instalacao instalacao : instalacoes) {
                 i++;
-               System.out.print(i + ") Lotação: "+ instalacao.getLotacao());
-               if(instalacao.getAnimal() != null){
-                   System.out.print(" Animal: "+(instalacao.getAnimal()).getNome()+" Especie: " + (instalacao.getAnimal()).getEspecieString());
-               }
-               System.out.println();
+                System.out.print(i + ") Lotação: " + instalacao.getLotacao());
+                if (instalacao.getAnimal() != null) {
+                    System.out.print(" Animal: " + (instalacao.getAnimal()).getNome() + " Especie: " + (instalacao.getAnimal()).getEspecieString());
+                }
+                System.out.println();
             }
             opcao = scan.next();
             try {
                 idInstalacao = Integer.parseInt(opcao);
-                instalacaoEscolhida = instalacoes.get(idInstalacao-1);
+                instalacaoEscolhida = instalacoes.get(idInstalacao - 1);
             } catch (Exception e) {
                 System.out.println("Id invalido");
             }
 
-            
         }
-        if(instalacaoEscolhida.getAnimal()!= null){
+
+        ArrayList<String> dados = new ArrayList<>();
+
+        if (instalacaoEscolhida.getAnimal() != null) {
+            //Retira animal se já tiver
+            dados = new ArrayList<>();
+
+            dados.add("ID_animal:");
+            dados.add(instalacaoEscolhida.getAnimal().getIdString());
+            GuardaRegistoHistorico("RETIRAR_INSTALAÇÃO", dados);
+
             instalacaoEscolhida.getAnimal().setInstalacao();
-        }        
+
+        }
+        //Mete animal na instalação
         instalacaoEscolhida.setAnimal(animalEscolhido);
-        
-        if(animalEscolhido.getInstalacao()!= null){
+        instalacaoEscolhida.setAnimalID(animalEscolhido.getId());
+
+        dados = new ArrayList<>();
+        dados.add("ID_animal:");
+        dados.add(animalEscolhido.getIdString());
+        dados.add("Nova_Instalação:");
+        dados.add(instalacaoEscolhida.getIdString());
+        GuardaRegistoHistorico("MOVER", dados);
+
+        if (animalEscolhido.getInstalacao() != null) {
+            //Retira animal da instalação se tiver
             animalEscolhido.getInstalacao().setAnimal();
-        } 
-        animalEscolhido.setInstalacao(instalacaoEscolhida);       
+
+            dados = new ArrayList<>();
+            dados.add("ID_animal:");
+            dados.add(instalacaoEscolhida.getAnimal().getIdString());
+            GuardaRegistoHistorico("RETIRAR_DE_INSTALAÇÃO", dados);
+
+        }
+        animalEscolhido.setInstalacao(instalacaoEscolhida);
+
     }
-    
 
     public void CalendarioChines() {
         int opcao;
         System.out.println("Insira o Ano:");
         opcao = (ano % 12) + 1;
-        String animal1 ="";
+        String animal1 = "";
         int atratividade = 0;
         switch (opcao) {
             case 1 -> {
@@ -448,10 +514,10 @@ public void Metodo2(){
                         animal.getEspecie().AumentaAtratividade();
                         atratividade = animal.getEspecie().getAtratividadeBase();
                         animal1 = animal.getEspecie().getNome();
-                                
+
                     }
                 }
-                
+
             }
             case 2 -> {
                 for (Animal animal : animais) {
@@ -461,7 +527,7 @@ public void Metodo2(){
                         animal1 = animal.getEspecie().getNome();
                     }
                 }
-                
+
             }
             case 3 -> {
                 for (Animal animal : animais) {
@@ -471,7 +537,7 @@ public void Metodo2(){
                         animal1 = animal.getEspecie().getNome();
                     }
                 }
-                
+
             }
             case 4 -> {
                 for (Animal animal : animais) {
@@ -481,7 +547,7 @@ public void Metodo2(){
                         animal1 = animal.getEspecie().getNome();
                     }
                 }
-               
+
             }
             case 5 -> {
                 for (Animal animal : animais) {
@@ -489,10 +555,10 @@ public void Metodo2(){
                         animal.getEspecie().AumentaAtratividade();
                         atratividade = animal.getEspecie().getAtratividadeBase();
                         animal1 = animal.getEspecie().getNome();
-                        
+
                     }
                 }
-                
+
             }
             case 6 -> {
                 for (Animal animal : animais) {
@@ -502,7 +568,7 @@ public void Metodo2(){
                         animal1 = animal.getEspecie().getNome();
                     }
                 }
-                
+
             }
             case 7 -> {
                 for (Animal animal : animais) {
@@ -512,7 +578,7 @@ public void Metodo2(){
                         animal1 = animal.getEspecie().getNome();
                     }
                 }
-                
+
             }
             case 8 -> {
                 for (Animal animal : animais) {
@@ -522,7 +588,7 @@ public void Metodo2(){
                         animal1 = animal.getEspecie().getNome();
                     }
                 }
-                
+
             }
             case 9 -> {
                 for (Animal animal : animais) {
@@ -532,7 +598,7 @@ public void Metodo2(){
                         animal1 = animal.getEspecie().getNome();
                     }
                 }
-                
+
             }
             case 10 -> {
                 for (Animal animal : animais) {
@@ -542,7 +608,7 @@ public void Metodo2(){
                         animal1 = animal.getEspecie().getNome();
                     }
                 }
-                
+
             }
             case 11 -> {
                 for (Animal animal : animais) {
@@ -552,7 +618,7 @@ public void Metodo2(){
                         animal1 = animal.getEspecie().getNome();
                     }
                 }
-                
+
             }
             case 12 -> {
                 for (Animal animal : animais) {
@@ -562,23 +628,22 @@ public void Metodo2(){
                         animal1 = animal.getEspecie().getNome();
                     }
                 }
-                
+
             }
-            default ->{
+            default -> {
                 System.out.println("blablabla");
             }
-        }   
-        System.out.println("A atratividade dos " + animal1+"s aumentou para " + atratividade);
+        }
+        System.out.println("A atratividade dos " + animal1 + "s aumentou para " + atratividade);
     }
 
-    
-    public void ListarAnimais() {   
+    public void ListarAnimais() {
         for (Animal animal : animais) {
             System.out.print(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getNome() + " Idade: " + animal.getIdade());
-            if(!animal.getMutacoesLista().isEmpty()){
+            if (!animal.getMutacoesLista().isEmpty()) {
                 System.out.print(" Mutações: ");
-                for(Mutacao mutacao: animal.getMutacoesLista()){
-                    System.out.print(mutacao.getNome()+ " ");
+                for (Mutacao mutacao : animal.getMutacoesLista()) {
+                    System.out.print(mutacao.getNome() + " ");
                 }
             }
             System.out.println();
@@ -586,11 +651,11 @@ public void Metodo2(){
     }
 
     public void ListarAnimaisComCarateristica() {
-        int opcao;             
-        int i =0;
-        for(Carateristica carateristica: carateristicas){
-            
-            System.out.println(i+") " + carateristica.getNome());
+        int opcao;
+        int i = 0;
+        for (Carateristica carateristica : carateristicas) {
+
+            System.out.println(i + ") " + carateristica.getNome());
             i++;
         }
         System.out.println("Selecione o numero carateristica que quer:");
@@ -607,14 +672,14 @@ public void Metodo2(){
     public void ListarAnimaisComMutacao() {
         int opcao;
         boolean encontrado = false;
-        int i =1;
-        for(Mutacao mutacao: mutacoes){
-            System.out.println(i+") " + mutacao.getNome());
+        int i = 1;
+        for (Mutacao mutacao : mutacoes) {
+            System.out.println(i + ") " + mutacao.getNome());
             i++;
         }
         System.out.println("Selecione o numero da Mutação que quer:");
         opcao = scan.nextInt();
-        for (Animal animal : animais) {            
+        for (Animal animal : animais) {
             for (Mutacao mutacaoAnimal : animal.getMutacoesLista()) {
                 if (mutacaoAnimal.equals(mutacoes.get(opcao - 1))) {
                     encontrado = true;
@@ -622,20 +687,19 @@ public void Metodo2(){
                 }
             }
         }
-        if(!encontrado){
+        if (!encontrado) {
             System.out.println("Não Existem animais com esta Mutação");
-        }       
+        }
     }
 
     public void ListarInstalacoes() {
         System.out.println("Instalações do zoo: ");
-        
+
         for (Instalacao instalacao : instalacoes) {
             System.out.print("id: " + instalacao.getId() + " Lotação:" + instalacao.getLotacao());
-            if(instalacao.getAnimal()== null){
+            if (instalacao.getAnimal() == null) {
                 System.out.println(" - Esta instalação não possui nenhum animal ");
-            }
-            else{
+            } else {
                 System.out.println(" - Nome: " + instalacao.getAnimal().getNome() + " Espécie: " + instalacao.getAnimal().getEspecie().getNome());
             }
         }
@@ -643,100 +707,55 @@ public void Metodo2(){
 
     public void FamiliaAnimal() {
         System.out.println("Instalações:");
-        for(Instalacao instalacao: instalacoes){
-            System.out.print("id: " + instalacao.getId() + " Lotação: "+ instalacao.getLotacao() );
-            if(instalacao.getAnimal()!= null){
-                System.out.print(" - Animal - Nome: " +instalacao.getAnimal().getNome() + " id:" + instalacao.getAnimal().getId() );
-            }
-            else{
+        for (Instalacao instalacao : instalacoes) {
+            System.out.print("id: " + instalacao.getId() + " Lotação: " + instalacao.getLotacao());
+            if (instalacao.getAnimal() != null) {
+                System.out.print(" - Animal - Nome: " + instalacao.getAnimal().getNome() + " id:" + instalacao.getAnimal().getId());
+            } else {
                 System.out.println();
             }
         }
         System.out.println("Animais");
-        PrintAnimal() ;
-        
+        PrintAnimal();
+
         System.out.println("Especies:");
         PrintEspecie();
-        
+
         System.out.println("Carateristicas:");
         PrintCarateristicas();
-        
-        
-        
-          
+
     }
 
     public void Obituario() {
-        
-            
-            
-        
 
-        
     }
 
     public void Historico() {
+        try {
+            File ficheiro = new File("Historico.txt");
+            Scanner reader = new Scanner(ficheiro);
+            while (reader.hasNextLine()) {
+                System.out.println(reader.nextLine());
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
 
+           
+        }
     }
 
     public void PeriodoContabilistico() {
-        double custoTotal = 0;
-        List<Animal> animaisBebes = new ArrayList();
-        List<Animal> animaisMortos = new ArrayList();
-        Animal bebe;
-        for (Animal animal : animais) {
+        System.out.println("Este ano foi gasto: " + saldoUsado + " euros.");
 
-            if (animal.CheckVida()) {
-                animal.AdicionarObito(animal);
-                animaisMortos.add(animal);
-
-            }
-            if (animal.CheckNascimento()) {
-                bebe = new Animal(1, GetRandomNameFromFile(), 0, animal.getEspecie());
-                animaisBebes.add(bebe);
-
-            }
-        }
-        System.out.println("Nascimentos: ");
-        for (int i = 0; i < animaisBebes.size(); i++) {
-            AdicionarListaAnimais(animaisBebes.get(i));
-            System.out.println("Nome: " + animaisBebes.get(i).getNome() + ". Espécie: " + animaisBebes.get(i).getEspecie().getNome());
-        }
-        System.out.println("Óbitos:");
-        for (int i = 0; i < animaisMortos.size(); i++) {
-            animais.remove(animaisMortos.get(i));
-            System.out.println("Nome: " + animaisMortos.get(i).getNome() + ". Espécie: " + animaisMortos.get(i).getEspecie().getNome() + ". Idade: " + animaisMortos.get(i).getIdade());
-        }
-        
-        
+        probMorrer();
         ano++;
         aumentaIdade();
-        
-        System.out.println("Este ano foi gasto em aquisições de animais: " + saldoUsadoAnimais + " euros.");
-        System.out.println("Este ano foi gasto em construções de instalações: " + saldoUsadoInstalacoes + " euros.");
-        System.out.println("Este ano foi gasto na manutenção do zoo: " + custosManutencao() + " euros.");
-        custoTotal = saldoUsadoAnimais + saldoUsadoInstalacoes + custosManutencao();
-        System.out.println("Custo total deste ano: " + custoTotal);
-        saldo -= custoTotal;
-        
     }
 
     public void Jumanji() {
 
     }
-    public double custosManutencao() {
-        double custosManutencao = 0;
-        for (Instalacao instalacao : instalacoes) {
-            custosManutencao += instalacao.getCustoManutencao() * instalacao.getLotacao();
-            if (instalacao.getAnimal() != null) {
-                custosManutencao += instalacao.getCustoRacao() * (instalacao.getAnimal().getEspecie().getRaridade());
-                custosManutencao += instalacao.getCustoCuidadores() * (instalacao.getAnimal().getEspecie().getRaridade());
-            }
-        }
-        return custosManutencao;
-    }
-    
-    
 
     //      METODOS PARA CARREGAR / SALVAR
     public void SaveShit() {
@@ -1043,22 +1062,44 @@ public void Metodo2(){
             System.out.println("Erro 001");
         }
     }
-    
-    
-    public void CarregarObituario(){
-        
-    }
 
     
-    
-    
-            //      METODOS AUXILIARES
-    
-    public void aumentaIdade(){
-        for(Animal animais: animais){
+
+    //      METODOS AUXILIARES
+    public void aumentaIdade() {
+        for (Animal animais : animais) {
             animais.incrementaIdade();
         }
     }
+
+    public void ListarObituarios() {
+        String[] linha;
+        try {
+            File ficheiro = new File("Obitos.txt");
+            Scanner reader = new Scanner(ficheiro);
+            while (reader.hasNextLine()) {
+                String dados = reader.nextLine();
+                linha = dados.split(" ");
+                try {
+                    System.out.println("Ano: " + linha[0] + " Id: " + linha[1] + " Nome: " + linha[2] + " Idade: " + linha[3] + " Especie: " + linha[4]);
+                    if (linha.length > 5) {
+                        for (int i = 5; i < linha.length; i++) {
+                            System.out.println(" " + linha[i]);
+                        }
+                    }
+                } catch (Exception e) {
+                    System.out.println("Ficheiro corrupto, Cancelado");
+                    return;
+                }
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            return;
+        }
+
+    }
+
     public String GetRandomNameFromFile() {
         int numNomes = 0;
         String[] nome = new String[10];
@@ -1100,7 +1141,7 @@ public void Metodo2(){
     public void PrintEspecie() {
         for (Especie especie : especies) {
             System.out.print(especie.getNome());
-            for(Carateristica carateristica: especie.getCarateristicas()){
+            for (Carateristica carateristica : especie.getCarateristicas()) {
                 System.out.print(" " + carateristica.getNome());
             }
             System.out.println();
@@ -1118,12 +1159,13 @@ public void Metodo2(){
             System.out.println(instalacao.getId() + " Lotação:" + instalacao.getLotacao());
         }
     }
-    
-    public void AdicionarListaAnimais(Animal animal){
+
+    public void AdicionarListaAnimais(Animal animal) {
         animais.add(animal);
-        
+
     }
-        public void AdicionarCarateristica() {
+
+    public void AdicionarCarateristica() {
         String nome;
         double custos;
         String abilidade;
@@ -1151,65 +1193,63 @@ public void Metodo2(){
         nome = scan.next();
         System.out.println("raridade:");
         raridade = scan.nextInt();
-         System.out.println("esperancaVida:");
+        System.out.println("esperancaVida:");
         esperancaVida = scan.nextInt();
 
-
-        Especie especie = new Especie(atratividade, nome, raridade,esperancaVida,this,true);
+        Especie especie = new Especie(atratividade, nome, raridade, esperancaVida, this, true);
         especies.add(especie);
     }
 
     public void AdicionarMutacao() {
         String nome;
         int modAtract;
-        
 
         System.out.println("Nome:");
         nome = scan.next();
         System.out.println("modAtract:");
-        modAtract = scan.nextInt();       
+        modAtract = scan.nextInt();
 
         Mutacao mutacao = new Mutacao(nome, modAtract);
         mutacoes.add(mutacao);
     }
-    
-    public void AdicionarCarateristicaAEspecie(){
-        for(Especie especie: especies){
+
+    public void AdicionarCarateristicaAEspecie() {
+        for (Especie especie : especies) {
             System.out.println("1- " + especie.getNome());
         }
         int opcao;
         opcao = scan.nextInt();
-        if(opcao <= especies.size()){
-            System.out.println(especies.get(opcao-1).getNome());
+        if (opcao <= especies.size()) {
+            System.out.println(especies.get(opcao - 1).getNome());
             int i = 0;
             for (Carateristica carateristica : carateristicas) {
                 System.out.println(i + "- " + carateristica.getNome());
                 i++;
 
             }
-            System.out.println("001");
+
             int opcao2;
             opcao2 = scan.nextInt();
-            System.out.println("002");
+
             System.out.println(carateristicas.size());
             System.out.println(opcao2);
             if (opcao2 < carateristicas.size()) {
-                System.out.println("002");
+
                 especies.get(opcao - 1).adicionaCarateristica(carateristicas.get(opcao2));
-                System.out.println("003");
+
             }
         }
     }
-    
-     public void AdicionarMutacaoAAnimal(){
-         int i = 0;
-        for(Animal animal: animais){
-            System.out.println(i+"- " + animal.getNome());
+
+    public void AdicionarMutacaoAAnimal() {
+        int i = 0;
+        for (Animal animal : animais) {
+            System.out.println(i + "- " + animal.getNome());
             i++;
         }
         int opcao;
         opcao = scan.nextInt();
-        if(opcao <= animais.size()){
+        if (opcao <= animais.size()) {
             System.out.println(animais.get(opcao).getNome());
             i = 0;
             for (Mutacao mutacao : mutacoes) {
@@ -1231,5 +1271,9 @@ public void Metodo2(){
     // GETS E SETS
     public List<Carateristica> getCarateristicas() {
         return carateristicas;
+    }
+
+    public int getAno() {
+        return ano;
     }
 }

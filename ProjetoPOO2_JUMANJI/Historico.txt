@@ -1,0 +1,7 @@
+MOVER ID_animal: 0 Nova_Instalação: 0 
+MOVER ID_animal: 1 Nova_Instalação: 1 
+RETIRAR_INSTALAÇÃO ID_animal: 0 
+MOVER ID_animal: 2 Nova_Instalação: 0
+MOVER ID_animal: 1 Nova_Instalação: 0 
+MORTE Nome: jony1 Id: 0 Idade: 10 Especie: Vaca Mutacoes: 
+COMPRA Nome: Delkash Id: 5 Idade: 12 Especie: Macaco Mutacoes: 

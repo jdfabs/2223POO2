@@ -37,6 +37,14 @@ public class Animal {
      public int getId(){
         return id;
     }
+     public String getIdString(){
+         Integer idInt = id;
+         return idInt.toString();
+     }
+     public String getIdadeString(){
+         Integer idadeInt = idade;
+         return idadeInt.toString();
+     }
     public String getNome(){
         return nome;
     }
@@ -82,13 +90,13 @@ public class Animal {
         return preco;
     }
     
-    public boolean CheckVida(){
-        
+    public boolean CheckVida() {
+
         int esperancaVida = this.getEspecie().getEsperancaVida();
-        double racioIdadeEsperancaVida = (double)(idade/esperancaVida);
-        double probMorrer = (Math.pow(((racioIdadeEsperancaVida-(0.5))*(0.7)),2)+.05);
-        double random = Math.random();            
-        return probMorrer > random;        
+        double racioIdadeEsperancaVida = (double) (idade / esperancaVida);
+        double probMorrer = (Math.pow(((racioIdadeEsperancaVida - (0.5)) * (0.7)), 2) + .05);
+        double random = Math.random();
+        return probMorrer > random;
     }
     public boolean CheckNascimento(){
         return true;
@@ -96,32 +104,53 @@ public class Animal {
     
     
     
-    public void AdicionarObito(Animal animal) {
+    public void Morre(Zoo zoo){
+        AdicionarObito(zoo);
+        this.getInstalacao().setAnimal();
+        this.getInstalacao().setAnimalID(-1);
+    }
+
+    public void AdicionarObito(Zoo zoo) {
         try {
             FileWriter fw = new FileWriter("Obitos.txt", true);
             BufferedWriter bw = new BufferedWriter(fw);
             PrintWriter pw = new PrintWriter(bw);
-
-            fw.write(animal.getId() + " ");
-            fw.write(animal.getNome() + " ");
-            fw.write(animal.getIdade() + " ");
-            fw.write(animal.getEspecie().getNome() + " ");
-            if (!animal.getMutacoesLista().isEmpty()) {
-                for (Mutacao mutacao : animal.getMutacoesLista()) {
-                    fw.write( animal.getId() + " ");
+            fw.write("\n");
+            fw.write(zoo.getAno() + " ");
+            fw.write(this.getId() + " ");
+            fw.write(this.getNome() + " ");
+            fw.write(this.getIdade() + " ");
+            fw.write(this.getEspecie().getNome() + " ");
+            if (!this.getMutacoesLista().isEmpty()) {
+                for (Mutacao mutacao : this.getMutacoesLista()) {
+                    fw.write(this.getNome() + " ");
                 }
             }
-            
 
             //System.out.println("RIP: "+animal.getNome()+ ". Espécie: " +animal.getEspecie().getNome()+ ".Tinha "+ animal.getIdade()+ " anos.");
             pw.flush();
             pw.close();
             bw.close();
             fw.close();
-        } catch(Exception o) {
+        } catch (Exception o) {
             System.out.println("Erro a adicionar animal aos obitos");
         }
 
+        
+        ArrayList<String> dados = new ArrayList<>();
+        dados.add("Nome:");
+        dados.add(this.getNome());
+        dados.add("Id:");
+        dados.add(this.getIdString());
+        dados.add("Idade:");
+        dados.add(this.getIdadeString());
+        dados.add("Especie:");
+        dados.add(this.getEspecie().getNome());
+        dados.add("Mutacoes:");
+        for (Mutacao mutacao : this.getMutacoesLista()) {
+            dados.add(mutacao.getNome());
+        }
+        zoo.GuardaRegistoHistorico("MORTE", dados);
+
     }
 }
-

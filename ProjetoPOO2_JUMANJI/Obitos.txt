@@ -1,1 +1,3 @@
-1 jony2 12 Vaca 1 jony2 11 Vaca 1 jony2 11 Vaca 0 jony1 10 Vaca 0 jony1 10 Vaca 3 jony4 13 Vaca 4 Patachou 1 Coelho 0 jony1 10 Vaca 2 jony3 12 Vaca 3 jony4 13 Vaca 2 jony3 12 Vaca 3 jony4 13 Vaca 4 Patachou 1 Coelho 1 jony2 11 Vaca 0 jony1 11 Vaca 1 jony2 12 Vaca 1 Melody 1 Vaca 3 jony4 15 Vaca 1 Ingeborg 1 Vaca 1 You 1 Coelho 1 Celeda 1 Vaca 7 Juvelen 7 Vaca 1 jony2 11 Vaca 4 Patachou 1 Coelho 
+2000 0 jony1 10 Vaca 
+
+2000 0 jony1 10 Vaca 
