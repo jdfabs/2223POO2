@@ -1,21 +1,16 @@
-Noturno 0.0 dormir_durante_dia
-Nada 0.0 nada
-Corre 0.0 corre
-Carnivoro 0.0 comer_carne
-Herbivero 0.0 comer_vegetais
+Noturno 0.0 dormir_durante_dia 
+Nada 0.0 nada 
+Corre 0.0 corre 
+Carnivoro 0.0 comer_carne 
+Herbivero 0.0 comer_vegetais 
 Pequeno 0.0 comer_pouco 
 Grande 0.0 comer_muito 
-Roedor 0.0 roer
-Artiodactyla 0.0 deixa_marca_de_casco
-Panthera 0.0 ruje
-Perissodactyla 0.0 galopa
-Primate 0.0 usa_ferramenta
-Galliformes 0.0 bate_asas
-Carnivora 0.0 ladra
-Fake 0.0 faz_magia
-Voador 0.0 voa
-
-
-Ga
-
-
+Roedor 0.0 roer 
+Artiodactyla 0.0 deixa_marca_de_casco 
+Panthera 0.0 ruje 
+Perissodactyla 0.0 galopa 
+Primate 0.0 usa_ferramenta 
+Galliformes 0.0 bate_asas 
+Carnivora 0.0 ladra 
+Fake 0.0 faz_magia 
+Voador 0.0 voa 

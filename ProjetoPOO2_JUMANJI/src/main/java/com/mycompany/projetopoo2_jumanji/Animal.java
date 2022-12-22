@@ -4,6 +4,9 @@
  */
 package com.mycompany.projetopoo2_jumanji;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -78,7 +81,61 @@ public class Animal {
         
         return preco;
     }
+    
+    public void probMorrer(){
+        int diferencaEsperancaVida = 0;
+        for(Animal animais: animais){
+            diferencaEsperancaVida = animais.getEspecie().getEsperancaVida() - animais.getIdade();
+            if(diferencaEsperancaVida <= 0){
+                if( (Math.random() * 100)+1 <= 80){
+                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
+                    
+                }  
+            }
+            if(diferencaEsperancaVida <= 5){
+                if( (Math.random() * 100)+1 <= 40){
+                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
+                }  
+            }
+            if(diferencaEsperancaVida <= 10){
+                if( (Math.random() * 100)+1 <= 20){
+                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
+                }  
+            }
+            if(diferencaEsperancaVida >= 15){
+                if( (Math.random() * 100)+1 <= 5){
+                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
+                }  
+            }
+        }
+    }
+    
+    public void AdicionarObito(Animal animal) {
+        try {
+            FileWriter fw = new FileWriter("Obitos.txt", true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter pw = new PrintWriter(bw);
 
+            fw.write(animal.getId() + " ");
+            fw.write(animal.getNome() + " ");
+            fw.write(animal.getIdade() + " ");
+            fw.write(animal.getEspecie().getNome() + " ");
+            if (!animal.getMutacoesLista().isEmpty()) {
+                for (Mutacao mutacao : animal.getMutacoesLista()) {
+                    fw.write( animal.getId() + " ");
+                }
+            }
+            
 
+            System.out.println("Animal adicionado aos obitos");
+            pw.flush();
+            pw.close();
+            bw.close();
+            fw.close();
+        } catch(Exception o) {
+            System.out.println("Erro a adicionar animal aos obitos");
+        }
+
+    }
 }
 

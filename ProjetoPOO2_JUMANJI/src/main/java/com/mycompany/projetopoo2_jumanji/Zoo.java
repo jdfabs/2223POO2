@@ -178,6 +178,10 @@ public void startMenu(){
                                 AdicionarMutacaoAAnimal();
                                 break;
                             }
+                            case 35 ->{
+                                AdicionarObituario(animais.get(0));
+                                break;
+                            }
                             
                             
                         }
@@ -189,109 +193,7 @@ public void startMenu(){
 
 
 
-    public void AdicionarCarateristica() {
-        String nome;
-        double custos;
-        String abilidade;
 
-        System.out.println("Nome:");
-        nome = scan.next();
-        System.out.println("custos:");
-        custos = (Double) (scan.nextDouble());
-        System.out.println("abilidade:");
-        abilidade = scan.next();
-
-        Carateristica carateristica = new Carateristica(nome, custos, abilidade);
-        carateristicas.add(carateristica);
-    }
-
-    public void AdicionarEspecie() {
-        int atratividade;
-        String nome;
-        int raridade;
-        int esperancaVida;
-
-        System.out.println("atratividade:");
-        atratividade = scan.nextInt();
-        System.out.println("nome:");
-        nome = scan.next();
-        System.out.println("raridade:");
-        raridade = scan.nextInt();
-         System.out.println("esperancaVida:");
-        esperancaVida = scan.nextInt();
-
-
-        Especie especie = new Especie(atratividade, nome, raridade,esperancaVida,this,true);
-        especies.add(especie);
-    }
-
-    public void AdicionarMutacao() {
-        String nome;
-        int modAtract;
-        
-
-        System.out.println("Nome:");
-        nome = scan.next();
-        System.out.println("modAtract:");
-        modAtract = scan.nextInt();       
-
-        Mutacao mutacao = new Mutacao(nome, modAtract);
-        mutacoes.add(mutacao);
-    }
-    
-    public void AdicionarCarateristicaAEspecie(){
-        for(Especie especie: especies){
-            System.out.println("1- " + especie.getNome());
-        }
-        int opcao;
-        opcao = scan.nextInt();
-        if(opcao <= especies.size()){
-            System.out.println(especies.get(opcao-1).getNome());
-            int i = 0;
-            for (Carateristica carateristica : carateristicas) {
-                System.out.println(i + "- " + carateristica.getNome());
-                i++;
-
-            }
-            System.out.println("001");
-            int opcao2;
-            opcao2 = scan.nextInt();
-            System.out.println("002");
-            System.out.println(carateristicas.size());
-            System.out.println(opcao2);
-            if (opcao2 < carateristicas.size()) {
-                System.out.println("002");
-                especies.get(opcao - 1).adicionaCarateristica(carateristicas.get(opcao2));
-                System.out.println("003");
-            }
-        }
-    }
-     public void AdicionarMutacaoAAnimal(){
-         int i = 0;
-        for(Animal animal: animais){
-            System.out.println(i+"- " + animal.getNome());
-            i++;
-        }
-        int opcao;
-        opcao = scan.nextInt();
-        if(opcao <= animais.size()){
-            System.out.println(animais.get(opcao).getNome());
-            i = 0;
-            for (Mutacao mutacao : mutacoes) {
-                System.out.println(i + "- " + mutacao.getNome());
-                i++;
-
-            }
-            int opcao2;
-            opcao2 = scan.nextInt();
-
-            if (opcao2 < mutacoes.size()) {
-                System.out.println("002");
-                animais.get(opcao).addMutacao(mutacoes.get(opcao2));
-                System.out.println("003");
-            }
-        }
-    }
 
 
 
@@ -393,9 +295,7 @@ public void Metodo2(){
         }
         else{
             System.out.println("Não existem especies com estas carateristicas");
-        }
-
-        
+        }     
 
     }
     
@@ -1096,35 +996,17 @@ public void Metodo2(){
             System.out.println("Erro 001");
         }
     }
-
-    //      METODOS AUXILIARES
-    public void probMorrer(){
-        int diferencaEsperancaVida = 0;
-        for(Animal animais: animais){
-            diferencaEsperancaVida = animais.getEspecie().getEsperancaVida() - animais.getIdade();
-            if(diferencaEsperancaVida <= 0){
-                if( (Math.random() * 100)+1 <= 80){
-                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
-                    
-                }  
-            }
-            if(diferencaEsperancaVida <= 5){
-                if( (Math.random() * 100)+1 <= 40){
-                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
-                }  
-            }
-            if(diferencaEsperancaVida <= 10){
-                if( (Math.random() * 100)+1 <= 20){
-                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
-                }  
-            }
-            if(diferencaEsperancaVida >= 15){
-                if( (Math.random() * 100)+1 <= 5){
-                    System.out.println("Este morreu. " + animais.getNome()+" Morreu aos "+ animais.getIdade()+ " anos");
-                }  
-            }
-        }
+    
+    
+    public void CarregarObituario(){
+        
     }
+
+    
+    
+    
+            //      METODOS AUXILIARES
+    
     public void aumentaIdade(){
         for(Animal animais: animais){
             animais.incrementaIdade();
@@ -1193,6 +1075,110 @@ public void Metodo2(){
     public void AdicionarListaAnimais(Animal animal){
         animais.add(animal);
         
+    }
+        public void AdicionarCarateristica() {
+        String nome;
+        double custos;
+        String abilidade;
+
+        System.out.println("Nome:");
+        nome = scan.next();
+        System.out.println("custos:");
+        custos = (Double) (scan.nextDouble());
+        System.out.println("abilidade:");
+        abilidade = scan.next();
+
+        Carateristica carateristica = new Carateristica(nome, custos, abilidade);
+        carateristicas.add(carateristica);
+    }
+
+    public void AdicionarEspecie() {
+        int atratividade;
+        String nome;
+        int raridade;
+        int esperancaVida;
+
+        System.out.println("atratividade:");
+        atratividade = scan.nextInt();
+        System.out.println("nome:");
+        nome = scan.next();
+        System.out.println("raridade:");
+        raridade = scan.nextInt();
+         System.out.println("esperancaVida:");
+        esperancaVida = scan.nextInt();
+
+
+        Especie especie = new Especie(atratividade, nome, raridade,esperancaVida,this,true);
+        especies.add(especie);
+    }
+
+    public void AdicionarMutacao() {
+        String nome;
+        int modAtract;
+        
+
+        System.out.println("Nome:");
+        nome = scan.next();
+        System.out.println("modAtract:");
+        modAtract = scan.nextInt();       
+
+        Mutacao mutacao = new Mutacao(nome, modAtract);
+        mutacoes.add(mutacao);
+    }
+    
+    public void AdicionarCarateristicaAEspecie(){
+        for(Especie especie: especies){
+            System.out.println("1- " + especie.getNome());
+        }
+        int opcao;
+        opcao = scan.nextInt();
+        if(opcao <= especies.size()){
+            System.out.println(especies.get(opcao-1).getNome());
+            int i = 0;
+            for (Carateristica carateristica : carateristicas) {
+                System.out.println(i + "- " + carateristica.getNome());
+                i++;
+
+            }
+            System.out.println("001");
+            int opcao2;
+            opcao2 = scan.nextInt();
+            System.out.println("002");
+            System.out.println(carateristicas.size());
+            System.out.println(opcao2);
+            if (opcao2 < carateristicas.size()) {
+                System.out.println("002");
+                especies.get(opcao - 1).adicionaCarateristica(carateristicas.get(opcao2));
+                System.out.println("003");
+            }
+        }
+    }
+    
+     public void AdicionarMutacaoAAnimal(){
+         int i = 0;
+        for(Animal animal: animais){
+            System.out.println(i+"- " + animal.getNome());
+            i++;
+        }
+        int opcao;
+        opcao = scan.nextInt();
+        if(opcao <= animais.size()){
+            System.out.println(animais.get(opcao).getNome());
+            i = 0;
+            for (Mutacao mutacao : mutacoes) {
+                System.out.println(i + "- " + mutacao.getNome());
+                i++;
+
+            }
+            int opcao2;
+            opcao2 = scan.nextInt();
+
+            if (opcao2 < mutacoes.size()) {
+                System.out.println("002");
+                animais.get(opcao).addMutacao(mutacoes.get(opcao2));
+                System.out.println("003");
+            }
+        }
     }
 
     // GETS E SETS
