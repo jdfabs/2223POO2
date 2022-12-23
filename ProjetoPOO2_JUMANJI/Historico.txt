@@ -184,3 +184,4 @@ COMPRA Nome: Brendon Id: 23 Idade: 7 Especie: Tigre Mutacoes: MutacaoD
 MORTE Nome: jony1 Id: 0 Idade: 10 Especie: Vaca Mutacoes: 
 MORTE Nome: jony2 Id: 1 Idade: 11 Especie: Vaca Mutacoes: 
 MORTE Nome: jony3 Id: 2 Idade: 12 Especie: Vaca Mutacoes: 
+CONTRUÇÃO ID: 4 Lotação: 3 
