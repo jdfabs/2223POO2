@@ -354,7 +354,7 @@ public class Zoo {
             case "pequena":
                 System.out.println("Resultado do concurso:");
                 for (int i = 0; i < 3; i++) {
-                    lotacao[i] = (int) ((Math.random() * 75) + 25);
+                    lotacao[i] = (int) ((Math.random() * 4) + 1);
                     preco[i] = (double) (lotacao[i] * ((Math.random() * 250) + 500));
                     System.out.println("Empresa " + (i + 1) + " - Lotação:" + lotacao[i] + " Preço: " + preco[i]);
                 }
@@ -363,7 +363,7 @@ public class Zoo {
             case "media":
                 System.out.println("Resultado do concurso:");
                 for (int i = 0; i < 3; i++) {
-                    lotacao[i] = (int) ((Math.random() * 150) + 100);
+                    lotacao[i] = (int) ((Math.random() * 5) + 5);
                     preco[i] = (double) (lotacao[i] * ((Math.random() * 250) + 500));
                     System.out.println("Empresa " + (i + 1) + " - Lotação:" + lotacao[i] + " Preço: " + preco[i]);
                 }
@@ -372,7 +372,7 @@ public class Zoo {
             case "grande":
                 System.out.println("Resultado do concurso:");
                 for (int i = 0; i < 3; i++) {
-                    lotacao[i] = (int) ((Math.random() * 250) + 250);
+                    lotacao[i] = (int) ((Math.random() * 5) + 10);
                     preco[i] = (double) (lotacao[i] * ((Math.random() * 250) + 500));
                     System.out.println("Empresa " + (i + 1) + " - Lotação:" + lotacao[i] + " Preço: " + preco[i]);
                 }

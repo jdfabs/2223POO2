@@ -2,3 +2,7 @@ MutacaoA 2
 MutacaoB 5 
 MutacaoC 7 
 MutacaoD 1 
+MutacaoE 2 
+MutacaoF 5 
+MutacaoG 7 
+MutacaoH 1 
