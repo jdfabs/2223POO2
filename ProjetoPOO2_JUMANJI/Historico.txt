@@ -90,3 +90,47 @@ COMPRA Nome: Pras Id: 1 Idade: 0 Especie: Galo Mutacoes: MutacaoA MutacaoB Mutac
 COMPRA Nome: Gotye Id: 2 Idade: 1 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
 COMPRA Nome: Sangeetha Id: 3 Idade: 1 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
 COMPRA Nome: Bussunda Id: 4 Idade: 7 Especie: Cavalo Mutacoes: MutacaoA MutacaoB MutacaoD 
+COMPRA Nome: Nino Id: 0 Idade: 0 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+COMPRA Nome: Satsuki Id: 1 Idade: 1 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoD 
+COMPRA Nome: Joselo Id: 2 Idade: 1 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoD 
+COMPRA Nome: Sheila Id: 3 Idade: 12 Especie: Tigre Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+CONTRUÇÃO ID: 4 Lotação: 49 
+CONTRUÇÃO ID: 5 Lotação: 159 
+MOVER ID_animal: 3 Nova_Instalação: 5 
+MOVER ID_animal: 3 Nova_Instalação: 4 
+RETIRAR_DE_INSTALAÇÃO ID_animal: 3 
+MOVER ID_animal: 2 Nova_Instalação: 1 
+MOVER ID_animal: 12 Nova_Instalação: 5 
+MORTE Nome: Satsuki Id: 1 Idade: 2 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoD 
+MORTE Nome: Canibus Id: 4 Idade: 1 Especie: Vaca Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+MORTE Nome: Patachou Id: 4 Idade: 1 Especie: Coelho Mutacoes: 
+COMPRA Nome: Harper Id: 5 Idade: 8 Especie: Cavalo Mutacoes: MutacaoB MutacaoC MutacaoD 
+MOVER ID_animal: 5 Nova_Instalação: 1 
+MOVER ID_animal: 15 Nova_Instalação: 0 
+CONTRUÇÃO ID: 4 Lotação: 381 
+COMPRA Nome: Kina Id: 16 Idade: 1 Especie: Rato Mutacoes: MutacaoB MutacaoC MutacaoD 
+COMPRA Nome: Kyulkyung Id: 17 Idade: 0 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoC 
+COMPRA Nome: Manikuttan Id: 18 Idade: 2 Especie: Serpente Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+MOVER ID_animal: 18 Nova_Instalação: 4 
+MORTE Nome: jony1 Id: 0 Idade: 12 Especie: Vaca Mutacoes: 
+MORTE Nome: Zalon Id: 0 Idade: 2 Especie: Vaca Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+MORTE Nome: Millie Id: 1 Idade: 2 Especie: Vaca Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+COMPRA Nome: Ola Id: 0 Idade: 2 Especie: Vaca Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+COMPRA Nome: Babydaddy Id: 1 Idade: 1 Especie: Coelho Mutacoes: MutacaoA MutacaoB MutacaoD 
+COMPRA Nome: Nanditha Id: 2 Idade: 1 Especie: Coelho Mutacoes: MutacaoB MutacaoC MutacaoD 
+COMPRA Nome: Coluche Id: 3 Idade: 10 Especie: Serpente Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+CONTRUÇÃO ID: 4 Lotação: 260 
+MOVER ID_animal: 3 Nova_Instalação: 1 
+MORTE Nome: jony3 Id: 2 Idade: 12 Especie: Vaca Mutacoes: 
+MOVER ID_animal: 12 Nova_Instalação: 4 
+COMPRA Nome: Ingola Id: 13 Idade: 14 Especie: Macaco Mutacoes: MutacaoA MutacaoB MutacaoC 
+CONTRUÇÃO ID: 5 Lotação: 337 
+MORTE Nome: Coluche Id: 3 Idade: 11 Especie: Serpente Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+MORTE Nome: Lebleba Id: 4 Idade: 1 Especie: Vaca Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+MORTE Nome: Shequida Id: 11 Idade: 1 Especie: Coelho Mutacoes: MutacaoA MutacaoC MutacaoD 
+MORTE Nome: Ingola Id: 13 Idade: 14 Especie: Macaco Mutacoes: MutacaoA MutacaoB MutacaoC 
+COMPRA Nome: Chessman Id: 0 Idade: 0 Especie: Coelho Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+COMPRA Nome: Lisa Id: 1 Idade: 0 Especie: Coelho Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+COMPRA Nome: Azu Id: 14 Idade: 0 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
+COMPRA Nome: Joker Id: 14 Idade: 12 Especie: Macaco Mutacoes: 
+COMPRA Nome: Bhavya Id: 15 Idade: 6 Especie: Serpente Mutacoes: MutacaoB MutacaoD 

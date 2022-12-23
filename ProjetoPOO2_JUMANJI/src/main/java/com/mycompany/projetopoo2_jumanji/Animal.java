@@ -22,9 +22,6 @@ public class Animal {
     protected Instalacao instalacao;  
     protected List<Mutacao> mutacoes = new ArrayList<>();
     
-   
-    
-    
 
    public Animal(int id, String nome, int idade, Especie especie) {
        this.id = id;

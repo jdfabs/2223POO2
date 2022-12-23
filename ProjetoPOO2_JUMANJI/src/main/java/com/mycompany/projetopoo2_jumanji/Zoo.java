@@ -391,15 +391,12 @@ public class Zoo {
         } catch (Exception e) {
             System.out.println("Construção de Instalação cancelada.");
         }
-
+            
         if ((indice == 1 || indice == 2 || indice == 3) && saldo >= preco[indice - 1]) {
             Instalacao instalacao = new Instalacao(instalacoes.size(), lotacao[indice - 1], -1);
             instalacoes.add(instalacao);
             saldo -= preco[indice-1];
             saldoUsadoInstalacoes += preco[indice-1];
-        } else {
-            saldo -= preco[indice - 1];
-
             ArrayList<String> dados = new ArrayList<>();
             dados.add("ID:");
             dados.add(instalacao.getIdString());
@@ -407,7 +404,6 @@ public class Zoo {
             dados.add(instalacao.getLotacaoString());
             GuardaRegistoHistorico("CONTRUÇÃO", dados);
         }
-
     }
 
     public void ColocarAnimalEmInstalacao() {
@@ -778,13 +774,16 @@ public class Zoo {
         System.out.println("Óbitos:");
         for (int i = 0; i < animaisMortos.size(); i++) {
             animais.remove(animaisMortos.get(i));
-            if( animaisMortos.get(i).getInstalacao() != null){
-                animaisMortos.get(i).getInstalacao().setAnimal();
+            if (animaisMortos.get(i).getInstalacao() != null) {
+                animaisMortos.get(i).Morre(this);
             }
             System.out.println("Nome: " + animaisMortos.get(i).getNome() + ". Espécie: " + animaisMortos.get(i).getEspecie().getNome() + ". Idade: " + animaisMortos.get(i).getIdade());
         }
         ano++;
         aumentaIdade();
+        System.out.println("Rendimentos");
+        System.out.println("Este ano os animais renderam: " + rendimentoAnimais());
+
         System.out.println("Custos");
         System.out.println("Este ano foi gasto em aquisições de animais: " + saldoUsadoAnimais + " euros.");
         System.out.println("Este ano foi gasto em construções de instalações: " + saldoUsadoInstalacoes + " euros.");
@@ -792,12 +791,26 @@ public class Zoo {
         custoAnual = saldoUsadoAnimais + saldoUsadoInstalacoes + custosManutencao();
         System.out.println("Custo total deste ano: " + custoAnual);
         saldo -= custoAnual;
+        saldo += rendimentoAnimais();
         saldoUsadoAnimais = 0;
         saldoUsadoInstalacoes = 0;
     }
 
     public void Jumanji() {
 
+    }
+    public double rendimentoAnimais() {
+        double rendimentosAnimais = 0;
+        for (Animal animal : animais) {
+            if (animal.getInstalacao() != null) {
+                rendimentosAnimais += rendimentosAnimais*animal.getInstalacao().getLotacao();
+                rendimentosAnimais += animal.getEspecie().getAtratividadeBase() * animal.getEspecie().getRaridade();
+                if (animal.getMutacoesLista() != null) {
+                    rendimentosAnimais += 5000;
+                }
+            }
+        }
+        return rendimentosAnimais;
     }
     public double custosManutencao() {
         double custosManutencao = 0;
@@ -812,7 +825,7 @@ public class Zoo {
     }
     public void probMutacoes(Animal animal){
         for(Mutacao mutacao: mutacoes){
-            if(1+ Math.random()* 100 < 90){
+            if(1+ Math.random()* 100 < 10){
                 animal.addMutacao(mutacao);
             }         
         }
@@ -962,9 +975,43 @@ public class Zoo {
             System.out.println("An error occurred.");
             return;
         }
-
+        System.out.println("001");
+        atualizarId();
+        System.out.println("003");
     }
-
+    public void atualizarId(){
+        
+        int maiorId = 0;
+        for(Animal animal: animais){
+            if(animal.getId() > maiorId){
+                maiorId = animal.getId();
+            }
+        }
+        try {
+            String[] linha;
+            File ficheiro = new File("Obitos.txt");
+            Scanner reader = new Scanner(ficheiro);
+            while (reader.hasNextLine()) {
+                String dados = reader.nextLine();
+                linha = dados.split(" ");
+                try {
+                    
+                    if(Integer.parseInt(linha[1])> maiorId){
+                        
+                        maiorId = Integer.parseInt(linha[1]);
+                    }
+                } catch (Exception e) {
+                    
+                    System.out.println("Ficheiro corrupto, Cancelado");
+                    return;
+                }
+            }
+        }catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+        }
+        System.out.println("007");
+        animalId = maiorId + 1;
+    }
     public void SalvarAnimais() {
         try {
             FileWriter writer = new FileWriter("Animais.txt");

@@ -1,5 +1,4 @@
 2000 0 jony1 10 Vaca 
-
 2000 0 jony1 10 Vaca 
 2001 2 jony3 13 Vaca 
 2001 1 Adamo 1 Vaca 
@@ -61,3 +60,14 @@
 2003 1 Sriman 1 Vaca 
 2003 1 Mareko 1 Vaca 
 2003 1 Shad 1 Vaca 
+2001 1 Satsuki 2 Rato Satsuki Satsuki Satsuki 
+2001 4 Canibus 1 Vaca Canibus Canibus Canibus Canibus 
+2000 4 Patachou 1 Coelho 
+2002 0 jony1 12 Vaca 
+2002 0 Zalon 2 Vaca Zalon Zalon Zalon Zalon 
+2002 1 Millie 2 Vaca Millie Millie Millie Millie 
+2000 2 jony3 12 Vaca 
+2001 3 Coluche 11 Serpente Coluche Coluche Coluche Coluche 
+2001 4 Lebleba 1 Vaca Lebleba Lebleba Lebleba Lebleba 
+2001 11 Shequida 1 Coelho Shequida Shequida Shequida 
+2001 13 Ingola 14 Macaco Ingola Ingola Ingola 
