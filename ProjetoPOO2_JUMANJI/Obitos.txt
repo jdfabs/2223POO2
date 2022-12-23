@@ -71,3 +71,11 @@
 2001 4 Lebleba 1 Vaca Lebleba Lebleba Lebleba Lebleba 
 2001 11 Shequida 1 Coelho Shequida Shequida Shequida 
 2001 13 Ingola 14 Macaco Ingola Ingola Ingola 
+2000 14 Lyn 1 Rato Lyn 
+2000 1 jony2 11 Vaca 
+2000 2 jony3 12 Vaca 
+2000 16 Jai 8 Macaco Jai 
+2000 20 Alisha 18 Serpente 
+2000 0 jony1 10 Vaca 
+2000 1 jony2 11 Vaca 
+2000 2 jony3 12 Vaca 

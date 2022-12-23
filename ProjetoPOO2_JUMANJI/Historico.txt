@@ -134,3 +134,53 @@ COMPRA Nome: Lisa Id: 1 Idade: 0 Especie: Coelho Mutacoes: MutacaoA MutacaoB Mut
 COMPRA Nome: Azu Id: 14 Idade: 0 Especie: Rato Mutacoes: MutacaoA MutacaoB MutacaoC MutacaoD 
 COMPRA Nome: Joker Id: 14 Idade: 12 Especie: Macaco Mutacoes: 
 COMPRA Nome: Bhavya Id: 15 Idade: 6 Especie: Serpente Mutacoes: MutacaoB MutacaoD 
+COMPRA Nome: Sammie Id: 14 Idade: 2 Especie: Galo Mutacoes: 
+COMPRA Nome: Dilana Id: 15 Idade: 0 Especie: Rato Mutacoes: 
+COMPRA Nome: Mehnaz Id: 16 Idade: 3 Especie: Coelho Mutacoes: 
+COMPRA Nome: Classified Id: 17 Idade: 0 Especie: Rato Mutacoes: 
+COMPRA Nome: Knobody Id: 18 Idade: 8 Especie: Cão Mutacoes: 
+COMPRA Nome: ili Id: 14 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Nome: Domino Id: 15 Idade: 0 Especie: Coelho Mutacoes: 
+COMPRA Nome: Zombo Id: 16 Idade: 6 Especie: Serpente Mutacoes: MutacaoA 
+COMPRA Nome: Lobo Id: 17 Idade: 0 Especie: Rato Mutacoes: 
+COMPRA Nome: T.I. Id: 18 Idade: 1 Especie: Rato Mutacoes: MutacaoB 
+COMPRA Nome: Lekain Id: 19 Idade: 0 Especie: Coelho Mutacoes: 
+COMPRA Nome: Blaaze Id: 20 Idade: 9 Especie: Macaco Mutacoes: 
+COMPRA Nome: Kunchacko Id: 21 Idade: 0 Especie: Rato Mutacoes: MutacaoA 
+COMPRA Nome: Kangta Id: 22 Idade: 18 Especie: Serpente Mutacoes: MutacaoC 
+COMPRA Nome: Lyn Id: 14 Idade: 1 Especie: Rato Mutacoes: MutacaoA 
+COMPRA Nome: Kana Id: 15 Idade: 2 Especie: Serpente Mutacoes: 
+COMPRA Nome: Raekwon Id: 16 Idade: 1 Especie: Coelho Mutacoes: 
+COMPRA Nome: Merche Id: 17 Idade: 9 Especie: Serpente Mutacoes: 
+COMPRA Nome: GoldLink Id: 18 Idade: 2 Especie: Galo Mutacoes: MutacaoC 
+MORTE Nome: Lyn Id: 14 Idade: 1 Especie: Rato Mutacoes: MutacaoA 
+COMPRA Nome: Savitri Id: 15 Idade: 11 Especie: Cavalo Mutacoes: 
+COMPRA Nome: Jai Id: 16 Idade: 8 Especie: Macaco Mutacoes: MutacaoD 
+COMPRA Nome: Manafest Id: 17 Idade: 0 Especie: Rato Mutacoes: MutacaoD 
+COMPRA Nome: Yoona Id: 18 Idade: 15 Especie: Macaco Mutacoes: MutacaoD 
+COMPRA Nome: Kuroneko Id: 19 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Nome: Alisha Id: 20 Idade: 18 Especie: Serpente Mutacoes: 
+MORTE Nome: jony2 Id: 1 Idade: 11 Especie: Vaca Mutacoes: 
+MORTE Nome: jony3 Id: 2 Idade: 12 Especie: Vaca Mutacoes: 
+MORTE Nome: Jai Id: 16 Idade: 8 Especie: Macaco Mutacoes: MutacaoD 
+MORTE Nome: Alisha Id: 20 Idade: 18 Especie: Serpente Mutacoes: 
+COMPRA Nome: Sofia Id: 21 Idade: 7 Especie: Tigre Mutacoes: 
+COMPRA Nome: Vikranth Id: 22 Idade: 1 Especie: Galo Mutacoes: 
+CONTRUÇÃO ID: 4 Lotação: 416 
+COMPRA Nome: Xenia Id: 23 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Nome: Dorismar Id: 24 Idade: 8 Especie: Vaca Mutacoes: MutacaoB MutacaoC MutacaoD 
+COMPRA Nome: QBoy Id: 25 Idade: 3 Especie: Coelho Mutacoes: 
+COMPRA Nome: Saandip Id: 26 Idade: 1 Especie: Coelho Mutacoes: 
+CONTRUÇÃO ID: 5 Lotação: 436 
+COMPRA Nome: Amala Id: 27 Idade: 1 Especie: Coelho Mutacoes: MutacaoD 
+COMPRA Nome: Totò Id: 28 Idade: 3 Especie: Coelho Mutacoes: MutacaoA 
+COMPRA Nome: Jennie Id: 29 Idade: 1 Especie: Coelho Mutacoes: 
+COMPRA Nome: Knobody Id: 30 Idade: 0 Especie: Galo Mutacoes: 
+CONTRUÇÃO ID: 4 Lotação: 484 
+CONTRUÇÃO ID: 5 Lotação: 448 
+COMPRA Nome: Emyli Id: 21 Idade: 3 Especie: Coelho Mutacoes: 
+COMPRA Nome: Sailorine Id: 22 Idade: 0 Especie: Coelho Mutacoes: 
+COMPRA Nome: Brendon Id: 23 Idade: 7 Especie: Tigre Mutacoes: MutacaoD 
+MORTE Nome: jony1 Id: 0 Idade: 10 Especie: Vaca Mutacoes: 
+MORTE Nome: jony2 Id: 1 Idade: 11 Especie: Vaca Mutacoes: 
+MORTE Nome: jony3 Id: 2 Idade: 12 Especie: Vaca Mutacoes: 

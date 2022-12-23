@@ -507,138 +507,111 @@ public class Zoo {
 
     public void CalendarioChines() {
         int opcao;
-        System.out.println("Insira o Ano:");
-        opcao = (ano % 12) + 1;
-        String animal1 = "";
-        int atratividade = 0;
+        opcao = (this.getAno() % 12) + 1;
         switch (opcao) {
             case 1 -> {
                 for (Animal animal : animais) {
                     if (animal.getEspecie().getNome().toLowerCase().equals("macaco")) {
                         animal.getEspecie().AumentaAtratividade();
-                        atratividade = animal.getEspecie().getAtratividadeBase();
-                        animal1 = animal.getEspecie().getNome();
-
+                        System.out.println("A atratividade do " + animal.getEspecie().getNome() + " aumentou para " + animal.getEspecie().getRaridade());
+                            
                     }
                 }
-
             }
             case 2 -> {
                 for (Animal animal : animais) {
                     if (animal.getEspecie().getNome().toLowerCase().equals("galinha")) {
                         animal.getEspecie().AumentaAtratividade();
-                        atratividade = animal.getEspecie().getAtratividadeBase();
-                        animal1 = animal.getEspecie().getNome();
+                        System.out.println("A atratividade do " + animal.getEspecie().getNome() + " aumentou para " + animal.getEspecie().getRaridade());
                     }
                 }
-
             }
             case 3 -> {
                 for (Animal animal : animais) {
                     if (animal.getEspecie().getNome().toLowerCase().equals("cao")) {
                         animal.getEspecie().AumentaAtratividade();
-                        atratividade = animal.getEspecie().getAtratividadeBase();
-                        animal1 = animal.getEspecie().getNome();
+                        System.out.println("A atratividade do " + animal.getEspecie().getNome() + " aumentou para " + animal.getEspecie().getRaridade());
                     }
                 }
-
             }
             case 4 -> {
                 for (Animal animal : animais) {
                     if (animal.getEspecie().getNome().toLowerCase().equals("porco")) {
                         animal.getEspecie().AumentaAtratividade();
-                        atratividade = animal.getEspecie().getAtratividadeBase();
-                        animal1 = animal.getEspecie().getNome();
+                        System.out.println("A atratividade do " + animal.getEspecie().getNome() + " aumentou para " + animal.getEspecie().getRaridade());
                     }
                 }
-
             }
             case 5 -> {
                 for (Animal animal : animais) {
                     if (animal.getEspecie().getNome().toLowerCase().equals("rato")) {
                         animal.getEspecie().AumentaAtratividade();
-                        atratividade = animal.getEspecie().getAtratividadeBase();
-                        animal1 = animal.getEspecie().getNome();
+                        System.out.println("A atratividade do " + animal.getEspecie().getNome() + " aumentou para " + animal.getEspecie().getRaridade());
 
                     }
                 }
-
             }
             case 6 -> {
                 for (Animal animal : animais) {
                     if (animal.getEspecie().getNome().toLowerCase().equals("vaca")) {
                         animal.getEspecie().AumentaAtratividade();
-                        atratividade = animal.getEspecie().getAtratividadeBase();
-                        animal1 = animal.getEspecie().getNome();
+                        System.out.println("A atratividade do " + animal.getEspecie().getNome() + " aumentou para " + animal.getEspecie().getRaridade());
                     }
                 }
-
             }
             case 7 -> {
                 for (Animal animal : animais) {
                     if (animal.getEspecie().getNome().toLowerCase().equals("tigre")) {
                         animal.getEspecie().AumentaAtratividade();
-                        atratividade = animal.getEspecie().getAtratividadeBase();
-                        animal1 = animal.getEspecie().getNome();
+                        System.out.println("A atratividade do " + animal.getEspecie().getNome() + " aumentou para " + animal.getEspecie().getRaridade());
                     }
                 }
-
             }
             case 8 -> {
                 for (Animal animal : animais) {
                     if (animal.getEspecie().getNome().toLowerCase().equals("coelho")) {
                         animal.getEspecie().AumentaAtratividade();
-                        atratividade = animal.getEspecie().getAtratividadeBase();
-                        animal1 = animal.getEspecie().getNome();
+                        System.out.println("A atratividade do " + animal.getEspecie().getNome() + " aumentou para " + animal.getEspecie().getRaridade());
                     }
                 }
-
             }
             case 9 -> {
                 for (Animal animal : animais) {
                     if (animal.getEspecie().getNome().toLowerCase().equals("dragao")) {
                         animal.getEspecie().AumentaAtratividade();
-                        atratividade = animal.getEspecie().getAtratividadeBase();
-                        animal1 = animal.getEspecie().getNome();
+                        System.out.println("A atratividade do " + animal.getEspecie().getNome() + " aumentou para " + animal.getEspecie().getRaridade());
                     }
                 }
-
             }
             case 10 -> {
                 for (Animal animal : animais) {
                     if (animal.getEspecie().getNome().toLowerCase().equals("serpente")) {
                         animal.getEspecie().AumentaAtratividade();
-                        atratividade = animal.getEspecie().getAtratividadeBase();
-                        animal1 = animal.getEspecie().getNome();
+                        System.out.println("A atratividade do " + animal.getEspecie().getNome() + " aumentou para " + animal.getEspecie().getRaridade());
                     }
                 }
-
             }
             case 11 -> {
                 for (Animal animal : animais) {
                     if (animal.getEspecie().getNome().toLowerCase().equals("cavalo")) {
                         animal.getEspecie().AumentaAtratividade();
-                        atratividade = animal.getEspecie().getAtratividadeBase();
-                        animal1 = animal.getEspecie().getNome();
+                        System.out.println("A atratividade do " + animal.getEspecie().getNome() + " aumentou para " + animal.getEspecie().getRaridade());
                     }
                 }
-
             }
             case 12 -> {
                 for (Animal animal : animais) {
                     if (animal.getEspecie().getNome().toLowerCase().equals("cabra")) {
                         animal.getEspecie().AumentaAtratividade();
-                        atratividade = animal.getEspecie().getAtratividadeBase();
-                        animal1 = animal.getEspecie().getNome();
+                        System.out.println("A atratividade do " + animal.getEspecie().getNome() + " aumentou para " + animal.getEspecie().getRaridade());
                     }
                 }
-
             }
             default -> {
                 System.out.println("blablabla");
             }
         }
-        System.out.println("A atratividade dos " + animal1 + "s aumentou para " + atratividade);
+        
     }
 
     public void ListarAnimais() {
@@ -730,10 +703,6 @@ public class Zoo {
 
     }
 
-    public void Obituario() {
-
-    }
-
     public void Historico() {
         try {
             File ficheiro = new File("Historico.txt");
@@ -745,7 +714,6 @@ public class Zoo {
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
 
-           
         }
     }
 
@@ -792,6 +760,7 @@ public class Zoo {
         System.out.println("Custo total deste ano: " + custoAnual);
         saldo -= custoAnual;
         saldo += rendimentoAnimais();
+        prejuizo();
         saldoUsadoAnimais = 0;
         saldoUsadoInstalacoes = 0;
     }
@@ -803,14 +772,51 @@ public class Zoo {
         double rendimentosAnimais = 0;
         for (Animal animal : animais) {
             if (animal.getInstalacao() != null) {
-                rendimentosAnimais += rendimentosAnimais*animal.getInstalacao().getLotacao();
-                rendimentosAnimais += animal.getEspecie().getAtratividadeBase() * animal.getEspecie().getRaridade();
+                rendimentosAnimais += rendimentosAnimais * animal.getInstalacao().getLotacao();
+
                 if (animal.getMutacoesLista() != null) {
-                    rendimentosAnimais += 5000;
+                    for (Mutacao mutacao : animal.getMutacoesLista()) {
+                        rendimentosAnimais += ((mutacao.getModAtract() + animal.getEspecie().getAtratividadeBase()) * animal.getEspecie().getRaridade());
+                    }
+                } else {
+                    
+                    rendimentosAnimais += animal.getEspecie().getAtratividadeBase() * animal.getEspecie().getRaridade();
+                    
                 }
             }
         }
         return rendimentosAnimais;
+    }
+    public void prejuizo() {
+        int mutacaoModAttract = 0;
+        double vendaAnimal = 0;
+        if (saldo < 0) {
+            System.out.println("Houve prejuízo este ano");
+            while (saldo < 0) {
+                for (Animal animal : animais) {
+                    if (animal.getMutacoesLista() != null) {
+                        for (Mutacao mutacao : animal.getMutacoesLista()) {
+                            mutacaoModAttract += mutacao.getModAtract();
+                        }
+                        System.out.println("Animal vendido devido ao prejuízo: " + animal.getNome()+ " especie: " + animal.getEspecie().getNome());
+                        saldo += ((100+ mutacaoModAttract + animal.getEspecie().getAtratividadeBase()) * animal.getEspecie().getRaridade());
+                        animais.remove(animal);
+                        if (animal.getInstalacao() != null) {
+                            animal.Morre(this);
+                        }
+                    } else {
+                        System.out.println("Animal vendido devido ao prejuízo: " + animal.getNome()+ " especie: " + animal.getEspecie().getNome());
+                        saldo += (25 +animal.getEspecie().getAtratividadeBase()) * animal.getEspecie().getRaridade();
+                        animais.remove(animal);
+                        if (animal.getInstalacao() != null) {
+                            animal.Morre(this);
+                        }
+                    }
+
+                }
+
+            }
+        }
     }
     public double custosManutencao() {
         double custosManutencao = 0;
