@@ -456,8 +456,8 @@ public class Zoo {
             for (Instalacao instalacao : instalacoes) {
                 i++;
                 System.out.print(i + ") Lotação: " + instalacao.getLotacao());
-                if (instalacao.getAnimal() != null) {
-                    System.out.print(" Animal: " + (instalacao.getAnimal()).getNome() + " Especie: " + (instalacao.getAnimal()).getEspecieString());
+                if (instalacao.getInstalacaoLotacao() != 0) {
+                    instalacao.getAnimaisInstalacao();
                 }
                 System.out.println();
             }
@@ -470,7 +470,8 @@ public class Zoo {
             }
 
         }
-
+        
+/*
         ArrayList<String> dados = new ArrayList<>();
 
         if (instalacaoEscolhida.getAnimal() != null) {
@@ -504,9 +505,10 @@ public class Zoo {
             dados.add(instalacaoEscolhida.getAnimal().getIdString());
             GuardaRegistoHistorico("RETIRAR_DE_INSTALAÇÃO", dados);
 
-        }
+        }*/
+        instalacaoEscolhida.addAnimalInstalacao(animalEscolhido);
         animalEscolhido.setInstalacao(instalacaoEscolhida);
-
+        
     }
 
     public void CalendarioChines() {
@@ -678,11 +680,10 @@ public class Zoo {
 
         for (Instalacao instalacao : instalacoes) {
             System.out.print("id: " + instalacao.getId() + " Lotação:" + instalacao.getLotacao());
-            if (instalacao.getAnimal() == null) {
-                System.out.println(" - Esta instalação não possui nenhum animal ");
-            } else {
-                System.out.println(" - Nome: " + instalacao.getAnimal().getNome() + " Espécie: " + instalacao.getAnimal().getEspecie().getNome());
-            }
+            //if (instalacao.getInstalacaoLotacao()!= 0){
+                instalacao.getAnimaisInstalacao();
+            //}
+            
         }
     }
 
@@ -690,8 +691,8 @@ public class Zoo {
         System.out.println("Instalações:");
         for (Instalacao instalacao : instalacoes) {
             System.out.print("id: " + instalacao.getId() + " Lotação: " + instalacao.getLotacao());
-            if (instalacao.getAnimal() != null) {
-                System.out.print(" - Animal - Nome: " + instalacao.getAnimal().getNome() + " id:" + instalacao.getAnimal().getId());
+            if (instalacao.getInstalacaoLotacao() != 0) {
+                instalacao.getAnimaisInstalacao();
             } else {
                 System.out.println();
             }
