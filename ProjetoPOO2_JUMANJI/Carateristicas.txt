@@ -1,11 +1,11 @@
-Noturno 0.0 dormir_durante_dia 
+Noturno 0.0 dorme_durante_dia 
 Nada 0.0 nada 
 Corre 0.0 corre 
-Carnivoro 0.0 comer_carne 
-Herbivero 0.0 comer_vegetais 
-Pequeno 0.0 comer_pouco 
-Grande 0.0 comer_muito 
-Roedor 0.0 roer 
+Carnivoro 0.0 come_carne 
+Herbivero 0.0 come_vegetais 
+Pequeno 0.0 come_pouco 
+Grande 0.0 come_muito 
+Roedor 0.0 roe 
 Artiodactyla 0.0 deixa_marca_de_casco 
 Panthera 0.0 ruje 
 Perissodactyla 0.0 galopa 

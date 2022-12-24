@@ -79,3 +79,8 @@
 2000 0 jony1 10 Vaca 
 2000 1 jony2 11 Vaca 
 2000 2 jony3 12 Vaca 
+
+2000 0 Skipper 27 Cabra 
+2000 0 Skipper 27 Cabra 
+2000 0 Skipper 28 Cabra 
+2000 0 Skipper 28 Cabra 

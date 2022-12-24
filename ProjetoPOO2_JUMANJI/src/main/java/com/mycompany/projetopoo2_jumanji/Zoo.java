@@ -9,6 +9,7 @@ import java.io.*;
 import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.Scanner; // Import the Scanner class to read text files
+import java.util.Objects;
 
 /**
  *
@@ -131,7 +132,7 @@ public class Zoo {
                     break;
                 }
                 case 14 -> {
-                    //Jumanji();
+                    Jumanji();
                     break;
                 }
                 case 15 -> {
@@ -185,6 +186,9 @@ public class Zoo {
                 case 35 -> {
                     animais.get(0).AdicionarObito(this);
                     break;
+                }
+                case 36 -> {
+                    probMutacoes(animais.get(0), true);
                 }
 
             }
@@ -722,9 +726,11 @@ public class Zoo {
         List<Animal> animaisBebes = new ArrayList();
         List<Animal> animaisMortos = new ArrayList();
         Animal bebe;
+        aumentaIdade();
+        
         for (Animal animal : animais) {
             if (animal.CheckVida()) {
-                animal.AdicionarObito(this);
+                animal.Morre(this);
                 animaisMortos.add(animal);
             }
             if (animal.CheckNascimento()) {
@@ -732,6 +738,22 @@ public class Zoo {
                 incrementaAnimalId();
                 probMutacoes(bebe);
                 animaisBebes.add(bebe);
+                
+                ArrayList<String> dados = new ArrayList<>();
+                dados.add("Nome: ");
+                dados.add(bebe.getNome());
+                dados.add("Id: ");
+                dados.add(bebe.getIdString());
+                dados.add("Idade: ");
+                dados.add(bebe.getIdadeString());
+                dados.add("Especie: ");
+                dados.add(bebe.getEspecie().getNome());
+                dados.add("Mutações: ");
+                for(Mutacao mutacao:bebe.getMutacoesLista() ){
+                    dados.add(mutacao.getNome() + " ");
+                }                
+                GuardaRegistoHistorico("NASCEU", dados);
+                
             }
         }
         System.out.println("Nascimentos: ");
@@ -748,10 +770,9 @@ public class Zoo {
             System.out.println("Nome: " + animaisMortos.get(i).getNome() + ". Espécie: " + animaisMortos.get(i).getEspecie().getNome() + ". Idade: " + animaisMortos.get(i).getIdade());
         }
         ano++;
-        aumentaIdade();
+        
         System.out.println("Rendimentos");
         System.out.println("Este ano os animais renderam: " + rendimentoAnimais());
-
         System.out.println("Custos");
         System.out.println("Este ano foi gasto em aquisições de animais: " + saldoUsadoAnimais + " euros.");
         System.out.println("Este ano foi gasto em construções de instalações: " + saldoUsadoInstalacoes + " euros.");
@@ -761,11 +782,47 @@ public class Zoo {
         saldo -= custoAnual;
         saldo += rendimentoAnimais();
         prejuizo();
-        saldoUsadoAnimais = 0;
-        saldoUsadoInstalacoes = 0;
     }
 
     public void Jumanji() {
+        
+        System.out.println("----JUMANJI----");
+        List<Animal> animaisEscapados = new ArrayList<>();
+        for (Animal animal : animais) {
+            if (Math.random() >= .7) {
+                animaisEscapados.add(animal);
+            }
+        }
+        for(Animal animalEscapado: animaisEscapados ){
+            int numCarateristicas = animalEscapado.getEspecie().getCarateristicas().size();
+            int carateristicaEscolhida =(int) (Math.random()*(numCarateristicas-1));
+            System.out.println(animalEscapado.getNome()+ " " + animalEscapado.getEspecie().getCarateristicas().get(carateristicaEscolhida).getAbilidade());
+            if (Math.random() >= .5) {
+                System.out.println("Este animal escapou");
+                if(animalEscapado.getInstalacao() != null){
+                    animalEscapado.getInstalacao().setAnimal();
+                }
+                
+                animalEscapado.setInstalacao();
+                animais.remove(animalEscapado);
+                
+                ArrayList<String> dados = new ArrayList<>();
+                dados.add("Nome: ");
+                dados.add(animalEscapado.getNome());
+                dados.add("Id: ");
+                dados.add(animalEscapado.getIdString());
+                dados.add("Idade: ");
+                dados.add(animalEscapado.getIdadeString());
+                dados.add("Especie: ");
+                dados.add(animalEscapado.getEspecie().getNome());
+                dados.add("Mutações: ");
+                for(Mutacao mutacao:animalEscapado.getMutacoesLista() ){
+                    dados.add(mutacao.getNome() + " ");
+                }                
+                GuardaRegistoHistorico("FUJIU", dados);
+
+            }
+        }
 
     }
     public double rendimentoAnimais() {
@@ -798,20 +855,32 @@ public class Zoo {
                         for (Mutacao mutacao : animal.getMutacoesLista()) {
                             mutacaoModAttract += mutacao.getModAtract();
                         }
-                        System.out.println("Animal vendido devido ao prejuízo: " + animal.getNome()+ " especie: " + animal.getEspecie().getNome());
-                        saldo += ((100+ mutacaoModAttract + animal.getEspecie().getAtratividadeBase()) * animal.getEspecie().getRaridade());
-                        animais.remove(animal);
-                        if (animal.getInstalacao() != null) {
-                            animal.Morre(this);
-                        }
+                        System.out.println("Animal vendido devido ao prejuízo: " + animal.getNome() + " especie: " + animal.getEspecie().getNome());
+                        saldo += ((100 + mutacaoModAttract + animal.getEspecie().getAtratividadeBase()) * animal.getEspecie().getRaridade());
+
                     } else {
-                        System.out.println("Animal vendido devido ao prejuízo: " + animal.getNome()+ " especie: " + animal.getEspecie().getNome());
-                        saldo += (25 +animal.getEspecie().getAtratividadeBase()) * animal.getEspecie().getRaridade();
-                        animais.remove(animal);
-                        if (animal.getInstalacao() != null) {
-                            animal.Morre(this);
-                        }
+                        System.out.println("Animal vendido devido ao prejuízo: " + animal.getNome() + " especie: " + animal.getEspecie().getNome());
+                        saldo += (25 + animal.getEspecie().getAtratividadeBase()) * animal.getEspecie().getRaridade();
+
                     }
+                    animais.remove(animal);
+                    if (animal.getInstalacao() != null) {
+                        animal.getInstalacao().setAnimal();
+                    }
+                    ArrayList<String> dados = new ArrayList<>();
+                    dados.add("Nome:");
+                    dados.add(animal.getNome());
+                    dados.add("Id:");
+                    dados.add(animal.getIdString());
+                    dados.add("Idade:");
+                    dados.add(animal.getIdadeString());
+                    dados.add("Especie:");
+                    dados.add(animal.getEspecie().getNome());
+                    dados.add("Mutacoes:");
+                    for (Mutacao mutacao : animal.getMutacoesLista()) {
+                        dados.add(mutacao.getNome());
+                    }
+                    GuardaRegistoHistorico("VENDA", dados);
 
                 }
 
@@ -829,15 +898,17 @@ public class Zoo {
         }
         return custosManutencao;
     }
-    public void probMutacoes(Animal animal){
-        for(Mutacao mutacao: mutacoes){
-            if(1+ Math.random()* 100 < 10){
+
+
+    public void probMutacoes(Animal animal) {
+        for (Mutacao mutacao : mutacoes) {
+            int i = -Objects.hash(animal.getId(), animal.getEspecie(), animal.getIdade(), animal.getMutacoesLista(), mutacao.getNome(), mutacao.getModAtract()) % 20 ;
+            if(i == 0){
                 animal.addMutacao(mutacao);
-            }         
+            }
         }
     }
-    
-    
+
 
     //      METODOS PARA CARREGAR / SALVAR
     public void SaveShit() {
@@ -985,39 +1056,7 @@ public class Zoo {
         atualizarId();
         System.out.println("003");
     }
-    public void atualizarId(){
-        
-        int maiorId = 0;
-        for(Animal animal: animais){
-            if(animal.getId() > maiorId){
-                maiorId = animal.getId();
-            }
-        }
-        try {
-            String[] linha;
-            File ficheiro = new File("Obitos.txt");
-            Scanner reader = new Scanner(ficheiro);
-            while (reader.hasNextLine()) {
-                String dados = reader.nextLine();
-                linha = dados.split(" ");
-                try {
-                    
-                    if(Integer.parseInt(linha[1])> maiorId){
-                        
-                        maiorId = Integer.parseInt(linha[1]);
-                    }
-                } catch (Exception e) {
-                    
-                    System.out.println("Ficheiro corrupto, Cancelado");
-                    return;
-                }
-            }
-        }catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
-        }
-        System.out.println("007");
-        animalId = maiorId + 1;
-    }
+
     public void SalvarAnimais() {
         try {
             FileWriter writer = new FileWriter("Animais.txt");
@@ -1179,9 +1218,41 @@ public class Zoo {
         }
     }
 
-    
-
     //      METODOS AUXILIARES
+    public void atualizarId() {
+
+        int maiorId = 0;
+        for (Animal animal : animais) {
+            if (animal.getId() > maiorId) {
+                maiorId = animal.getId();
+            }
+        }
+        try {
+            String[] linha;
+            File ficheiro = new File("Obitos.txt");
+            Scanner reader = new Scanner(ficheiro);
+            while (reader.hasNextLine()) {
+                String dados = reader.nextLine();
+                linha = dados.split(" ");
+                try {
+
+                    if (Integer.parseInt(linha[1]) > maiorId) {
+
+                        maiorId = Integer.parseInt(linha[1]);
+                    }
+                } catch (Exception e) {
+
+                    System.out.println("Ficheiro corrupto, Cancelado");
+                    return;
+                }
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+        }
+        System.out.println("007");
+        animalId = maiorId + 1;
+    }
+
     public void aumentaIdade() {
         for (Animal animais : animais) {
             animais.incrementaIdade();

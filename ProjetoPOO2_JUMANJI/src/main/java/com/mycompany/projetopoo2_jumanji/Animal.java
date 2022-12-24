@@ -103,8 +103,11 @@ public class Animal {
     
     public void Morre(Zoo zoo){
         AdicionarObito(zoo);
+        if(instalacao != null){
         this.getInstalacao().setAnimal();
         this.getInstalacao().setAnimalID(-1);
+        }
+        
     }
 
     public void AdicionarObito(Zoo zoo) {
