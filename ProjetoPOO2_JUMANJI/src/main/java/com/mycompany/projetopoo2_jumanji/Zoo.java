@@ -445,9 +445,7 @@ public class Zoo {
                     for (Animal animal : instalacao.getAnimais()) {
                         System.out.println();
                         System.out.print("Id: " + animal.getIdString() + " Nome: " + animal.getNome() + " Especie: " + animal.getEspecie().getNome());
-
                     }
-
                 }
                 System.out.println();
             }
@@ -1443,7 +1441,7 @@ public class Zoo {
             System.out.println(opcao2);
             if (opcao2 < carateristicas.size()) {
 
-                especies.get(opcao - 1).adicionaCarateristica(carateristicas.get(opcao2));
+                especies.get(opcao - 1).adicionarCarateristica(carateristicas.get(opcao2));
 
             }
         }

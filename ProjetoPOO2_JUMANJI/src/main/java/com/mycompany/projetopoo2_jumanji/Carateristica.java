@@ -9,16 +9,14 @@ package com.mycompany.projetopoo2_jumanji;
  * @author jdfab
  */
 public class Carateristica {
-<<<<<<< Updated upstream
-    private final String nome;
-    private final String habilidade;
-=======
+
+    
     private  String nome;
     private  double custos;
-    private  String abilidade;
->>>>>>> Stashed changes
+    private  String habilidade;
+
     
-    public Carateristica(String nome, String habilidade ){
+     public Carateristica(String nome, double custos,String habilidade ){
      this.nome = nome;   
      
      this.habilidade = habilidade;
@@ -29,5 +27,8 @@ public class Carateristica {
     }
     public String getAbilidade(){
         return habilidade;
+    }
+    public double getCustos(){
+        return custos;
     }
 }
