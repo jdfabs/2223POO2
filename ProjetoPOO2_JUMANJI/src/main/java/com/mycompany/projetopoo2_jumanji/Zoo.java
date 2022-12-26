@@ -395,9 +395,8 @@ public class Zoo {
         } catch (Exception e) {
             System.out.println("Construção de Instalação cancelada.");
         }
-            
-        if ((indice == 1 || indice == 2 || indice == 3) && saldo >= preco[indice - 1]) {
-            Instalacao instalacao = new Instalacao(instalacoes.size(), lotacao[indice - 1], -1);
+        if ((indice == 1 || indice == 2 || indice == 3) && saldo >= preco[indice - 1]) {                 
+            Instalacao instalacao = new Instalacao(instalacoes.size(), lotacao[indice - 1]);    
             instalacoes.add(instalacao);
             saldo -= preco[indice-1];
             saldoUsadoInstalacoes += preco[indice-1];
@@ -413,9 +412,11 @@ public class Zoo {
     public void ColocarAnimalEmInstalacao() {
         String opcao = "";
         Animal animalEscolhido = null;
+        Animal animalRemover = null;
         int idAnimal;
         Instalacao instalacaoEscolhida;
         int idInstalacao;
+        int idAnimalRemover;
         for (Animal animal : animais) {
             System.out.print("id: " + animal.getId() + " Nome: " + animal.getNome() + " Especie:" + animal.getEspecieString());
             if (animal.getInstalacao() != null) {
@@ -436,7 +437,6 @@ public class Zoo {
         }
         boolean animalEncontrado = false;
         for (Animal animal : animais) {
-            System.out.println("DEBUG: " + idAnimal + " " + animal.getId());
             if (idAnimal == animal.getId()) {
 
                 animalEscolhido = animal;
@@ -456,8 +456,15 @@ public class Zoo {
             for (Instalacao instalacao : instalacoes) {
                 i++;
                 System.out.print(i + ") Lotação: " + instalacao.getLotacao());
-                if (instalacao.getInstalacaoLotacao() != 0) {
-                    instalacao.getAnimaisInstalacao();
+                if (!instalacao.getAnimais().isEmpty()) {
+                    System.out.print(" - Animais nesta instalacao: ");
+                    for (Animal animal : instalacao.getAnimais()) {
+                        
+                        System.out.print("Id: " + animal.getIdString() + "nome: " + animal.getNome() + " Especie: " + animal.getEspecie().getNome() );
+                        
+                    }
+                    System.out.println("");
+
                 }
                 System.out.println();
             }
@@ -471,24 +478,55 @@ public class Zoo {
 
         }
         
-/*
         ArrayList<String> dados = new ArrayList<>();
 
-        if (instalacaoEscolhida.getAnimal() != null) {
+        if (!instalacaoEscolhida.getAnimais().isEmpty()) {
             //Retira animal se já tiver
+            
+
+            System.out.println("Esta instalação já está cheia, Que animal deseja retirar?");
+            System.out.println("Lotação da instalação: " + instalacaoEscolhida.getLotacao() + " - Animais nesta Instalação:");
+            boolean animalEscolhidoRemover = false;
+
+            while (!animalEscolhidoRemover) {
+                for (Animal animal : instalacaoEscolhida.getAnimais()) {
+                    System.out.print("Id: ");
+                    System.out.print(animal.getId());
+                    System.out.print(" Nome: ");
+                    System.out.print(animal.getNome());
+                    System.out.print(" Idade: ");
+                    System.out.print(animal.getIdade());
+                    System.out.print(" Especie: ");
+                    System.out.print(animal.getEspecie().getNome());
+                    System.out.print("Atratividade: ");
+                    System.out.format("double : %.2f", animal.calculaAtratividade());
+                    System.out.println("Insira o ID do animal a remover:");
+
+                    opcao = scan.next();
+                    try {
+                        idAnimalRemover = Integer.parseInt(opcao);
+                        for (Animal animalPossiveisRemover : instalacaoEscolhida.getAnimais()) {
+                            if (animalPossiveisRemover.id == idAnimalRemover) {
+                                animalEscolhidoRemover = true;
+                                animalRemover = animalPossiveisRemover;
+                                instalacaoEscolhida.getAnimais().remove(animalRemover);
+                                animalRemover.setInstalacao();
+                            }
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Id invalido");
+                    }
+                }
+            }
             dados = new ArrayList<>();
-
             dados.add("ID_animal:");
-            dados.add(instalacaoEscolhida.getAnimal().getIdString());
+            dados.add(animalRemover.getIdString());
+            dados.add(" Nome_Animal: ");
+            dados.add(animalRemover.getNome());
             GuardaRegistoHistorico("RETIRAR_INSTALAÇÃO", dados);
-
-            instalacaoEscolhida.getAnimal().setInstalacao();
-
         }
         //Mete animal na instalação
-        instalacaoEscolhida.setAnimal(animalEscolhido);
-        instalacaoEscolhida.setAnimalID(animalEscolhido.getId());
-
+        instalacaoEscolhida.addAnimalInstalacao(animalEscolhido);
         dados = new ArrayList<>();
         dados.add("ID_animal:");
         dados.add(animalEscolhido.getIdString());
@@ -498,15 +536,14 @@ public class Zoo {
 
         if (animalEscolhido.getInstalacao() != null) {
             //Retira animal da instalação se tiver
-            animalEscolhido.getInstalacao().setAnimal();
-
+            animalEscolhido.getInstalacao().getAnimais().remove(animalEscolhido);
             dados = new ArrayList<>();
             dados.add("ID_animal:");
-            dados.add(instalacaoEscolhida.getAnimal().getIdString());
+            dados.add(animalEscolhido.getIdString());
+            dados.add(" Nome_Animal: ");
+            dados.add(animalEscolhido.getNome());
             GuardaRegistoHistorico("RETIRAR_DE_INSTALAÇÃO", dados);
-
-        }*/
-        instalacaoEscolhida.addAnimalInstalacao(animalEscolhido);
+        }
         animalEscolhido.setInstalacao(instalacaoEscolhida);
         
     }
@@ -681,7 +718,7 @@ public class Zoo {
         for (Instalacao instalacao : instalacoes) {
             System.out.print("id: " + instalacao.getId() + " Lotação:" + instalacao.getLotacao());
             //if (instalacao.getInstalacaoLotacao()!= 0){
-                instalacao.getAnimaisInstalacao();
+                instalacao.getAnimais();
             //}
             
         }
@@ -692,7 +729,7 @@ public class Zoo {
         for (Instalacao instalacao : instalacoes) {
             System.out.print("id: " + instalacao.getId() + " Lotação: " + instalacao.getLotacao());
             if (instalacao.getInstalacaoLotacao() != 0) {
-                instalacao.getAnimaisInstalacao();
+                instalacao.getAnimais();
             } else {
                 System.out.println();
             }
@@ -1209,6 +1246,12 @@ public class Zoo {
             for (Instalacao instalacao : instalacoes) {
                 writer.write(instalacao.getId() + " ");
                 writer.write(instalacao.getLotacao() + " ");
+                
+                for(Animal animal : instalacao.getAnimais()){
+                    
+                }
+                
+                
                 writer.write(instalacao.getAnimalId() + " ");
                 writer.write("\n");
             }

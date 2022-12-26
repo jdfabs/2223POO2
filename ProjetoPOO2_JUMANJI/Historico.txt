@@ -1,73 +1,27 @@
-MOVER ID_animal: 0 Nova_Instalação: 0 
- 
-MORTE Nome: Skipper Id: 0 Idade: 27 Especie: Cabra Mutacoes: 
-MORTE Nome: Skipper Id: 0 Idade: 27 Especie: Cabra Mutacoes: 
-COMPRA Nome: Kana Id: 0 Idade: 1 Especie: Rato Mutacoes: 
-COMPRA Nome: Roscoe Id: 1 Idade: 10 Especie: Vaca Mutacoes: 
-COMPRA Nome: Waajeed Id: 2 Idade: 10 Especie: Macaco Mutacoes: 
-MORTE Nome: Skipper Id: 0 Idade: 28 Especie: Cabra Mutacoes: 
-COMPRA Nome: Jeetendra Id: 0 Idade: 1 Especie: Rato Mutacoes: 
-COMPRA Nome: Jai Id: 1 Idade: 2 Especie: Coelho Mutacoes: MutacaoF 
-COMPRA Nome: Morris Id: 2 Idade: 0 Especie: Rato Mutacoes: 
-MORTE Nome: Skipper Id: 0 Idade: 28 Especie: Cabra Mutacoes: 
-NASCEU Nome:  Coko Id:  3 Idade:  0 Especie:  Cabra Mutações:  
-NASCEU Nome:  Pest Id:  4 Idade:  0 Especie:  Rato Mutações:  
-NASCEU Nome:  Nico Id:  5 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
-NASCEU Nome:  Ivana Id:  6 Idade:  0 Especie:  Rato Mutações:  
-MOVER ID_animal: 0 Nova_Instalação: 0 
-COMPRA Nome: Vijayasree Id: 0 Idade: 12 Especie: Vaca Mutacoes: 
-CONTRUÇÃO ID: 4 Lotação: 8 
-CONTRUÇÃO ID: 4 Lotação: 4 
-COMPRA Nome: Joshiy Id: 0 Idade: 3 Especie: Galo Mutacoes: 
-MORTE Nome: Skipper Id: 0 Idade: 28 Especie: Cabra Mutacoes: 
-NASCEU Nome:  Larry Id:  1 Idade:  0 Especie:  Cabra Mutações:  
-MORTE Nome: Joshiy Id: 0 Idade: 4 Especie: Galo Mutacoes: 
-NASCEU Nome:  Eldee Id:  2 Idade:  0 Especie:  Galo Mutações:  
+MOVER ID_animal: 0 Nova_Instalação: 0
+CONTRUÇÃO ID: 0 Lotação: 2 
+CONTRUÇÃO ID: 1 Lotação: 3 
+CONTRUÇÃO ID: 2 Lotação: 4 
 CONTRUÇÃO ID: 0 Lotação: 3 
+CONTRUÇÃO ID: 1 Lotação: 3 
+CONTRUÇÃO ID: 2 Lotação: 1 
 CONTRUÇÃO ID: 0 Lotação: 2 
 CONTRUÇÃO ID: 0 Lotação: 3 
-CONTRUÇÃO ID: 1 Lotação: 9 
-COMPRA Nome: EliZe Id: 0 Idade: 1 Especie: Rato Mutacoes: 
-COMPRA Nome: Takaloo Id: 1 Idade: 2 Especie: Vaca Mutacoes: MutacaoB 
-COMPRA Nome: Perfect Id: 2 Idade: 5 Especie: Cavalo Mutacoes: MutacaoF 
-COMPRA Nome: Yukmouth Id: 3 Idade: 7 Especie: Tigre Mutacoes: 
-CONTRUÇÃO ID: 0 Lotação: 7 
-CONTRUÇÃO ID: 1 Lotação: 13 
-COMPRA Nome: Grimace Id: 0 Idade: 2 Especie: Coelho Mutacoes: 
-COMPRA Nome: Mizchif Id: 1 Idade: 0 Especie: Rato Mutacoes: 
-COMPRA Nome: Joselo Id: 2 Idade: 1 Especie: Rato Mutacoes: 
-COMPRA Nome: Kyper Id: 3 Idade: 1 Especie: Rato Mutacoes: 
-COMPRA Nome: Malavika Id: 4 Idade: 5 Especie: Macaco Mutacoes: 
-COMPRA Nome: Kehlani Id: 5 Idade: 5 Especie: Cavalo Mutacoes: 
-CONTRUÇÃO ID: 2 Lotação: 3 
-CONTRUÇÃO ID: 0 Lotação: 2 
-CONTRUÇÃO ID: 1 Lotação: 11 
-COMPRA Nome: Mankind Id: 0 Idade: 3 Especie: Galo Mutacoes: MutacaoD 
-COMPRA Nome: Dollarman Id: 1 Idade: 0 Especie: Rato Mutacoes: MutacaoA 
-COMPRA Nome: Ganesh Id: 2 Idade: 0 Especie: Rato Mutacoes: 
-COMPRA Nome: Eldee Id: 3 Idade: 0 Especie: Rato Mutacoes: MutacaoF 
-CONTRUÇÃO ID: 0 Lotação: 1 
-CONTRUÇÃO ID: 1 Lotação: 6 
-COMPRA Nome: Melanie Id: 0 Idade: 1 Especie: Rato Mutacoes: 
-COMPRA Nome: Alizée Id: 1 Idade: 3 Especie: Coelho Mutacoes: MutacaoG 
-COMPRA Nome: Braulio Id: 2 Idade: 0 Especie: Rato Mutacoes: 
-COMPRA Nome: Xander Id: 3 Idade: 0 Especie: Cavalo Mutacoes: 
-COMPRA Nome: Jagannathan Id: 4 Idade: 1 Especie: Rato Mutacoes: 
-COMPRA Nome: Badshah Id: 5 Idade: 18 Especie: Vaca Mutacoes: 
-COMPRA Nome: Yoshika Id: 0 Idade: 0 Especie: Rato Mutacoes: MutacaoG 
-COMPRA Nome: Esteban Id: 1 Idade: 1 Especie: Rato Mutacoes: 
-COMPRA Nome: Ferron Id: 2 Idade: 0 Especie: Rato Mutacoes: 
-COMPRA Nome: Adeyto Id: 3 Idade: 7 Especie: Cão Mutacoes: MutacaoG 
-CONTRUÇÃO ID: 0 Lotação: 4 
-CONTRUÇÃO ID: 1 Lotação: 12 
-CONTRUÇÃO ID: 2 Lotação: 5 
-CONTRUÇÃO ID: 0 Lotação: 8 
 CONTRUÇÃO ID: 1 Lotação: 2 
-CONTRUÇÃO ID: 2 Lotação: 10 
-COMPRA Nome: Velvet Id: 0 Idade: 1 Especie: Cavalo Mutacoes: MutacaoA 
-CONTRUÇÃO ID: 3 Lotação: 1 
-COMPRA Nome: Supla Id: 1 Idade: 0 Especie: Rato Mutacoes: 
-COMPRA Nome: Tiffany Id: 2 Idade: 1 Especie: Rato Mutacoes: 
-COMPRA Nome: Devayani Id: 3 Idade: 0 Especie: Coelho Mutacoes: MutacaoD 
-COMPRA Nome: Diesel Id: 4 Idade: 13 Especie: Cavalo Mutacoes: MutacaoE 
-COMPRA Nome: Michele Id: 5 Idade: 14 Especie: Tigre Mutacoes: 
+CONTRUÇÃO ID: 0 Lotação: 2 
+CONTRUÇÃO ID: 1 Lotação: 3 
+CONTRUÇÃO ID: 0 Lotação: 4 
+COMPRA Nome: Hornswoggle Id: 0 Idade: 3 Especie: Coelho Mutacoes: MutacaoF 
+CONTRUÇÃO ID: 0 Lotação: 5 
+CONTRUÇÃO ID: 0 Lotação: 6 
+CONTRUÇÃO ID: 0 Lotação: 7 
+CONTRUÇÃO ID: 0 Lotação: 3 
+CONTRUÇÃO ID: 0 Lotação: 4 
+CONTRUÇÃO ID: 0 Lotação: 8 
+CONTRUÇÃO ID: 0 Lotação: 8 
+CONTRUÇÃO ID: 0 Lotação: 9 
+COMPRA Nome: Azad Id: 0 Idade: 12 Especie: Macaco Mutacoes: MutacaoF 
+COMPRA Nome: Christell Id: 1 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Nome: Beni Id: 2 Idade: 1 Especie: Rato Mutacoes: MutacaoF 
+CONTRUÇÃO ID: 0 Lotação: 2 
+MOVER ID_animal: 0 Nova_Instalação: 0 

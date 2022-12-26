@@ -19,14 +19,21 @@ public class Instalacao {
     private double custoCuidadores = 25;
     private double custoManutencao = 100;
     private List<Animal> animaisInstalacao = new ArrayList<>();
+    private List<Integer> animaisId = new ArrayList<>();
     //private List<Integer> animalId = new ArrayList<>() ;
     
     
-    public Instalacao(int id, int lotacao, int animalId){
+    public Instalacao(int id, int lotacao){
         this.id=id;
         this.lotacao = lotacao;
-        for(int i = 0; i < lotacao; i++){
-            //animalId.add( new Integer(-1);
+    }
+    
+    
+    public Instalacao(int id, int lotacao, List<Integer> animalIds){
+        this.id=id;
+        this.lotacao = lotacao;
+        for(Integer idInt :animalIds){
+            animaisId.add(idInt);
         }
     }
     public int getId(){
@@ -43,12 +50,9 @@ public class Instalacao {
     public int getInstalacaoLotacao(){
         return animaisInstalacao.size();
     }
-    public void getAnimaisInstalacao(){
-        System.out.println("" );
-        System.out.println("Animais nesta instalacao: " );
-        for(Animal animalInstalacao: animaisInstalacao){
-            System.out.print("nome: " + animalInstalacao.getNome() + " Especie: " + animalInstalacao.getEspecie().getNome());
-        }
+    public List<Animal> getAnimais(){
+
+        return animaisInstalacao;
     }
     public void addAnimalInstalacao(Animal animal){
         if(this.lotacao < animaisInstalacao.size()){

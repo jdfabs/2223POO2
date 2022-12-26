@@ -47,19 +47,16 @@ public class Animal {
     }
     public int getIdade(){
         return idade;
-    }
-   
+    }   
     public Especie getEspecie(){
         return especie;
     }
-
     public String getEspecieString(){
         return this.especie.getNome();
     }
     public Instalacao getInstalacao(){
         return instalacao;
     }
-
     public void setInstalacao(Instalacao instalacao){
         this.instalacao = instalacao;
     }
@@ -68,15 +65,13 @@ public class Animal {
     }
     public void addMutacao(Mutacao mutacao){
         this.mutacoes.add(mutacao);
-    }
-    
+    }    
     public List<Mutacao> getMutacoesLista(){
         return mutacoes;
     }
     public void incrementaIdade(){
         idade++;
-    }
-    
+    }    
     public double calculaPreco(){
         double preco = 50;
         preco *= especie.getAtratividadeBase();
@@ -85,8 +80,7 @@ public class Animal {
         preco *= especie.getAtratividadeBase();
         
         return preco;
-    }
-    
+    }    
     public boolean CheckVida() {
 
         int esperancaVida = this.getEspecie().getEsperancaVida();
@@ -98,9 +92,6 @@ public class Animal {
     public boolean CheckNascimento(){
         return true;
     }
-    
-    
-    
     public void Morre(Zoo zoo){
         AdicionarObito(zoo);
         if(instalacao != null){
@@ -109,7 +100,6 @@ public class Animal {
         }
         
     }
-
     public void AdicionarObito(Zoo zoo) {
         try {
             FileWriter fw = new FileWriter("Obitos.txt", true);
@@ -152,5 +142,14 @@ public class Animal {
         }
         zoo.GuardaRegistoHistorico("MORTE", dados);
 
+    }    
+    public double calculaAtratividade(){
+        double atratividade = especie.getAtratividadeBase();
+        atratividade *= 1-((idade/especie.getEsperancaVida())*0.2);
+        for(Mutacao mutacao: mutacoes){
+            atratividade *= mutacao.getModAtract();
+        }      
+        
+        return atratividade;
     }
 }
