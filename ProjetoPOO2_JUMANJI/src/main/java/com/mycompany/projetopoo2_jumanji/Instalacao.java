@@ -21,8 +21,6 @@ public class Instalacao {
     private final List<Animal> animaisInstalacao = new ArrayList<>();
     private final List<Integer> animaisId = new ArrayList<>();
 
-    
-    
     public Instalacao(int id, int lotacao){
         this.id=id;
         this.lotacao = lotacao;

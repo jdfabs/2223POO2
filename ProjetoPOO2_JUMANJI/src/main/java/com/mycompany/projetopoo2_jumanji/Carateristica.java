@@ -10,22 +10,18 @@ package com.mycompany.projetopoo2_jumanji;
  */
 public class Carateristica {
     private final String nome;
-    private final double custos;
-    private final String abilidade;
+    private final String habilidade;
     
-    public Carateristica(String nome, double custos,String abilidade ){
+    public Carateristica(String nome, String habilidade ){
      this.nome = nome;   
-     this.custos = custos;
-     this.abilidade = abilidade;
+     
+     this.habilidade = habilidade;
     }
     
     public String getNome(){
         return nome;
     }
-    public double getCustos(){
-        return custos;
-    }
     public String getAbilidade(){
-        return abilidade;
+        return habilidade;
     }
 }
