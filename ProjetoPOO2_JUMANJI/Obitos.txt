@@ -1,88 +1,88 @@
-2000 0 jony1 10 Vaca 
-2000 0 jony1 10 Vaca 
-2001 2 jony3 13 Vaca 
-2001 1 Adamo 1 Vaca 
-2002 1 Speak 2 Vaca 
-2002 1 Necro 1 Vaca 
-2002 1 Karunas 1 Vaca 
-2000 4 Patachou 1 Coelho 
-2001 1 jony2 12 Vaca 
-2001 1 Yusa 1 Vaca 
-2002 0 jony1 12 Vaca 
-2002 1 Shifty 1 Vaca 
-2003 2 jony3 15 Vaca 
-2003 1 Atlantis 2 Vaca 
-2003 1 Madhushree 2 Vaca 
-2003 1 Chiquito 2 Vaca 
-2003 1 Scialpi 2 Vaca 
-2003 1 Harper 2 Coelho 
-2003 1 Kyo 1 Vaca 
-2003 1 Sailorine 1 Vaca 
-2003 1 Vamba 1 Vaca 
-2003 1 Tal 1 Coelho 
-2003 1 K'Maro 1 Coelho 
-2003 1 Aaliyah 1 Vaca 
-2000 5 Rekha 2 Galo 
-2001 3 jony4 14 Vaca 
-2001 6 Jayamala 6 Serpente 
-2002 1 Urvashi 1 Serpente 
-2002 1 Vishnuvardhan 1 Vaca 
-2003 1 Kunchacko 3 Serpente 
-2003 1 Coba 2 Coelho 
-2003 1 Amandititita 1 Vaca 
-2003 1 Speech 1 Vaca 
-2003 1 Azu 1 Vaca 
-2003 1 Ryback 1 Coelho 
-2004 1 Ginger 4 Vaca 
-2004 1 Roya 3 Vaca 
-2004 1 Rufus 2 Coelho 
-2004 1 Camané 2 Vaca 
-2004 1 misono 2 Vaca 
-2004 1 Tinashe 2 Vaca 
-2004 1 Mohombi 1 Vaca 
-2004 1 Cadenet 1 Vaca 
-2004 1 Sylvester 1 Coelho 
-2004 1 K 1 Vaca 
-2004 1 Escoria 1 Coelho 
-2004 1 Emilia 1 Vaca 
-2004 1 Erfan 1 Vaca 
-2004 1 Tzuki 1 Vaca 
-2004 1 Michel'le 1 Serpente 
-2004 1 Kafani 1 Vaca 
-2004 1 Wendy 1 Vaca 
-2000 1 jony2 11 Vaca 
-2000 2 jony3 12 Vaca 
-2000 3 jony4 13 Vaca 
-2001 1 Kennedy 1 Vaca 
-2003 1 Priyamani 2 Vaca 
-2003 13 Natalia 4 Serpente 
-2003 1 LE 1 Vaca 
-2003 1 Sriman 1 Vaca 
-2003 1 Mareko 1 Vaca 
-2003 1 Shad 1 Vaca 
-2001 1 Satsuki 2 Rato Satsuki Satsuki Satsuki 
-2001 4 Canibus 1 Vaca Canibus Canibus Canibus Canibus 
-2000 4 Patachou 1 Coelho 
-2002 0 jony1 12 Vaca 
-2002 0 Zalon 2 Vaca Zalon Zalon Zalon Zalon 
-2002 1 Millie 2 Vaca Millie Millie Millie Millie 
-2000 2 jony3 12 Vaca 
-2001 3 Coluche 11 Serpente Coluche Coluche Coluche Coluche 
-2001 4 Lebleba 1 Vaca Lebleba Lebleba Lebleba Lebleba 
-2001 11 Shequida 1 Coelho Shequida Shequida Shequida 
-2001 13 Ingola 14 Macaco Ingola Ingola Ingola 
-2000 14 Lyn 1 Rato Lyn 
-2000 1 jony2 11 Vaca 
-2000 2 jony3 12 Vaca 
-2000 16 Jai 8 Macaco Jai 
-2000 20 Alisha 18 Serpente 
-2000 0 jony1 10 Vaca 
-2000 1 jony2 11 Vaca 
-2000 2 jony3 12 Vaca 
 
-2000 0 Skipper 27 Cabra 
-2000 0 Skipper 27 Cabra 
-2000 0 Skipper 28 Cabra 
-2000 0 Skipper 28 Cabra 
-2000 0 Skipper 28 Cabra 
-2000 0 Joshiy 4 Galo 
+2000 11 Sheila 6 Vaca  Mutações: MutacaoG MutacaoH 
+2000 17 Jamala 16 Vaca 
+2000 22 Rowan 19 Vaca  Mutações: MutacaoC MutacaoH 
+2000 0 Aaradhna 1 Rato  Mutações: MutacaoG 
+2000 1 Kylee 1 Rato  Mutações: MutacaoA 
+2000 7 Savitri 11 Serpente 
+2001 8 Giovanna 2 Vaca 
+2002 3 Nutan 4 Rato  Mutações: MutacaoC MutacaoG 
+2002 5 Birdman 4 Rato 
+2002 10 Devon 3 Cavalo 
+2002 11 Byul 4 Rato 
+2002 12 Salif 3 Rato 
+2000 0 Kyulkyung 1 Rato  Mutações: MutacaoG 
+2000 9 India 2 Rato 
+2000 4 Kramer 1 Rato  Mutações: MutacaoC MutacaoG 
+2000 9 Chiara 2 Rato 
+2001 1 Nana 2 Coelho  Mutações: MutacaoE 
+2001 7 Stigma 3 Rato 
+2001 10 Sammie 2 Vaca 
+2000 7 Algérino 4 Galo 
+2001 5 Akrobatik 2 Rato  Mutações: MutacaoH 
+2001 6 Madhoo 17 Serpente  Mutações: MutacaoB 
+2002 0 Ratsy 13 Macaco 
+2002 1 Ima 4 Rato 
+2003 3 Eamon 4 Rato  Mutações: MutacaoF 
+2003 9 Asuka 2 Rato 
+2003 11 Yoav 1 Rato 
+2004 4 Aamani 5 Coelho  Mutações: MutacaoA 
+2005 10 Annie 4 Rato 
+2006 8 Akala 7 Cavalo  Mutações: MutacaoB MutacaoG 
+2006 12 Tucker 4 Rato 
+2006 13 Montrouge 7 Cavalo 
+2006 14 Kovas 4 Rato 
+2000 0 Evridiki 3 Coelho 
+2001 3 VanVelzen 14 Cavalo 
+2002 6 Jem 4 Rato  Mutações: MutacaoC 
+2003 4 Giggs 10 Serpente 
+2000 1 Gonzaguinha 16 Macaco 
+2000 8 Tzuyu 2 Rato 
+2000 9 Jun 9 Vaca  Mutações: MutacaoF 
+2000 11 Nico 1 Coelho  Mutações: MutacaoB 
+2000 4 Maïwenn 2 Rato  Mutações: MutacaoH 
+2000 12 Anggun 2 Rato 
+2000 23 Maximo 13 Vaca  Mutações: MutacaoG 
+2000 29 Sharada 14 Serpente  Mutações: MutacaoF 
+2000 38 Ramarajan 7 Tigre 
+2000 39 Wise 2 Galo  Mutações: MutacaoH 
+2000 51 Lumidee 4 Tigre 
+2001 5 Thekra 2 Rato  Mutações: MutacaoH 
+2001 8 Paige 2 Rato 
+2001 16 Aidonia 4 Coelho 
+2001 21 Marz 3 Rato 
+2001 22 NAV 3 Cavalo  Mutações: MutacaoF 
+2001 32 Vanusa 3 Rato 
+2001 34 Kotoko 20 Serpente 
+2001 45 Mayoori 3 Coelho  Mutações: MutacaoB MutacaoF 
+2001 46 Sujatha 11 Cavalo 
+2001 49 Metis 4 Coelho 
+2001 52 Freeman 3 Tigre 
+2002 1 Mohan 4 Rato 
+2002 2 Dara 4 Rato  Mutações: MutacaoF 
+2002 6 Hannah 4 Rato  Mutações: MutacaoB MutacaoF 
+2002 7 Chalice 4 Rato 
+2002 9 Chiranjeevi 4 Rato 
+2002 13 Insooni 12 Serpente  Mutações: MutacaoF 
+2002 14 Osez 3 Serpente 
+2002 25 Reyash 4 Rato 
+2002 27 Larry 4 Rato 
+2002 41 Zazie 16 Tigre 
+2002 42 Stoka 3 Galo  Mutações: MutacaoB MutacaoF 
+2002 44 Séverine 17 Macaco 
+2003 10 Ruggedman 4 Coelho  Mutações: MutacaoB 
+2003 11 Gert 4 Rato 
+2003 15 Sunil 6 Coelho 
+2003 17 Aleyn 4 Rato  Mutações: MutacaoE 
+2003 18 Narsha 5 Cavalo 
+2003 24 Manskee 20 Serpente  Mutações: MutacaoA MutacaoD 
+2003 35 McG 4 Rato 
+2003 36 Selen 4 Rato 
+2003 47 Xandee 4 Rato  Mutações: MutacaoB MutacaoF 
+2004 19 Chynna 7 Serpente 
+2004 26 Riria 7 Cavalo 
+2004 30 Taktloss 5 Coelho 
+2004 31 Hakimakli 8 Coelho 
+2000 0 Sharda 2 Rato  Mutações: MutacaoA 
+2000 3 Guru 2 Rato  Mutações: MutacaoC MutacaoH 
+2000 4 Bojoura 1 Rato  Mutações: MutacaoC MutacaoH 

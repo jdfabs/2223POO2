@@ -47,11 +47,8 @@ public class Instalacao {
     public int getLotacao(){
         return lotacao;
     }
-    public int getInstalacaoLotacao(){
-        return animaisInstalacao.size();
-    }
-    public List<Animal> getAnimais(){
 
+    public List<Animal> getAnimais(){
         return animaisInstalacao;
     }
     public void addAnimalInstalacao(Animal animal){
@@ -95,14 +92,9 @@ public class Instalacao {
     public double getCustoManutencao(){
         return custoManutencao;
     }
-    /*public Animal getAnimal(){
-        return animal;
+    public List<Integer> getAnimaisId(){
+        return animaisId;
     }
-    public void setAnimal(Animal animal){
-        this.animal = animal;
-    }
-    public void setAnimal(){
-        this.animal = null;
-    }*/
+
    
 }

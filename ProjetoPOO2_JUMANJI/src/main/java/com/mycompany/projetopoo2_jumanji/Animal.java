@@ -30,57 +30,70 @@ public class Animal {
        this.especie = especie;
    }
    
-   
-     public int getId(){
+    public int getId() {
         return id;
     }
-     public String getIdString(){
-         Integer idInt = id;
-         return idInt.toString();
-     }
-     public String getIdadeString(){
-         Integer idadeInt = idade;
-         return idadeInt.toString();
-     }
-    public String getNome(){
+
+    public String getIdString() {
+        Integer idInt = id;
+        return idInt.toString();
+    }
+
+    public String getIdadeString() {
+        Integer idadeInt = idade;
+        return idadeInt.toString();
+    }
+
+    public String getNome() {
         return nome;
     }
-    public int getIdade(){
+
+    public int getIdade() {
         return idade;
-    }   
-    public Especie getEspecie(){
+    }
+
+    public Especie getEspecie() {
         return especie;
     }
-    public String getEspecieString(){
+
+    public String getEspecieString() {
         return this.especie.getNome();
     }
-    public Instalacao getInstalacao(){
+
+    public Instalacao getInstalacao() {
         return instalacao;
     }
-    public void setInstalacao(Instalacao instalacao){
+
+    public void setInstalacao(Instalacao instalacao) {
         this.instalacao = instalacao;
     }
-    public void setInstalacao(){
+
+    public void setInstalacao() {
         this.instalacao = null;
     }
-    public void addMutacao(Mutacao mutacao){
+
+    public void addMutacao(Mutacao mutacao) {
         this.mutacoes.add(mutacao);
-    }    
-    public List<Mutacao> getMutacoesLista(){
+    }
+
+    public List<Mutacao> getMutacoesLista() {
         return mutacoes;
     }
-    public void incrementaIdade(){
+
+    public void incrementaIdade() {
         idade++;
-    }    
-    public double calculaPreco(){
+    }
+
+    public double calculaPreco() {
         double preco = 50;
         preco *= especie.getAtratividadeBase();
         preco *= especie.getRaridade();
-        preco *= especie.getEsperancaVida()-idade;
+        preco *= 2-(idade/especie.getEsperancaVida());
         preco *= especie.getAtratividadeBase();
-        
+
         return preco;
-    }    
+    }
+
     public boolean CheckVida() {
 
         int esperancaVida = this.getEspecie().getEsperancaVida();
@@ -89,17 +102,18 @@ public class Animal {
         double random = Math.random();
         return probMorrer > random;
     }
-    public boolean CheckNascimento(){
-        return true;
+
+    public boolean CheckNascimento() {
+        return false;
     }
-    public void Morre(Zoo zoo){
+
+    public void Morre(Zoo zoo) {
         AdicionarObito(zoo);
-        if(instalacao != null){
-        this.getInstalacao().setAnimal();
-        this.getInstalacao().setAnimalID(-1);
+        if (instalacao != null) {
+            this.getInstalacao().getAnimais().remove(this);  
         }
-        
     }
+
     public void AdicionarObito(Zoo zoo) {
         try {
             FileWriter fw = new FileWriter("Obitos.txt", true);
@@ -111,9 +125,10 @@ public class Animal {
             fw.write(this.getNome() + " ");
             fw.write(this.getIdade() + " ");
             fw.write(this.getEspecie().getNome() + " ");
-            if (!this.getMutacoesLista().isEmpty()) {
-                for (Mutacao mutacao : this.getMutacoesLista()) {
-                    fw.write(this.getNome() + " ");
+            if (!mutacoes.isEmpty()) {
+                fw.write(" Mutações: ");
+                for (Mutacao mutacao : mutacoes) {
+                    fw.write(mutacao.getNome() + " ");
                 }
             }
 
@@ -126,7 +141,6 @@ public class Animal {
             System.out.println("Erro a adicionar animal aos obitos");
         }
 
-        
         ArrayList<String> dados = new ArrayList<>();
         dados.add("Nome:");
         dados.add(this.getNome());
@@ -136,20 +150,24 @@ public class Animal {
         dados.add(this.getIdadeString());
         dados.add("Especie:");
         dados.add(this.getEspecie().getNome());
-        dados.add("Mutacoes:");
-        for (Mutacao mutacao : this.getMutacoesLista()) {
-            dados.add(mutacao.getNome());
+        if (!mutacoes.isEmpty()) {
+            dados.add("Mutacoes:");
+            for (Mutacao mutacao : mutacoes) {
+                dados.add(mutacao.getNome());
+            }
         }
+
         zoo.GuardaRegistoHistorico("MORTE", dados);
 
-    }    
-    public double calculaAtratividade(){
+    }
+
+    public double calculaAtratividade() {
         double atratividade = especie.getAtratividadeBase();
-        atratividade *= 1-((idade/especie.getEsperancaVida())*0.2);
-        for(Mutacao mutacao: mutacoes){
+        atratividade *= 1 - ((idade / especie.getEsperancaVida()) * 0.2);
+        for (Mutacao mutacao : mutacoes) {
             atratividade *= mutacao.getModAtract();
-        }      
-        
+        }
+
         return atratividade;
     }
 }

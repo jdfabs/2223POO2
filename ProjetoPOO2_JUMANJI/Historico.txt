@@ -1,27 +1,177 @@
-MOVER ID_animal: 0 Nova_Instalação: 0
-CONTRUÇÃO ID: 0 Lotação: 2 
-CONTRUÇÃO ID: 1 Lotação: 3 
-CONTRUÇÃO ID: 2 Lotação: 4 
-CONTRUÇÃO ID: 0 Lotação: 3 
-CONTRUÇÃO ID: 1 Lotação: 3 
-CONTRUÇÃO ID: 2 Lotação: 1 
-CONTRUÇÃO ID: 0 Lotação: 2 
-CONTRUÇÃO ID: 0 Lotação: 3 
-CONTRUÇÃO ID: 1 Lotação: 2 
-CONTRUÇÃO ID: 0 Lotação: 2 
-CONTRUÇÃO ID: 1 Lotação: 3 
-CONTRUÇÃO ID: 0 Lotação: 4 
-COMPRA Nome: Hornswoggle Id: 0 Idade: 3 Especie: Coelho Mutacoes: MutacaoF 
-CONTRUÇÃO ID: 0 Lotação: 5 
-CONTRUÇÃO ID: 0 Lotação: 6 
-CONTRUÇÃO ID: 0 Lotação: 7 
-CONTRUÇÃO ID: 0 Lotação: 3 
-CONTRUÇÃO ID: 0 Lotação: 4 
-CONTRUÇÃO ID: 0 Lotação: 8 
-CONTRUÇÃO ID: 0 Lotação: 8 
-CONTRUÇÃO ID: 0 Lotação: 9 
-COMPRA Nome: Azad Id: 0 Idade: 12 Especie: Macaco Mutacoes: MutacaoF 
-COMPRA Nome: Christell Id: 1 Idade: 1 Especie: Rato Mutacoes: 
-COMPRA Nome: Beni Id: 2 Idade: 1 Especie: Rato Mutacoes: MutacaoF 
-CONTRUÇÃO ID: 0 Lotação: 2 
-MOVER ID_animal: 0 Nova_Instalação: 0 
+
+COMPRA Ano: 2000 - Nome: Mikaila Id: 0 Idade: 0 Especie: Rato Mutacoes: MutacaoG 
+COMPRA Ano: 2000 - Nome: Kamaliya Id: 1 Idade: 1 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Konnan Id: 2 Idade: 0 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Mokobé Id: 3 Idade: 2 Especie: Galo Mutacoes: MutacaoD 
+COMPRA Ano: 2000 - Nome: Kalel Id: 4 Idade: 1 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Jessicka Id: 5 Idade: 8 Especie: Vaca Mutacoes: 
+COMPRA Ano: 2000 - Nome: Asuka Id: 6 Idade: 1 Especie: Coelho Mutacoes: MutacaoC MutacaoE 
+COMPRA Ano: 2000 - Nome: Cascarita Id: 7 Idade: 1 Especie: Coelho Mutacoes: MutacaoH 
+COMPRA Ano: 2000 - Nome: Lucero Id: 8 Idade: 0 Especie: Vaca Mutacoes: 
+COMPRA Ano: 2000 - Nome: Lawrence Id: 9 Idade: 0 Especie: Rato Mutacoes: MutacaoD 
+COMPRA Ano: 2000 - Nome: Ayshea Id: 10 Idade: 1 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Khéops Id: 11 Idade: 0 Especie: Galo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Eliel Id: 12 Idade: 16 Especie: Serpente Mutacoes: MutacaoC MutacaoE 
+COMPRA Ano: 2000 - Nome: Gummy Id: 13 Idade: 0 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Bala Id: 14 Idade: 1 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Elektra Id: 15 Idade: 14 Especie: Tigre Mutacoes: 
+COMPRA Ano: 2000 - Nome: Branco Id: 16 Idade: 5 Especie: Cavalo Mutacoes: MutacaoE 
+VENDA Ano: 2001 - Nome: Eliel Id: 12 Idade: 17 Especie: Serpente Mutacoes: MutacaoC MutacaoE 
+VENDA Ano: 2001 - Nome: Branco Id: 16 Idade: 6 Especie: Cavalo Mutacoes: MutacaoE 
+VENDA Ano: 2001 - Nome: Cascarita Id: 7 Idade: 2 Especie: Coelho Mutacoes: MutacaoH 
+COMPRA Ano: 2000 - Nome: Pierrothito Id: 0 Idade: 0 Especie: Coelho Mutacoes: MutacaoG 
+COMPRA Ano: 2000 - Nome: Gonzaguinha Id: 1 Idade: 15 Especie: Macaco Mutacoes: 
+COMPRA Ano: 2000 - Nome: Trenyce Id: 2 Idade: 3 Especie: Tigre Mutacoes: 
+COMPRA Ano: 2000 - Nome: Mim Id: 3 Idade: 1 Especie: Coelho Mutacoes: MutacaoC MutacaoG 
+COMPRA Ano: 2000 - Nome: Kollegah Id: 4 Idade: 1 Especie: Galo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Sakura Id: 5 Idade: 3 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Raekwon Id: 6 Idade: 0 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Chouchou Id: 7 Idade: 2 Especie: Coelho Mutacoes: MutacaoD 
+COMPRA Ano: 2000 - Nome: Ruggedman Id: 8 Idade: 1 Especie: Galo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Pitof Id: 9 Idade: 13 Especie: Serpente Mutacoes: MutacaoH 
+COMPRA Ano: 2000 - Nome: Remady Id: 10 Idade: 7 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Bojoura Id: 11 Idade: 0 Especie: Rato Mutacoes: MutacaoE 
+COMPRA Ano: 2000 - Nome: Garbo Id: 12 Idade: 2 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Ajeesh Id: 13 Idade: 1 Especie: Galo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Yazz Id: 14 Idade: 0 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Above Id: 15 Idade: 6 Especie: Cavalo Mutacoes: MutacaoE 
+MORTE Ano: 2000 - Nome: Gonzaguinha Id: 1 Idade: 16 Especie: Macaco 
+COMPRA Ano: 2000 - Nome: Anacani Id: 0 Idade: 4 Especie: Serpente Mutacoes: MutacaoC 
+COMPRA Ano: 2000 - Nome: Nujabes Id: 1 Idade: 2 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Jenifer Id: 2 Idade: 1 Especie: Rato Mutacoes: MutacaoG 
+COMPRA Ano: 2000 - Nome: Rico Id: 3 Idade: 0 Especie: Rato Mutacoes: MutacaoG 
+COMPRA Ano: 2000 - Nome: Haiducii Id: 4 Idade: 0 Especie: Rato Mutacoes: MutacaoA 
+COMPRA Ano: 2000 - Nome: Tamia Id: 5 Idade: 3 Especie: Coelho Mutacoes: MutacaoC 
+COMPRA Ano: 2000 - Nome: Haiducii Id: 6 Idade: 1 Especie: Rato Mutacoes: MutacaoC 
+COMPRA Ano: 2000 - Nome: Jero Id: 7 Idade: 3 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Tzuyu Id: 8 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Jun Id: 9 Idade: 8 Especie: Vaca Mutacoes: MutacaoF 
+COMPRA Ano: 2000 - Nome: Hadise Id: 10 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Nico Id: 11 Idade: 0 Especie: Coelho Mutacoes: MutacaoB 
+COMPRA Ano: 2000 - Nome: Devon Id: 12 Idade: 8 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Ravi Id: 13 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Boa Id: 14 Idade: 11 Especie: Macaco Mutacoes: 
+COMPRA Ano: 2000 - Nome: Lawrence Id: 15 Idade: 1 Especie: Rato Mutacoes: MutacaoE 
+COMPRA Ano: 2000 - Nome: Jungah Id: 16 Idade: 14 Especie: Macaco Mutacoes: 
+COMPRA Ano: 2000 - Nome: Sirusho Id: 17 Idade: 18 Especie: Vaca Mutacoes: MutacaoA 
+COMPRA Ano: 2000 - Nome: Ruggedman Id: 18 Idade: 3 Especie: Coelho Mutacoes: MutacaoE MutacaoF MutacaoG 
+COMPRA Ano: 2000 - Nome: Darin Id: 19 Idade: 0 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Emma Id: 20 Idade: 3 Especie: Serpente Mutacoes: MutacaoF 
+COMPRA Ano: 2000 - Nome: Menny Id: 21 Idade: 0 Especie: Coelho Mutacoes: MutacaoE MutacaoF MutacaoG 
+COMPRA Ano: 2000 - Nome: Tagaq Id: 22 Idade: 0 Especie: Rato Mutacoes: MutacaoF 
+COMPRA Ano: 2000 - Nome: Sagarika Id: 23 Idade: 11 Especie: Macaco Mutacoes: 
+COMPRA Ano: 2000 - Nome: Cam'ron Id: 24 Idade: 13 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Marilou Id: 25 Idade: 13 Especie: Macaco Mutacoes: 
+COMPRA Ano: 2000 - Nome: Saigon Id: 26 Idade: 16 Especie: Serpente Mutacoes: 
+MORTE Ano: 2000 - Nome: Tzuyu Id: 8 Idade: 2 Especie: Rato 
+MORTE Ano: 2000 - Nome: Jun Id: 9 Idade: 9 Especie: Vaca Mutacoes: MutacaoF 
+MORTE Ano: 2000 - Nome: Nico Id: 11 Idade: 1 Especie: Coelho Mutacoes: MutacaoB 
+COMPRA Ano: 2000 - Nome: Linda Id: 0 Idade: 10 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Mohan Id: 1 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Dara Id: 2 Idade: 1 Especie: Rato Mutacoes: MutacaoF 
+COMPRA Ano: 2000 - Nome: Braulio Id: 3 Idade: 12 Especie: Serpente Mutacoes: 
+COMPRA Ano: 2000 - Nome: Maïwenn Id: 4 Idade: 1 Especie: Rato Mutacoes: MutacaoH 
+COMPRA Ano: 2000 - Nome: Thekra Id: 5 Idade: 0 Especie: Rato Mutacoes: MutacaoH 
+COMPRA Ano: 2000 - Nome: Hannah Id: 6 Idade: 1 Especie: Rato Mutacoes: MutacaoB MutacaoF 
+COMPRA Ano: 2000 - Nome: Chalice Id: 7 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Paige Id: 8 Idade: 0 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Chiranjeevi Id: 9 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Ruggedman Id: 10 Idade: 0 Especie: Coelho Mutacoes: MutacaoB 
+COMPRA Ano: 2000 - Nome: Gert Id: 11 Idade: 0 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Anggun Id: 12 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Insooni Id: 13 Idade: 9 Especie: Serpente Mutacoes: MutacaoF 
+COMPRA Ano: 2000 - Nome: Osez Id: 14 Idade: 0 Especie: Serpente Mutacoes: 
+COMPRA Ano: 2000 - Nome: Sunil Id: 15 Idade: 2 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Aidonia Id: 16 Idade: 2 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Aleyn Id: 17 Idade: 0 Especie: Rato Mutacoes: MutacaoE 
+COMPRA Ano: 2000 - Nome: Narsha Id: 18 Idade: 1 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Chynna Id: 19 Idade: 2 Especie: Serpente Mutacoes: 
+COMPRA Ano: 2000 - Nome: Rayvon Id: 20 Idade: 10 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Marz Id: 21 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: NAV Id: 22 Idade: 1 Especie: Cavalo Mutacoes: MutacaoF 
+COMPRA Ano: 2000 - Nome: Maximo Id: 23 Idade: 12 Especie: Vaca Mutacoes: MutacaoG 
+COMPRA Ano: 2000 - Nome: Manskee Id: 24 Idade: 16 Especie: Serpente Mutacoes: MutacaoA MutacaoD 
+COMPRA Ano: 2000 - Nome: Reyash Id: 25 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Riria Id: 26 Idade: 2 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Larry Id: 27 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Ebi Id: 28 Idade: 10 Especie: Tigre Mutacoes: MutacaoG 
+COMPRA Ano: 2000 - Nome: Sharada Id: 29 Idade: 13 Especie: Serpente Mutacoes: MutacaoF 
+COMPRA Ano: 2000 - Nome: Taktloss Id: 30 Idade: 0 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Hakimakli Id: 31 Idade: 3 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Vanusa Id: 32 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Seorak Id: 33 Idade: 17 Especie: Serpente Mutacoes: 
+COMPRA Ano: 2000 - Nome: Kotoko Id: 34 Idade: 18 Especie: Serpente Mutacoes: 
+COMPRA Ano: 2000 - Nome: McG Id: 35 Idade: 0 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Selen Id: 36 Idade: 0 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Ogeday Id: 37 Idade: 2 Especie: Galo Mutacoes: MutacaoC 
+COMPRA Ano: 2000 - Nome: Ramarajan Id: 38 Idade: 6 Especie: Tigre Mutacoes: 
+COMPRA Ano: 2000 - Nome: Wise Id: 39 Idade: 1 Especie: Galo Mutacoes: MutacaoH 
+COMPRA Ano: 2000 - Nome: Keith Id: 40 Idade: 16 Especie: Serpente Mutacoes: MutacaoE 
+COMPRA Ano: 2000 - Nome: Zazie Id: 41 Idade: 13 Especie: Tigre Mutacoes: 
+COMPRA Ano: 2000 - Nome: Stoka Id: 42 Idade: 0 Especie: Galo Mutacoes: MutacaoB MutacaoF 
+COMPRA Ano: 2000 - Nome: Paulini Id: 43 Idade: 1 Especie: Cavalo Mutacoes: MutacaoC 
+COMPRA Ano: 2000 - Nome: Séverine Id: 44 Idade: 14 Especie: Macaco Mutacoes: 
+COMPRA Ano: 2000 - Nome: Mayoori Id: 45 Idade: 1 Especie: Coelho Mutacoes: MutacaoB MutacaoF 
+COMPRA Ano: 2000 - Nome: Sujatha Id: 46 Idade: 9 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Xandee Id: 47 Idade: 0 Especie: Rato Mutacoes: MutacaoB MutacaoF 
+COMPRA Ano: 2000 - Nome: Currensy Id: 48 Idade: 2 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Metis Id: 49 Idade: 2 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Younha Id: 50 Idade: 19 Especie: Vaca Mutacoes: 
+COMPRA Ano: 2000 - Nome: Lumidee Id: 51 Idade: 3 Especie: Tigre Mutacoes: 
+COMPRA Ano: 2000 - Nome: Freeman Id: 52 Idade: 1 Especie: Tigre Mutacoes: 
+MORTE Ano: 2000 - Nome: Maïwenn Id: 4 Idade: 2 Especie: Rato Mutacoes: MutacaoH 
+MORTE Ano: 2000 - Nome: Anggun Id: 12 Idade: 2 Especie: Rato 
+MORTE Ano: 2000 - Nome: Maximo Id: 23 Idade: 13 Especie: Vaca Mutacoes: MutacaoG 
+MORTE Ano: 2000 - Nome: Sharada Id: 29 Idade: 14 Especie: Serpente Mutacoes: MutacaoF 
+MORTE Ano: 2000 - Nome: Ramarajan Id: 38 Idade: 7 Especie: Tigre 
+MORTE Ano: 2000 - Nome: Wise Id: 39 Idade: 2 Especie: Galo Mutacoes: MutacaoH 
+MORTE Ano: 2000 - Nome: Lumidee Id: 51 Idade: 4 Especie: Tigre 
+MORTE Ano: 2001 - Nome: Thekra Id: 5 Idade: 2 Especie: Rato Mutacoes: MutacaoH 
+MORTE Ano: 2001 - Nome: Paige Id: 8 Idade: 2 Especie: Rato 
+MORTE Ano: 2001 - Nome: Aidonia Id: 16 Idade: 4 Especie: Coelho 
+MORTE Ano: 2001 - Nome: Marz Id: 21 Idade: 3 Especie: Rato 
+MORTE Ano: 2001 - Nome: NAV Id: 22 Idade: 3 Especie: Cavalo Mutacoes: MutacaoF 
+MORTE Ano: 2001 - Nome: Vanusa Id: 32 Idade: 3 Especie: Rato 
+MORTE Ano: 2001 - Nome: Kotoko Id: 34 Idade: 20 Especie: Serpente 
+MORTE Ano: 2001 - Nome: Mayoori Id: 45 Idade: 3 Especie: Coelho Mutacoes: MutacaoB MutacaoF 
+MORTE Ano: 2001 - Nome: Sujatha Id: 46 Idade: 11 Especie: Cavalo 
+MORTE Ano: 2001 - Nome: Metis Id: 49 Idade: 4 Especie: Coelho 
+MORTE Ano: 2001 - Nome: Freeman Id: 52 Idade: 3 Especie: Tigre 
+MORTE Ano: 2002 - Nome: Mohan Id: 1 Idade: 4 Especie: Rato 
+MORTE Ano: 2002 - Nome: Dara Id: 2 Idade: 4 Especie: Rato Mutacoes: MutacaoF 
+MORTE Ano: 2002 - Nome: Hannah Id: 6 Idade: 4 Especie: Rato Mutacoes: MutacaoB MutacaoF 
+MORTE Ano: 2002 - Nome: Chalice Id: 7 Idade: 4 Especie: Rato 
+MORTE Ano: 2002 - Nome: Chiranjeevi Id: 9 Idade: 4 Especie: Rato 
+MORTE Ano: 2002 - Nome: Insooni Id: 13 Idade: 12 Especie: Serpente Mutacoes: MutacaoF 
+MORTE Ano: 2002 - Nome: Osez Id: 14 Idade: 3 Especie: Serpente 
+MORTE Ano: 2002 - Nome: Reyash Id: 25 Idade: 4 Especie: Rato 
+MORTE Ano: 2002 - Nome: Larry Id: 27 Idade: 4 Especie: Rato 
+MORTE Ano: 2002 - Nome: Zazie Id: 41 Idade: 16 Especie: Tigre 
+MORTE Ano: 2002 - Nome: Stoka Id: 42 Idade: 3 Especie: Galo Mutacoes: MutacaoB MutacaoF 
+MORTE Ano: 2002 - Nome: Séverine Id: 44 Idade: 17 Especie: Macaco 
+MORTE Ano: 2003 - Nome: Ruggedman Id: 10 Idade: 4 Especie: Coelho Mutacoes: MutacaoB 
+MORTE Ano: 2003 - Nome: Gert Id: 11 Idade: 4 Especie: Rato 
+MORTE Ano: 2003 - Nome: Sunil Id: 15 Idade: 6 Especie: Coelho 
+MORTE Ano: 2003 - Nome: Aleyn Id: 17 Idade: 4 Especie: Rato Mutacoes: MutacaoE 
+MORTE Ano: 2003 - Nome: Narsha Id: 18 Idade: 5 Especie: Cavalo 
+MORTE Ano: 2003 - Nome: Manskee Id: 24 Idade: 20 Especie: Serpente Mutacoes: MutacaoA MutacaoD 
+MORTE Ano: 2003 - Nome: McG Id: 35 Idade: 4 Especie: Rato 
+MORTE Ano: 2003 - Nome: Selen Id: 36 Idade: 4 Especie: Rato 
+MORTE Ano: 2003 - Nome: Xandee Id: 47 Idade: 4 Especie: Rato Mutacoes: MutacaoB MutacaoF 
+MORTE Ano: 2004 - Nome: Chynna Id: 19 Idade: 7 Especie: Serpente 
+MORTE Ano: 2004 - Nome: Riria Id: 26 Idade: 7 Especie: Cavalo 
+MORTE Ano: 2004 - Nome: Taktloss Id: 30 Idade: 5 Especie: Coelho 
+MORTE Ano: 2004 - Nome: Hakimakli Id: 31 Idade: 8 Especie: Coelho 
+COMPRA Ano: 2000 - Nome: Sharda Id: 0 Idade: 1 Especie: Rato Mutacoes: MutacaoA 
+COMPRA Ano: 2000 - Nome: Moony Id: 1 Idade: 2 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Lorena Id: 2 Idade: 12 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Guru Id: 3 Idade: 1 Especie: Rato Mutacoes: MutacaoC MutacaoH 
+COMPRA Ano: 2000 - Nome: Bojoura Id: 4 Idade: 0 Especie: Rato Mutacoes: MutacaoC MutacaoH 
+COMPRA Ano: 2000 - Nome: Lobão Id: 5 Idade: 3 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Borgeous Id: 6 Idade: 2 Especie: Galo Mutacoes: MutacaoH 
+COMPRA Ano: 2000 - Nome: Chen Id: 7 Idade: 7 Especie: Vaca Mutacoes: MutacaoG 
+COMPRA Ano: 2000 - Nome: Pink Id: 8 Idade: 0 Especie: Galo Mutacoes: MutacaoH 
+MORTE Ano: 2000 - Nome: Sharda Id: 0 Idade: 2 Especie: Rato Mutacoes: MutacaoA 
+MORTE Ano: 2000 - Nome: Guru Id: 3 Idade: 2 Especie: Rato Mutacoes: MutacaoC MutacaoH 
+MORTE Ano: 2000 - Nome: Bojoura Id: 4 Idade: 1 Especie: Rato Mutacoes: MutacaoC MutacaoH 
+VENDA Ano: 2001 - Nome: Lorena Id: 2 Idade: 13 Especie: Cavalo Mutacoes: 
