@@ -26,7 +26,7 @@ public class Zoo {
     private final List<Carateristica> carateristicas = new ArrayList();
     private final List<Mutacao> mutacoes = new ArrayList();
     private int ano = 2000;
-    private double saldo = 100000;
+    private double saldo = 10000000;
     private double saldoUsadoAnimais = 0;
     private double saldoUsadoInstalacoes = 0;
     private int animalId = 0;
@@ -230,47 +230,54 @@ public class Zoo {
             }
 
         }
-        System.out.println("Qual animal é que deseja adquirir?");
-        int opcao;
-        boolean animalEscolhido = false;
-        while (!animalEscolhido) {
-            
-            try {
-                opcao = scan.nextInt();
-                
-                if (saldo >= animaisOpcoes.get(opcao - 1).calculaPreco()) { //se saldo > custo do animal escolhido
-                    adicionarListaAnimais(animaisOpcoes.get(opcao - 1));
-                    incrementaAnimalId();
-                    probMutacoes(animaisOpcoes.get(opcao - 1)); //ver se o animal vai ter mutações
-                    saldo -= animaisOpcoes.get(opcao - 1).calculaPreco();
-                    saldoUsadoAnimais += animaisOpcoes.get(opcao - 1).calculaPreco();
+        System.out.println("Qual animal é que deseja adquirir? (Escolha qualquer outra opção para cancelar)");
+        int opcao1;
+        try {
+            opcao1 = scan.nextInt();
+            if (opcao1 == 1 || opcao1 == 2 || opcao1 == 3) {
+                try {
+                    if (saldo >= animaisOpcoes.get(opcao1 - 1).calculaPreco()) { //se saldo > custo do animal escolhido
+                        adicionarListaAnimais(animaisOpcoes.get(opcao1 - 1));
+                        incrementaAnimalId();
+                        probMutacoes(animaisOpcoes.get(opcao1 - 1)); //ver se o animal vai ter mutações
+                        saldo -= animaisOpcoes.get(opcao1 - 1).calculaPreco();
+                        saldoUsadoAnimais += animaisOpcoes.get(opcao1 - 1).calculaPreco();
 
-                    ArrayList<String> dados = new ArrayList<>(); // recolhe informação para guardar no historico
-                    dados.add("Nome:");
-                    dados.add(animaisOpcoes.get(opcao - 1).getNome());
-                    dados.add("Id:");
-                    dados.add(animaisOpcoes.get(opcao - 1).getIdString());
-                    dados.add("Idade:");
-                    dados.add(animaisOpcoes.get(opcao - 1).getIdadeString());
-                    dados.add("Especie:");
-                    dados.add(animaisOpcoes.get(opcao - 1).getEspecie().getNome());
-                    dados.add("Mutacoes:");
-                    for (Mutacao mutacao : animaisOpcoes.get(opcao - 1).getMutacoesLista()) {
-                        dados.add(mutacao.getNome());
+                        ArrayList<String> dados = new ArrayList<>(); // recolhe informação para guardar no historico
+                        dados.add("Nome:");
+                        dados.add(animaisOpcoes.get(opcao1 - 1).getNome());
+                        dados.add("Id:");
+                        dados.add(animaisOpcoes.get(opcao1 - 1).getIdString());
+                        dados.add("Idade:");
+                        dados.add(animaisOpcoes.get(opcao1 - 1).getIdadeString());
+                        dados.add("Especie:");
+                        dados.add(animaisOpcoes.get(opcao1 - 1).getEspecie().getNome());
+                        dados.add("Mutacoes:");
+                        for (Mutacao mutacao : animaisOpcoes.get(opcao1 - 1).getMutacoesLista()) {
+                            dados.add(mutacao.getNome());
+                        }
+                        guardaRegistoHistorico("COMPRA", dados); //guardar no historico
+                        
+                    } else {
+                        System.out.println("Dinheiro insufeciente, cancelando");
+                        return;
+
                     }
-                    guardaRegistoHistorico("COMPRA", dados); //guardar no historico
-                    animalEscolhido= true;
-                }
-                else{
-                    System.out.println("Dinheiro insufeciente, cancelando");
+                } catch (Exception e) {
+                    System.out.println("Input invalido, cancelado!");
                     return;
+
                 }
-
-            } catch (Exception e) {
-                System.out.println("Invalid input!");
             }
-        }
+            else {
+                System.out.println("Input invalido, cancelado!");
+                return;
+            }
+        } catch (Exception e) {
+            System.out.println("Input invalido, cancelado!");
+            return;
 
+        }
 
     }
 
@@ -283,11 +290,9 @@ public class Zoo {
             System.out.println(i + ") " + carateristica.getNome());
             i++;
         }
-        System.out.println("Selecione o numero carateristica que quer:");
+        System.out.println("Selecione o numero carateristica que quer ou Escolha qualquer outra opção para cancelar:");
         try{
             opcao = scan.nextInt();
-        
-        
 
         for (Especie especie : especies) { //procura especies com carateristica escolhida
             for (Carateristica carateristicaProcura : especie.getCarateristicas()) {
@@ -298,7 +303,7 @@ public class Zoo {
         }
         }
         catch(Exception e){
-            System.out.println("Invalid input");
+            System.out.println("Cancelado");
         }
         if (!possiveisEspecies.isEmpty()) {
             int randomEspecie = (int) (Math.random() * (possiveisEspecies.size() - 1)); //random especie das possiveis
@@ -464,7 +469,7 @@ public class Zoo {
                 System.out.println("Id invalido");
             }
         }
-
+        
         if (instalacaoEscolhida.getAnimais().size() == instalacaoEscolhida.getLotacao()) { //se instalação estiver cheia
             //Retira um animal para colocar o novo
 
@@ -615,14 +620,19 @@ public class Zoo {
             System.out.println(i + ") " + carateristica.getNome());
             i++;
         }
-        System.out.println("Selecione o numero carateristica que quer:");
-        opcao = scan.nextInt();
-        for (Animal animal : animais) { //para cada animal a qual esta carateristica se aplique, imprime
-            for (Carateristica carateristicaAnimal : animal.getEspecie().getCarateristicas()) {
-                if (carateristicaAnimal.equals(carateristicas.get(opcao))) {
-                    System.out.println(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getNome() + " Idade: " + animal.getIdade());
+        System.out.println("Selecione o numero carateristica que quer ou qualquer outra opção para cancelar:");
+
+        try {
+            opcao = scan.nextInt();
+            for (Animal animal : animais) { //para cada animal a qual esta carateristica se aplique, imprime
+                for (Carateristica carateristicaAnimal : animal.getEspecie().getCarateristicas()) {
+                    if (carateristicaAnimal.equals(carateristicas.get(opcao))) {
+                        System.out.println(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getNome() + " Idade: " + animal.getIdade());
+                    }
                 }
             }
+        } catch (Exception e) {
+            System.out.println("Cancelado");
         }
     }
 
@@ -634,7 +644,8 @@ public class Zoo {
             System.out.println(i + ") " + mutacao.getNome());
             i++;
         }
-        System.out.println("Selecione o numero da Mutação que quer:");
+        System.out.println("Selecione o numero da Mutação que quer ou qualquer outra opção para cancelar:");
+        try{
         opcao = scan.nextInt();
         System.out.println("Animais com a mutação " + mutacoes.get(opcao - 1).getNome() + ":");
         for (Animal animal : animais) { //para cada animal a qual esta mutação se aplica, imprime
@@ -644,6 +655,11 @@ public class Zoo {
                     System.out.println(animal.getNome() + " id: " + animal.getId() + " Especie: " + animal.getEspecie().getNome() + " Idade: " + animal.getIdade());
                 }
             }
+        }
+        }
+        catch(Exception e){
+            System.out.println("Cancelado");
+            return;
         }
         if (!encontrado) {
             System.out.println("Não Existem animais com esta Mutação");
