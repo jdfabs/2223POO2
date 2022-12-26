@@ -1,0 +1,167 @@
+88 Chisu 5 Coelho -1 
+89 Muska 5 Coelho -1 
+91 Taktloss 5 Coelho -1 
+92 Tahis 5 Coelho -1 MutacaoE 
+94 Supastition 5 Coelho -1 
+96 Shing02 5 Coelho -1 MutacaoA MutacaoB 
+101 Sudhir 4 Coelho -1 
+102 Ninezero 4 Coelho -1 MutacaoB MutacaoF 
+107 Pupo 4 Coelho -1 
+111 Charlene 4 Coelho -1 
+117 Bojoura 3 Coelho -1 
+118 Harvey 3 Coelho -1 MutacaoF 
+119 Yasmine 3 Coelho -1 MutacaoC MutacaoD 
+121 Gajala 3 Coelho -1 
+123 Hayden 3 Coelho -1 
+126 Abyale 3 Coelho -1 
+129 Darine 3 Coelho -1 
+130 Gajala 3 Coelho -1 
+136 Diana 3 Coelho -1 MutacaoA MutacaoB 
+138 Nena 3 Coelho -1 MutacaoF 
+142 Wunmi 3 Coelho -1 MutacaoB MutacaoF 
+144 Merz 3 Coelho -1 MutacaoD 
+146 Vijay 2 Coelho -1 
+149 Soraya 2 Coelho -1 
+150 Carpentras 2 Coelho -1 
+151 Tiê 2 Coelho -1 
+152 Aaradhna 2 Coelho -1 MutacaoE 
+155 Jigsaw 2 Coelho -1 MutacaoG 
+159 Priyamani 2 Coelho -1 MutacaoC MutacaoD 
+160 Aidonia 2 Coelho -1 MutacaoH 
+162 Wiley 2 Coelho -1 MutacaoB MutacaoF 
+163 Ezkimo 2 Coelho -1 
+164 Murali 2 Coelho -1 MutacaoD 
+166 Kenna 2 Coelho -1 
+167 Fancy 2 Coelho -1 
+171 Swanee 2 Coelho -1 
+174 Teru 2 Coelho -1 
+177 Goldberg 2 Coelho -1 
+183 Karthik 2 Coelho -1 
+185 Paraluman 2 Coelho -1 
+188 Elektra 2 Coelho -1 
+193 Sumalatha 77 Dragão -1 
+195 Abigail 2 Galo -1 
+197 Oceana 1 Coelho -1 
+198 Raakhee 1 Coelho -1 MutacaoF 
+199 Vamba 1 Coelho -1 MutacaoC 
+200 Future 1 Coelho -1 MutacaoH 
+201 Revathi 1 Coelho -1 
+202 Dyango 1 Coelho -1 MutacaoB 
+207 Nitro 1 Coelho -1 
+208 Pasupathy 1 Coelho -1 
+209 Manafest 1 Coelho -1 
+210 Bussunda 1 Coelho -1 
+211 Selen 1 Coelho -1 
+212 Dave 1 Coelho -1 MutacaoE 
+213 PartyNextDoor 1 Coelho -1 
+214 Annabelle 1 Coelho -1 
+215 Fisz 1 Coelho -1 MutacaoG 
+216 Olunike 1 Coelho -1 MutacaoA 
+218 Chrispa 1 Coelho -1 MutacaoB MutacaoF 
+219 B-Real 1 Coelho -1 
+221 Tifa 1 Coelho -1 
+222 Lekain 1 Coelho -1 
+223 Onew 1 Coelho -1 
+224 Sukumaran 1 Coelho -1 
+225 Brahmanandam 1 Coelho -1 
+226 Olivia 1 Coelho -1 
+227 Muscles 1 Coelho -1 
+228 Zucchero 1 Coelho -1 MutacaoE 
+229 Nico 1 Coelho -1 
+230 Suho 1 Coelho -1 
+231 Sat 1 Coelho -1 MutacaoG 
+233 Minette 1 Coelho -1 
+234 Sonia 1 Coelho -1 MutacaoF 
+235 Sithara 1 Coelho -1 MutacaoC MutacaoD 
+236 Dana 1 Coelho -1 MutacaoH 
+238 Chouchou 1 Coelho -1 MutacaoB MutacaoF 
+239 Jun 1 Coelho -1 
+240 McG 1 Coelho -1 MutacaoD 
+241 Yo-Yo 1 Coelho -1 
+242 Fabo 1 Coelho -1 
+243 Devayani 1 Coelho -1 
+244 Myztiko 1 Coelho -1 
+245 Yani 1 Coelho -1 
+246 Subair 1 Dragão 0 MutacaoE 
+247 Chandrashekhar 1 Galo -1 
+248 Antoine 1 Rato -1 
+249 GoldLink 0 Coelho -1 
+250 Pegasso 0 Coelho -1 
+251 Danarto 0 Coelho -1 MutacaoG 
+252 Osez 0 Coelho -1 MutacaoA MutacaoB 
+253 Nesli 0 Coelho -1 
+254 Guru 0 Coelho -1 MutacaoF 
+255 Mahendran 0 Coelho -1 MutacaoC MutacaoD 
+256 Illy 0 Coelho -1 MutacaoH 
+257 Beenzino 0 Coelho -1 
+258 Sofiane 0 Coelho -1 MutacaoB MutacaoF 
+259 Himeka 0 Coelho -1 
+260 Skyzoo 0 Coelho -1 MutacaoD 
+261 Raaghav 0 Coelho -1 
+262 Kelis 0 Coelho -1 
+263 Madhubala 0 Coelho -1 
+264 Solage 0 Coelho -1 
+265 Pianoman 0 Coelho -1 
+266 Jobriath 0 Coelho -1 
+267 Ichimaru 0 Coelho -1 
+268 Kyouka 0 Coelho -1 MutacaoE 
+269 Kesha 0 Coelho -1 
+270 Alizée 0 Coelho -1 
+271 Maïwenn 0 Coelho -1 MutacaoG 
+272 Ratheesh 0 Coelho -1 MutacaoA MutacaoB 
+273 Dosseh 0 Coelho -1 
+274 Dileep 0 Coelho -1 MutacaoF 
+275 Mocky 0 Coelho -1 MutacaoC MutacaoD 
+276 Mario 0 Coelho -1 MutacaoH 
+277 Simon-Max 0 Coelho -1 
+278 Rojan 0 Coelho -1 MutacaoB MutacaoF 
+279 Anémone 0 Coelho -1 
+280 Sheela 0 Coelho -1 MutacaoD 
+281 Rola 0 Coelho -1 
+282 Milva 0 Coelho -1 
+283 Dharan 0 Coelho -1 
+284 Krohme 0 Coelho -1 
+285 Shruti 0 Coelho -1 
+286 Mayoori 0 Coelho -1 
+287 Honoka 0 Coelho -1 
+288 RuPaul 0 Coelho -1 MutacaoE 
+289 Electroshock 0 Coelho -1 
+290 Eve 0 Coelho -1 
+291 Headliner 0 Coelho -1 MutacaoG 
+292 Tuotilo 0 Coelho -1 MutacaoA MutacaoB 
+293 Emilia 0 Coelho -1 
+294 Tyla 0 Coelho -1 MutacaoF 
+295 Lemar 0 Coelho -1 MutacaoC MutacaoD 
+296 Kelis 0 Coelho -1 MutacaoH 
+297 Nagesh 0 Coelho -1 
+298 Shagrath 0 Coelho -1 MutacaoB MutacaoF 
+299 Speak 0 Coelho -1 
+300 Webbie 0 Coelho -1 MutacaoD 
+301 Kwes 0 Coelho -1 
+302 Bricktop 0 Coelho -1 
+303 Perla 0 Coelho -1 
+304 Katsuni 0 Coelho -1 
+305 Kollegah 0 Coelho -1 
+306 Sharada 0 Coelho -1 
+307 Monguito 0 Coelho -1 
+308 Electroshock 0 Coelho -1 MutacaoE 
+309 Alfio 0 Coelho -1 
+310 Sharkula 0 Coelho -1 
+311 Garbo 0 Coelho -1 MutacaoG 
+312 Puntillita 0 Coelho -1 MutacaoA MutacaoB 
+313 Csézy 0 Coelho -1 
+314 Raghav 0 Coelho -1 MutacaoF 
+315 Vajramuni 0 Coelho -1 MutacaoC MutacaoD 
+316 Lomepal 0 Coelho -1 MutacaoH 
+317 Nico 0 Coelho -1 
+318 Naza 0 Coelho -1 MutacaoB MutacaoF 
+319 Soprano 0 Coelho -1 
+320 Lizzo 0 Coelho -1 MutacaoD 
+321 Madeon 0 Coelho -1 
+322 Eldee 0 Coelho -1 
+323 Finneas 0 Coelho -1 
+324 Frauenarzt 0 Coelho -1 
+325 Sujatha 0 Coelho -1 
+326 Algérino 0 Coelho -1 
+327 marhy 0 Coelho -1 
+328 Cronos 0 Galo -1 

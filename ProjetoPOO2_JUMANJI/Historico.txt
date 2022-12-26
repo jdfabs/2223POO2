@@ -27,3 +27,572 @@ COMPRA Ano: 2000 - Nome: Christophe Id: 11 Idade: 0 Especie: Rato Mutacoes:
 COMPRA Ano: 2000 - Nome: Beans Id: 12 Idade: 1 Especie: Rato Mutacoes: 
 COMPRA Ano: 2000 - Nome: Natalia Id: 11 Idade: 0 Especie: Rato Mutacoes: 
 COMPRA Ano: 2000 - Nome: Karandash Id: 11 Idade: 1 Especie: Rato Mutacoes: 
+NASCEU Ano: 2001 - Nome:  Raja Id:  14 Idade:  0 Especie:  Rato Mutações:  MutacaoE  MutacaoF  
+NASCEU Ano: 2001 - Nome:  Abyss Id:  15 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2001 - Nome: Beenzino Id: 2 Idade: 2 Especie: Rato Mutacoes: MutacaoH 
+MORTE Ano: 2001 - Nome: Dugazon Id: 3 Idade: 2 Especie: Rato 
+NASCEU Ano: 2001 - Nome:  Peja Id:  16 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2001 - Nome:  Lauv Id:  17 Idade:  0 Especie:  Rato Mutações:  MutacaoG  
+NASCEU Ano: 2001 - Nome:  Jacynthe Id:  18 Idade:  0 Especie:  Rato Mutações:  MutacaoA  
+NASCEU Ano: 2001 - Nome:  Chiara Id:  19 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2001 - Nome:  Jeeva Id:  20 Idade:  0 Especie:  Rato Mutações:  MutacaoF  
+NASCEU Ano: 2001 - Nome:  Ephesto Id:  21 Idade:  0 Especie:  Rato Mutações:  MutacaoC  
+MORTE Ano: 2001 - Nome: Tunisiano Id: 10 Idade: 3 Especie: Coelho Mutacoes: MutacaoA 
+NASCEU Ano: 2001 - Nome:  RedOne Id:  22 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2001 - Nome:  Rihanna Id:  23 Idade:  0 Especie:  Vaca Mutações:  MutacaoB  MutacaoD  
+COMPRA Ano: 2000 - Nome: Kraus Id: 11 Idade: 1 Especie: Rato Mutacoes: MutacaoD 
+COMPRA Ano: 2000 - Nome: Trinere Id: 12 Idade: 0 Especie: Coelho Mutacoes: MutacaoC MutacaoG 
+COMPRA Ano: 2000 - Nome: Vera-Ellen Id: 13 Idade: 10 Especie: Tigre Mutacoes: 
+COMPRA Ano: 2000 - Nome: Padmini Id: 14 Idade: 0 Especie: Rato Mutacoes: 
+NASCEU Ano: 2000 - Nome:  Khotan Id:  15 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2000 - Nome:  Chakuza Id:  16 Idade:  0 Especie:  Rato Mutações:  MutacaoE  MutacaoH  
+COMPRA Ano: 2001 - Nome: Awie Id: 17 Idade: 0 Especie: Rato Mutacoes: 
+CONTRUÇÃO Ano: 2001 - ID: 0 Lotação: 1 
+MOVER Ano: 2001 - ID_animal: 17 Nova_Instalação: 0 
+CONTRUÇÃO Ano: 2001 - ID: 1 Lotação: 8 
+RETIRAR_INSTALAÇÃO Ano: 2001 - ID_animal: 17  Nome_Animal:  Awie 
+MOVER Ano: 2001 - ID_animal: 11 Nova_Instalação: 0 
+MORTE Ano: 2001 - Nome: Kraus Id: 11 Idade: 3 Especie: Rato Mutacoes: MutacaoD 
+NASCEU Ano: 2001 - Nome:  Jędker Id:  18 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2001 - Nome: Padmini Id: 14 Idade: 2 Especie: Rato 
+NASCEU Ano: 2001 - Nome:  Darina Id:  19 Idade:  0 Especie:  Rato Mutações:  MutacaoG  
+MORTE Ano: 2001 - Nome: Khotan Id: 15 Idade: 1 Especie: Rato 
+NASCEU Ano: 2001 - Nome:  Rajkiran Id:  20 Idade:  0 Especie:  Rato Mutações:  MutacaoA  
+NASCEU Ano: 2001 - Nome:  Rufus Id:  21 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2001 - Nome:  Raffi Id:  22 Idade:  0 Especie:  Rato Mutações:  MutacaoF  
+MORTE Ano: 2001 - Nome: Kraus Id: 11 Idade: 3 Especie: Rato Mutacoes: MutacaoD 
+COMPRA Ano: 2002 - Nome: Common Id: 23 Idade: 1 Especie: Rato Mutacoes: MutacaoH 
+COMPRA Ano: 2002 - Nome: Janagaraj Id: 24 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2002 - Nome: Teru Id: 25 Idade: 1 Especie: Macaco Mutacoes: 
+MOVER Ano: 2002 - ID_animal: 25 Nova_Instalação: 0 
+NASCEU Ano: 2002 - Nome:  V Id:  26 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2002 - Nome:  Sivakumar Id:  27 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2002 - Nome:  Sim Id:  28 Idade:  0 Especie:  Rato Mutações:  MutacaoD  MutacaoH  
+MORTE Ano: 2002 - Nome: Jędker Id: 18 Idade: 1 Especie: Rato 
+NASCEU Ano: 2002 - Nome:  Eon Id:  29 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2002 - Nome:  Syria Id:  30 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2002 - Nome: Rufus Id: 21 Idade: 1 Especie: Rato 
+NASCEU Ano: 2002 - Nome:  Lights Id:  31 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2002 - Nome:  Valeriya Id:  32 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2002 - Nome:  Twinkle Id:  33 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2002 - Nome:  Yangpa Id:  34 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2002 - Nome: Teru Id: 25 Idade: 2 Especie: Macaco 
+NASCEU Ano: 2002 - Nome:  Chessman Id:  35 Idade:  0 Especie:  Macaco Mutações:  
+MORTE Ano: 2002 - Nome: Teru Id: 25 Idade: 2 Especie: Macaco 
+MOVER Ano: 2003 - ID_animal: 35 Nova_Instalação: 1 
+NASCEU Ano: 2003 - Nome:  Juanito Id:  36 Idade:  0 Especie:  Rato Mutações:  MutacaoE  MutacaoH  
+MORTE Ano: 2003 - Nome: Darina Id: 19 Idade: 2 Especie: Rato Mutacoes: MutacaoG 
+NASCEU Ano: 2003 - Nome:  Abyale Id:  37 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2003 - Nome:  Dru Id:  38 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2003 - Nome:  Ruggedman Id:  39 Idade:  0 Especie:  Rato Mutações:  MutacaoG  
+MORTE Ano: 2003 - Nome: Janagaraj Id: 24 Idade: 3 Especie: Rato 
+NASCEU Ano: 2003 - Nome:  Elkie Id:  40 Idade:  0 Especie:  Rato Mutações:  MutacaoA  
+NASCEU Ano: 2003 - Nome:  Dodie Id:  41 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2003 - Nome:  MCA Id:  42 Idade:  0 Especie:  Rato Mutações:  MutacaoF  
+NASCEU Ano: 2003 - Nome:  Jyongri Id:  43 Idade:  0 Especie:  Rato Mutações:  MutacaoC  MutacaoG  
+NASCEU Ano: 2003 - Nome:  Sable Id:  44 Idade:  0 Especie:  Rato Mutações:  MutacaoH  
+NASCEU Ano: 2003 - Nome:  Olímpico Id:  45 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2003 - Nome:  Nucha Id:  46 Idade:  0 Especie:  Rato Mutações:  MutacaoB  
+NASCEU Ano: 2003 - Nome:  Jonah Id:  47 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2003 - Nome: Chessman Id: 35 Idade: 1 Especie: Macaco 
+MORTE Ano: 2003 - Nome: Chessman Id: 35 Idade: 1 Especie: Macaco 
+COMPRA Ano: 2004 - Nome: Aidonia Id: 48 Idade: 1 Especie: Coelho Mutacoes: MutacaoA 
+MOVER Ano: 2004 - ID_animal: 44 Nova_Instalação: 1 
+MOVER Ano: 2004 - ID_animal: 46 Nova_Instalação: 1 
+MOVER Ano: 2004 - ID_animal: 36 Nova_Instalação: 1 
+MOVER Ano: 2004 - ID_animal: 48 Nova_Instalação: 0 
+MOVER Ano: 2004 - ID_animal: 40 Nova_Instalação: 1 
+NASCEU Ano: 2004 - Nome:  Outsider Id:  49 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  
+MORTE Ano: 2004 - Nome: Vera-Ellen Id: 13 Idade: 15 Especie: Tigre 
+MORTE Ano: 2004 - Nome: Chakuza Id: 16 Idade: 4 Especie: Rato Mutacoes: MutacaoE MutacaoH 
+MORTE Ano: 2004 - Nome: Awie Id: 17 Idade: 4 Especie: Rato 
+NASCEU Ano: 2004 - Nome:  Wanderléa Id:  50 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2004 - Nome: Rajkiran Id: 20 Idade: 3 Especie: Rato Mutacoes: MutacaoA 
+MORTE Ano: 2004 - Nome: Raffi Id: 22 Idade: 3 Especie: Rato Mutacoes: MutacaoF 
+NASCEU Ano: 2004 - Nome:  Cam'ron Id:  51 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2004 - Nome: Common Id: 23 Idade: 4 Especie: Rato Mutacoes: MutacaoH 
+NASCEU Ano: 2004 - Nome:  Renaud Id:  52 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2004 - Nome:  T-Pain Id:  53 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+MORTE Ano: 2004 - Nome: Sivakumar Id: 27 Idade: 2 Especie: Rato 
+NASCEU Ano: 2004 - Nome:  Vinni Id:  54 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2004 - Nome:  Shruti Id:  55 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2004 - Nome:  Renaud Id:  56 Idade:  0 Especie:  Rato Mutações:  MutacaoE  MutacaoH  
+MORTE Ano: 2004 - Nome: Syria Id: 30 Idade: 2 Especie: Rato 
+NASCEU Ano: 2004 - Nome:  Soopafly Id:  57 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2004 - Nome:  Jaddanbai Id:  58 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2004 - Nome:  Dharan Id:  59 Idade:  0 Especie:  Rato Mutações:  MutacaoG  
+NASCEU Ano: 2004 - Nome:  Tabu Id:  60 Idade:  0 Especie:  Rato Mutações:  MutacaoA  
+MORTE Ano: 2004 - Nome: Yangpa Id: 34 Idade: 2 Especie: Rato 
+NASCEU Ano: 2004 - Nome:  Anjali Id:  61 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2004 - Nome:  Sherin Id:  62 Idade:  0 Especie:  Rato Mutações:  MutacaoF  
+NASCEU Ano: 2004 - Nome:  Ilaiyaraaja Id:  63 Idade:  0 Especie:  Rato Mutações:  MutacaoC  MutacaoG  
+NASCEU Ano: 2004 - Nome:  Angel Id:  64 Idade:  0 Especie:  Rato Mutações:  MutacaoH  
+NASCEU Ano: 2004 - Nome:  Séverine Id:  65 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2004 - Nome:  Mundy Id:  66 Idade:  0 Especie:  Rato Mutações:  MutacaoB  
+NASCEU Ano: 2004 - Nome:  Pandora Id:  67 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2004 - Nome:  Aoife Id:  68 Idade:  0 Especie:  Rato Mutações:  MutacaoD  MutacaoH  
+NASCEU Ano: 2004 - Nome:  Koushik Id:  69 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2004 - Nome:  Pampidoo Id:  70 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2004 - Nome: Aidonia Id: 48 Idade: 2 Especie: Coelho Mutacoes: MutacaoA 
+NASCEU Ano: 2004 - Nome:  Wanessa Id:  71 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+MORTE Ano: 2004 - Nome: Aidonia Id: 48 Idade: 2 Especie: Coelho Mutacoes: MutacaoA 
+MOVER Ano: 2005 - ID_animal: 70 Nova_Instalação: 0 
+COMPRA Ano: 2000 - Nome: Stephanie Id: 49 Idade: 0 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Noa Id: 50 Idade: 4 Especie: Serpente Mutacoes: MutacaoC 
+COMPRA Ano: 2000 - Nome: Marilyn Id: 51 Idade: 2 Especie: Tigre Mutacoes: 
+CONTRUÇÃO Ano: 2000 - ID: 0 Lotação: 3 
+MOVER Ano: 2000 - ID_animal: 51 Nova_Instalação: 0 
+MOVER Ano: 2000 - ID_animal: 50 Nova_Instalação: 0 
+NASCEU Ano: 2000 - Nome:  Mundy Id:  52 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2000 - Nome:  Rowetta Id:  53 Idade:  0 Especie:  Serpente Mutações:  MutacaoF  
+MOVER Ano: 2001 - ID_animal: 53 Nova_Instalação: 0 
+MORTE Ano: 2001 - Nome: Noa Id: 50 Idade: 6 Especie: Serpente Mutacoes: MutacaoC 
+NASCEU Ano: 2001 - Nome:  Subtitle Id:  54 Idade:  0 Especie:  Tigre Mutações:  
+NASCEU Ano: 2001 - Nome:  Chicháy Id:  55 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2001 - Nome: Noa Id: 50 Idade: 6 Especie: Serpente Mutacoes: MutacaoC 
+NASCEU Ano: 2002 - Nome:  Dalida Id:  56 Idade:  0 Especie:  Rato Mutações:  MutacaoE  
+NASCEU Ano: 2002 - Nome:  Mokobé Id:  57 Idade:  0 Especie:  Tigre Mutações:  MutacaoE  
+NASCEU Ano: 2002 - Nome:  Syang Id:  58 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2002 - Nome:  Ilya Id:  59 Idade:  0 Especie:  Tigre Mutações:  
+NASCEU Ano: 2002 - Nome:  Virus Id:  60 Idade:  0 Especie:  Rato Mutações:  MutacaoA  MutacaoE  MutacaoH  
+COMPRA Ano: 2000 - Nome: Monice Id: 51 Idade: 14 Especie: Tigre Mutacoes: 
+COMPRA Ano: 2000 - Nome: Frankee Id: 52 Idade: 2 Especie: Coelho Mutacoes: MutacaoC 
+CONTRUÇÃO Ano: 2000 - ID: 0 Lotação: 5 
+MOVER Ano: 2000 - ID_animal: 51 Nova_Instalação: 0 
+MOVER Ano: 2000 - ID_animal: 52 Nova_Instalação: 0 
+MORTE Ano: 2000 - Nome: Frankee Id: 52 Idade: 3 Especie: Coelho Mutacoes: MutacaoC 
+NASCEU Ano: 2000 - Nome:  Adeeb Id:  53 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+MORTE Ano: 2000 - Nome: Frankee Id: 52 Idade: 3 Especie: Coelho Mutacoes: MutacaoC 
+NASCEU Ano: 2001 - Nome:  misono Id:  54 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  
+MORTE Ano: 2002 - Nome: Adeeb Id: 53 Idade: 2 Especie: Coelho Mutacoes: MutacaoF 
+NASCEU Ano: 2002 - Nome:  Takaloo Id:  55 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2002 - Nome:  Madlib Id:  56 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2003 - Nome:  Danny Id:  57 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  
+NASCEU Ano: 2003 - Nome:  Selen Id:  58 Idade:  0 Especie:  Coelho Mutações:  
+COMPRA Ano: 2001 - Nome: Jungah Id: 54 Idade: 13 Especie: Vaca Mutacoes: 
+COMPRA Ano: 2001 - Nome: Nina Id: 55 Idade: 1 Especie: Rato Mutacoes: MutacaoG MutacaoH 
+COMPRA Ano: 2001 - Nome: Alias Id: 56 Idade: 0 Especie: Rato Mutacoes: MutacaoG MutacaoH 
+COMPRA Ano: 2001 - Nome: AiM Id: 57 Idade: 0 Especie: Rato Mutacoes: MutacaoA 
+MORTE Ano: 2001 - Nome: Jungah Id: 54 Idade: 14 Especie: Vaca 
+NASCEU Ano: 2001 - Nome:  Omarion Id:  58 Idade:  0 Especie:  Vaca Mutações:  
+NASCEU Ano: 2001 - Nome:  Merz Id:  59 Idade:  0 Especie:  Rato Mutações:  MutacaoF  
+NASCEU Ano: 2001 - Nome:  Karylle Id:  60 Idade:  0 Especie:  Rato Mutações:  MutacaoC  
+CONTRUÇÃO Ano: 2002 - ID: 0 Lotação: 11 
+MOVER Ano: 2002 - ID_animal: 59 Nova_Instalação: 0 
+NASCEU Ano: 2002 - Nome:  Trenyce Id:  61 Idade:  0 Especie:  Rato Mutações:  MutacaoH  
+MORTE Ano: 2002 - Nome: AiM Id: 57 Idade: 2 Especie: Rato Mutacoes: MutacaoA 
+MORTE Ano: 2002 - Nome: Omarion Id: 58 Idade: 1 Especie: Vaca 
+NASCEU Ano: 2002 - Nome:  Jordy Id:  62 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2002 - Nome:  Jacno Id:  63 Idade:  0 Especie:  Rato Mutações:  MutacaoB  
+MORTE Ano: 2003 - Nome: Nina Id: 55 Idade: 4 Especie: Rato Mutacoes: MutacaoG MutacaoH 
+NASCEU Ano: 2003 - Nome:  Jagannathan Id:  64 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2003 - Nome:  Mumtaj Id:  65 Idade:  0 Especie:  Rato Mutações:  MutacaoD  
+NASCEU Ano: 2003 - Nome:  Anita Id:  66 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2003 - Nome:  Délizia Id:  67 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2003 - Nome:  T-Pain Id:  68 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2003 - Nome:  Bhavya Id:  69 Idade:  0 Especie:  Rato Mutações:  
+COMPRA Ano: 2001 - Nome: Timaya Id: 59 Idade: 2 Especie: Coelho Mutacoes: MutacaoD 
+COMPRA Ano: 2001 - Nome: Ali Id: 60 Idade: 0 Especie: Rato Mutacoes: MutacaoA 
+COMPRA Ano: 2001 - Nome: Mumtaj Id: 61 Idade: 0 Especie: Rato Mutacoes: 
+CONTRUÇÃO Ano: 2001 - ID: 0 Lotação: 5 
+MOVER Ano: 2001 - ID_animal: 59 Nova_Instalação: 0 
+MOVER Ano: 2001 - ID_animal: 60 Nova_Instalação: 0 
+MOVER Ano: 2001 - ID_animal: 61 Nova_Instalação: 0 
+NASCEU Ano: 2001 - Nome:  Hümeyra Id:  62 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2001 - Nome: Ali Id: 60 Idade: 1 Especie: Rato Mutacoes: MutacaoA 
+NASCEU Ano: 2001 - Nome:  Ravichandran Id:  63 Idade:  0 Especie:  Rato Mutações:  MutacaoC  
+NASCEU Ano: 2001 - Nome:  L.O.C. Id:  64 Idade:  0 Especie:  Rato Mutações:  MutacaoH  
+MORTE Ano: 2001 - Nome: Ali Id: 60 Idade: 1 Especie: Rato Mutacoes: MutacaoA 
+NASCEU Ano: 2002 - Nome:  Grock Id:  65 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2002 - Nome:  Res Id:  66 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2002 - Nome:  Moroccoblu Id:  67 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2002 - Nome:  Bhavatharini Id:  68 Idade:  0 Especie:  Rato Mutações:  MutacaoD  
+NASCEU Ano: 2003 - Nome:  Violetta Id:  69 Idade:  0 Especie:  Coelho Mutações:  MutacaoE  
+NASCEU Ano: 2003 - Nome:  Hervé Id:  70 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2003 - Nome: Ravichandran Id: 63 Idade: 2 Especie: Rato Mutacoes: MutacaoC 
+NASCEU Ano: 2003 - Nome:  Steno Id:  71 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2003 - Nome: Grock Id: 65 Idade: 1 Especie: Rato 
+NASCEU Ano: 2003 - Nome:  Matisyahu Id:  72 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2003 - Nome:  Malaika Id:  73 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  
+NASCEU Ano: 2003 - Nome:  Amerie Id:  74 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2003 - Nome:  Borgeous Id:  75 Idade:  0 Especie:  Rato Mutações:  
+COMPRA Ano: 2000 - Nome: Sisqó Id: 66 Idade: 0 Especie: Rato Mutacoes: MutacaoB MutacaoH 
+COMPRA Ano: 2000 - Nome: Scialpi Id: 67 Idade: 3 Especie: Coelho Mutacoes: 
+CONTRUÇÃO Ano: 2000 - ID: 0 Lotação: 7 
+MOVER Ano: 2000 - ID_animal: 66 Nova_Instalação: 0 
+CONTRUÇÃO Ano: 2000 - ID: 1 Lotação: 5 
+MOVER Ano: 2000 - ID_animal: 67 Nova_Instalação: 1 
+NASCEU Ano: 2000 - Nome:  Frenkie Id:  68 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2001 - Nome: Sisqó Id: 66 Idade: 2 Especie: Rato Mutacoes: MutacaoB MutacaoH 
+NASCEU Ano: 2001 - Nome:  Jewell Id:  69 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2001 - Nome:  Ella Id:  70 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2001 - Nome:  Angel Id:  71 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2001 - Nome: Sisqó Id: 66 Idade: 2 Especie: Rato Mutacoes: MutacaoB MutacaoH 
+NASCEU Ano: 2002 - Nome:  Kana Id:  72 Idade:  0 Especie:  Coelho Mutações:  MutacaoE  
+NASCEU Ano: 2002 - Nome:  Linda Id:  73 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2002 - Nome:  Colos Id:  74 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2002 - Nome: Ella Id: 70 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2002 - Nome:  Zacarias Id:  75 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  MutacaoH  
+MORTE Ano: 2003 - Nome: Scialpi Id: 67 Idade: 7 Especie: Coelho 
+NASCEU Ano: 2003 - Nome:  Zendaya Id:  76 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  
+NASCEU Ano: 2003 - Nome:  Padmini Id:  77 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2003 - Nome:  Cappadonna Id:  78 Idade:  0 Especie:  Rato Mutações:  MutacaoF  
+MORTE Ano: 2003 - Nome: Angel Id: 71 Idade: 2 Especie: Coelho 
+NASCEU Ano: 2003 - Nome:  T-Pain Id:  79 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  
+NASCEU Ano: 2003 - Nome:  Xenia Id:  80 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2003 - Nome:  Kish Id:  81 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2003 - Nome:  Muna Id:  82 Idade:  0 Especie:  Rato Mutações:  MutacaoB  
+MORTE Ano: 2003 - Nome: Scialpi Id: 67 Idade: 7 Especie: Coelho 
+COMPRA Ano: 2000 - Nome: Elán Id: 72 Idade: 0 Especie: Coelho Mutacoes: MutacaoE 
+CONTRUÇÃO Ano: 2000 - ID: 0 Lotação: 4 
+MOVER Ano: 2000 - ID_animal: 72 Nova_Instalação: 0 
+MORTE Ano: 2000 - Nome: Elán Id: 72 Idade: 1 Especie: Coelho Mutacoes: MutacaoE 
+NASCEU Ano: 2000 - Nome:  Hero Id:  73 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2000 - Nome: Elán Id: 72 Idade: 1 Especie: Coelho Mutacoes: MutacaoE 
+MOVER Ano: 2001 - ID_animal: 73 Nova_Instalação: 0 
+NASCEU Ano: 2001 - Nome:  Broery Id:  74 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2002 - Nome:  Yuna Id:  75 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+NASCEU Ano: 2002 - Nome:  Sumathi Id:  76 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  MutacaoB  
+NASCEU Ano: 2003 - Nome:  Aṣa Id:  77 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2003 - Nome:  Ridan Id:  78 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+NASCEU Ano: 2003 - Nome:  Haiducii Id:  79 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  MutacaoD  
+NASCEU Ano: 2004 - Nome:  Hallowicked Id:  80 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2004 - Nome:  Cher Id:  81 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2004 - Nome:  Freeway Id:  82 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  MutacaoF  
+NASCEU Ano: 2004 - Nome:  Dharan Id:  83 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2004 - Nome:  Jetta Id:  84 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+NASCEU Ano: 2004 - Nome:  Jasmine Id:  85 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2004 - Nome: Haiducii Id: 79 Idade: 1 Especie: Coelho Mutacoes: MutacaoC MutacaoD 
+NASCEU Ano: 2004 - Nome:  Ginger Id:  86 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2005 - Nome:  Becky Id:  87 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2005 - Nome:  Chisu Id:  88 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2005 - Nome: Yuna Id: 75 Idade: 3 Especie: Coelho Mutacoes: MutacaoG 
+NASCEU Ano: 2005 - Nome:  Muska Id:  89 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2005 - Nome:  Dhany Id:  90 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2005 - Nome: Aṣa Id: 77 Idade: 2 Especie: Coelho 
+NASCEU Ano: 2005 - Nome:  Taktloss Id:  91 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2005 - Nome:  Tahis Id:  92 Idade:  0 Especie:  Coelho Mutações:  MutacaoE  
+NASCEU Ano: 2005 - Nome:  Syreeta Id:  93 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2005 - Nome:  Supastition Id:  94 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2005 - Nome: Dharan Id: 83 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2005 - Nome:  Klayton Id:  95 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+NASCEU Ano: 2005 - Nome:  Shing02 Id:  96 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  MutacaoB  
+NASCEU Ano: 2005 - Nome:  Pebbles Id:  97 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2005 - Nome:  Fabio Id:  98 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+NASCEU Ano: 2006 - Nome:  Kiyoharu Id:  99 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  MutacaoD  
+NASCEU Ano: 2006 - Nome:  Pérotin Id:  100 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+MORTE Ano: 2006 - Nome: Cher Id: 81 Idade: 2 Especie: Coelho 
+NASCEU Ano: 2006 - Nome:  Sudhir Id:  101 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2006 - Nome:  Ninezero Id:  102 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  MutacaoF  
+NASCEU Ano: 2006 - Nome:  Emilio Id:  103 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2006 - Nome:  Juliette Id:  104 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+NASCEU Ano: 2006 - Nome:  Seungri Id:  105 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2006 - Nome:  Hümeyra Id:  106 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2006 - Nome:  Pupo Id:  107 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2006 - Nome:  Daffney Id:  108 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2006 - Nome:  Cláudya Id:  109 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2006 - Nome: Syreeta Id: 93 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2006 - Nome:  Zucchero Id:  110 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2006 - Nome:  Charlene Id:  111 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2006 - Nome:  Busdriver Id:  112 Idade:  0 Especie:  Coelho Mutações:  MutacaoE  
+NASCEU Ano: 2006 - Nome:  Jibbs Id:  113 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2006 - Nome:  Satomi' Id:  114 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2006 - Nome: Fabio Id: 98 Idade: 1 Especie: Coelho Mutacoes: MutacaoF 
+NASCEU Ano: 2007 - Nome:  Dolphy Id:  115 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+NASCEU Ano: 2007 - Nome:  Tela Id:  116 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  MutacaoB  
+NASCEU Ano: 2007 - Nome:  Bojoura Id:  117 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Harvey Id:  118 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+MORTE Ano: 2007 - Nome: Hallowicked Id: 80 Idade: 3 Especie: Coelho Mutacoes: MutacaoH 
+NASCEU Ano: 2007 - Nome:  Yasmine Id:  119 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  MutacaoD  
+NASCEU Ano: 2007 - Nome:  Aqualung Id:  120 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2007 - Nome:  Gajala Id:  121 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Mika Id:  122 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  MutacaoF  
+NASCEU Ano: 2007 - Nome:  Hayden Id:  123 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Azad Id:  124 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+NASCEU Ano: 2007 - Nome:  Micky Id:  125 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Abyale Id:  126 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  KENTA Id:  127 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Wax Id:  128 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Darine Id:  129 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Gajala Id:  130 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Bono Id:  131 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Yelawolf Id:  132 Idade:  0 Especie:  Coelho Mutações:  MutacaoE  
+MORTE Ano: 2007 - Nome: Pebbles Id: 97 Idade: 2 Especie: Coelho 
+NASCEU Ano: 2007 - Nome:  Retta Id:  133 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Battlecat Id:  134 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Griot Id:  135 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+MORTE Ano: 2007 - Nome: Emilio Id: 103 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2007 - Nome:  Diana Id:  136 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  MutacaoB  
+NASCEU Ano: 2007 - Nome:  Temperamento Id:  137 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Nena Id:  138 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+NASCEU Ano: 2007 - Nome:  Seorak Id:  139 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  MutacaoD  
+NASCEU Ano: 2007 - Nome:  Wallen Id:  140 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2007 - Nome:  Leon Id:  141 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2007 - Nome: Cláudya Id: 109 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2007 - Nome:  Wunmi Id:  142 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  MutacaoF  
+NASCEU Ano: 2007 - Nome:  Jokeren Id:  143 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2007 - Nome:  Merz Id:  144 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+MORTE Ano: 2007 - Nome: Jibbs Id: 113 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2007 - Nome:  Taiji Id:  145 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2008 - Nome: Hero Id: 73 Idade: 8 Especie: Coelho 
+MORTE Ano: 2008 - Nome: Broery Id: 74 Idade: 7 Especie: Coelho 
+NASCEU Ano: 2008 - Nome:  Vijay Id:  146 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2008 - Nome: Sumathi Id: 76 Idade: 6 Especie: Coelho Mutacoes: MutacaoA MutacaoB 
+NASCEU Ano: 2008 - Nome:  Duquende Id:  147 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Sandrin Id:  148 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2008 - Nome: Freeway Id: 82 Idade: 4 Especie: Coelho Mutacoes: MutacaoB MutacaoF 
+NASCEU Ano: 2008 - Nome:  Soraya Id:  149 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2008 - Nome: Jetta Id: 84 Idade: 4 Especie: Coelho Mutacoes: MutacaoD 
+MORTE Ano: 2008 - Nome: Jasmine Id: 85 Idade: 4 Especie: Coelho 
+NASCEU Ano: 2008 - Nome:  Carpentras Id:  150 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2008 - Nome: Becky Id: 87 Idade: 3 Especie: Coelho 
+NASCEU Ano: 2008 - Nome:  Tiê Id:  151 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Aaradhna Id:  152 Idade:  0 Especie:  Coelho Mutações:  MutacaoE  
+NASCEU Ano: 2008 - Nome:  Scarface Id:  153 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Dexter Id:  154 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Jigsaw Id:  155 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+NASCEU Ano: 2008 - Nome:  Loredana Id:  156 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  MutacaoB  
+NASCEU Ano: 2008 - Nome:  Badshah Id:  157 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Pritam Id:  158 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+NASCEU Ano: 2008 - Nome:  Priyamani Id:  159 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  MutacaoD  
+MORTE Ano: 2008 - Nome: Hümeyra Id: 106 Idade: 2 Especie: Coelho 
+NASCEU Ano: 2008 - Nome:  Aidonia Id:  160 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2008 - Nome:  Kamahl Id:  161 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Wiley Id:  162 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  MutacaoF  
+NASCEU Ano: 2008 - Nome:  Ezkimo Id:  163 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Murali Id:  164 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+MORTE Ano: 2008 - Nome: Tela Id: 116 Idade: 1 Especie: Coelho Mutacoes: MutacaoA MutacaoB 
+NASCEU Ano: 2008 - Nome:  Manikuttan Id:  165 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Kenna Id:  166 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Fancy Id:  167 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2008 - Nome: Mika Id: 122 Idade: 1 Especie: Coelho Mutacoes: MutacaoB MutacaoF 
+NASCEU Ano: 2008 - Nome:  Osez Id:  168 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Jadakiss Id:  169 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Lauv Id:  170 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Swanee Id:  171 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Juju Id:  172 Idade:  0 Especie:  Coelho Mutações:  MutacaoE  
+NASCEU Ano: 2008 - Nome:  Heath Id:  173 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Teru Id:  174 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Lacey Id:  175 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+NASCEU Ano: 2008 - Nome:  Sadayakko Id:  176 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  
+MORTE Ano: 2008 - Nome: Bono Id: 131 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2008 - Nome:  Goldberg Id:  177 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Kalpana Id:  178 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+NASCEU Ano: 2008 - Nome:  Yasin Id:  179 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  
+NASCEU Ano: 2008 - Nome:  Emilia Id:  180 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2008 - Nome:  Zucchero Id:  181 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2008 - Nome: Temperamento Id: 137 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2008 - Nome:  Finneas Id:  182 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  
+NASCEU Ano: 2008 - Nome:  Karthik Id:  183 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2008 - Nome: Seorak Id: 139 Idade: 1 Especie: Coelho Mutacoes: MutacaoC MutacaoD 
+NASCEU Ano: 2008 - Nome:  Spagna Id:  184 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+MORTE Ano: 2008 - Nome: Wallen Id: 140 Idade: 1 Especie: Coelho Mutacoes: MutacaoH 
+NASCEU Ano: 2008 - Nome:  Paraluman Id:  185 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2008 - Nome: Leon Id: 141 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2008 - Nome:  Daniel Id:  186 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Jasmine Id:  187 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2008 - Nome: Jokeren Id: 143 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2008 - Nome:  Elektra Id:  188 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  Eyedea Id:  189 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2008 - Nome:  KENTA Id:  190 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2008 - Nome: Hero Id: 73 Idade: 8 Especie: Coelho 
+FUJIU Ano: 2009 - Nome:  Dhany Id:  90 Idade:  3 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Kiyoharu Id:  99 Idade:  2 Especie:  Coelho Mutações:  MutacaoC  MutacaoD  
+FUJIU Ano: 2009 - Nome:  Juliette Id:  104 Idade:  2 Especie:  Coelho Mutações:  MutacaoD  
+FUJIU Ano: 2009 - Nome:  Satomi' Id:  114 Idade:  2 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Aqualung Id:  120 Idade:  1 Especie:  Coelho Mutações:  MutacaoH  
+FUJIU Ano: 2009 - Nome:  Yelawolf Id:  132 Idade:  1 Especie:  Coelho Mutações:  MutacaoE  
+FUJIU Ano: 2009 - Nome:  Retta Id:  133 Idade:  1 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Battlecat Id:  134 Idade:  1 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Manikuttan Id:  165 Idade:  0 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Lacey Id:  175 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+FUJIU Ano: 2009 - Nome:  Daniel Id:  186 Idade:  0 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Jasmine Id:  187 Idade:  0 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Eyedea Id:  189 Idade:  0 Especie:  Coelho Mutações:  
+COMPRA Ano: 2009 - Nome: Patra Id: 191 Idade: 186 Especie: Dragão Mutacoes: 
+FUJIU Ano: 2009 - Nome:  Daffney Id:  108 Idade:  2 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Zucchero Id:  110 Idade:  2 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Dolphy Id:  115 Idade:  1 Especie:  Coelho Mutações:  MutacaoG  
+FUJIU Ano: 2009 - Nome:  Micky Id:  125 Idade:  1 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  KENTA Id:  127 Idade:  1 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Wax Id:  128 Idade:  1 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Emilia Id:  180 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+FUJIU Ano: 2009 - Nome:  Zucchero Id:  181 Idade:  0 Especie:  Coelho Mutações:  
+COMPRA Ano: 2009 - Nome: Annabelle Id: 192 Idade: 58 Especie: Dragão Mutacoes: MutacaoA MutacaoB 
+COMPRA Ano: 2009 - Nome: Sumalatha Id: 193 Idade: 75 Especie: Dragão Mutacoes: 
+COMPRA Ano: 2009 - Nome: Srinath Id: 194 Idade: 209 Especie: Dragão Mutacoes: 
+COMPRA Ano: 2009 - Nome: Abigail Id: 195 Idade: 0 Especie: Galo Mutacoes: 
+COMPRA Ano: 2009 - Nome: Roshini Id: 196 Idade: 0 Especie: Rato Mutacoes: 
+FUJIU Ano: 2009 - Nome:  Klayton Id:  95 Idade:  3 Especie:  Coelho Mutações:  MutacaoG  
+FUJIU Ano: 2009 - Nome:  Pérotin Id:  100 Idade:  2 Especie:  Coelho Mutações:  MutacaoH  
+FUJIU Ano: 2009 - Nome:  Seungri Id:  105 Idade:  2 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Duquende Id:  147 Idade:  0 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Loredana Id:  156 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  MutacaoB  
+FUJIU Ano: 2009 - Nome:  Badshah Id:  157 Idade:  0 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Pritam Id:  158 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+FUJIU Ano: 2009 - Nome:  Kamahl Id:  161 Idade:  0 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Lauv Id:  170 Idade:  0 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Heath Id:  173 Idade:  0 Especie:  Coelho Mutações:  
+FUJIU Ano: 2009 - Nome:  Patra Id:  191 Idade:  186 Especie:  Dragão Mutações:  
+FUJIU Ano: 2009 - Nome:  Annabelle Id:  192 Idade:  58 Especie:  Dragão Mutações:  MutacaoA  MutacaoB  
+NASCEU Ano: 2009 - Nome:  Oceana Id:  197 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Raakhee Id:  198 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+NASCEU Ano: 2009 - Nome:  Vamba Id:  199 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  
+NASCEU Ano: 2009 - Nome:  Future Id:  200 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2009 - Nome:  Revathi Id:  201 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Dyango Id:  202 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  
+NASCEU Ano: 2009 - Nome:  Kumar Id:  203 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Euforia Id:  204 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+NASCEU Ano: 2009 - Nome:  Cher Id:  205 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Swarnalatha Id:  206 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Nitro Id:  207 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2009 - Nome: Busdriver Id: 112 Idade: 3 Especie: Coelho Mutacoes: MutacaoE 
+NASCEU Ano: 2009 - Nome:  Pasupathy Id:  208 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Manafest Id:  209 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Bussunda Id:  210 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Selen Id:  211 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Dave Id:  212 Idade:  0 Especie:  Coelho Mutações:  MutacaoE  
+NASCEU Ano: 2009 - Nome:  PartyNextDoor Id:  213 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Annabelle Id:  214 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Fisz Id:  215 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+MORTE Ano: 2009 - Nome: Griot Id: 135 Idade: 2 Especie: Coelho Mutacoes: MutacaoG 
+NASCEU Ano: 2009 - Nome:  Olunike Id:  216 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  
+NASCEU Ano: 2009 - Nome:  Heath Id:  217 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Chrispa Id:  218 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  MutacaoF  
+NASCEU Ano: 2009 - Nome:  B-Real Id:  219 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Eilera Id:  220 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+MORTE Ano: 2009 - Nome: Taiji Id: 145 Idade: 2 Especie: Coelho 
+NASCEU Ano: 2009 - Nome:  Tifa Id:  221 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Lekain Id:  222 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Onew Id:  223 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Sukumaran Id:  224 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Brahmanandam Id:  225 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Olivia Id:  226 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2009 - Nome: Scarface Id: 153 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2009 - Nome:  Muscles Id:  227 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2009 - Nome: Dexter Id: 154 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2009 - Nome:  Zucchero Id:  228 Idade:  0 Especie:  Coelho Mutações:  MutacaoE  
+NASCEU Ano: 2009 - Nome:  Nico Id:  229 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Suho Id:  230 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Sat Id:  231 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+NASCEU Ano: 2009 - Nome:  Rojan Id:  232 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  MutacaoB  
+MORTE Ano: 2009 - Nome: Osez Id: 168 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2009 - Nome:  Minette Id:  233 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2009 - Nome: Jadakiss Id: 169 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2009 - Nome:  Sonia Id:  234 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+NASCEU Ano: 2009 - Nome:  Sithara Id:  235 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  MutacaoD  
+MORTE Ano: 2009 - Nome: Juju Id: 172 Idade: 1 Especie: Coelho Mutacoes: MutacaoE 
+NASCEU Ano: 2009 - Nome:  Dana Id:  236 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2009 - Nome:  Alberte Id:  237 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2009 - Nome: Sadayakko Id: 176 Idade: 1 Especie: Coelho Mutacoes: MutacaoA 
+NASCEU Ano: 2009 - Nome:  Chouchou Id:  238 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  MutacaoF  
+NASCEU Ano: 2009 - Nome:  Jun Id:  239 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  McG Id:  240 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+MORTE Ano: 2009 - Nome: Finneas Id: 182 Idade: 1 Especie: Coelho Mutacoes: MutacaoB 
+NASCEU Ano: 2009 - Nome:  Yo-Yo Id:  241 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Fabo Id:  242 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Devayani Id:  243 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Myztiko Id:  244 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2009 - Nome: KENTA Id: 190 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2009 - Nome:  Yani Id:  245 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2009 - Nome:  Subair Id:  246 Idade:  0 Especie:  Dragão Mutações:  MutacaoE  
+MORTE Ano: 2009 - Nome: Srinath Id: 194 Idade: 210 Especie: Dragão 
+NASCEU Ano: 2009 - Nome:  Chandrashekhar Id:  247 Idade:  0 Especie:  Galo Mutações:  
+MORTE Ano: 2009 - Nome: Roshini Id: 196 Idade: 1 Especie: Rato 
+NASCEU Ano: 2009 - Nome:  Antoine Id:  248 Idade:  0 Especie:  Rato Mutações:  
+MOVER Ano: 2010 - ID_animal: 246 Nova_Instalação: 0 
+MORTE Ano: 2010 - Nome: Ridan Id: 78 Idade: 7 Especie: Coelho Mutacoes: MutacaoF 
+MORTE Ano: 2010 - Nome: Ginger Id: 86 Idade: 6 Especie: Coelho 
+NASCEU Ano: 2010 - Nome:  GoldLink Id:  249 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Pegasso Id:  250 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Danarto Id:  251 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+NASCEU Ano: 2010 - Nome:  Osez Id:  252 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  MutacaoB  
+NASCEU Ano: 2010 - Nome:  Nesli Id:  253 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Guru Id:  254 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+NASCEU Ano: 2010 - Nome:  Mahendran Id:  255 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  MutacaoD  
+NASCEU Ano: 2010 - Nome:  Illy Id:  256 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2010 - Nome:  Beenzino Id:  257 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Sofiane Id:  258 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  MutacaoF  
+NASCEU Ano: 2010 - Nome:  Himeka Id:  259 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Skyzoo Id:  260 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+NASCEU Ano: 2010 - Nome:  Raaghav Id:  261 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2010 - Nome: Azad Id: 124 Idade: 3 Especie: Coelho Mutacoes: MutacaoD 
+NASCEU Ano: 2010 - Nome:  Kelis Id:  262 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Madhubala Id:  263 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Solage Id:  264 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Pianoman Id:  265 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Jobriath Id:  266 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Ichimaru Id:  267 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Kyouka Id:  268 Idade:  0 Especie:  Coelho Mutações:  MutacaoE  
+NASCEU Ano: 2010 - Nome:  Kesha Id:  269 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2010 - Nome: Sandrin Id: 148 Idade: 2 Especie: Coelho 
+NASCEU Ano: 2010 - Nome:  Alizée Id:  270 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Maïwenn Id:  271 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+NASCEU Ano: 2010 - Nome:  Ratheesh Id:  272 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  MutacaoB  
+NASCEU Ano: 2010 - Nome:  Dosseh Id:  273 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Dileep Id:  274 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+NASCEU Ano: 2010 - Nome:  Mocky Id:  275 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  MutacaoD  
+NASCEU Ano: 2010 - Nome:  Mario Id:  276 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2010 - Nome:  Simon-Max Id:  277 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Rojan Id:  278 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  MutacaoF  
+NASCEU Ano: 2010 - Nome:  Anémone Id:  279 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Sheela Id:  280 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+NASCEU Ano: 2010 - Nome:  Rola Id:  281 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2010 - Nome: Kalpana Id: 178 Idade: 2 Especie: Coelho Mutacoes: MutacaoF 
+NASCEU Ano: 2010 - Nome:  Milva Id:  282 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2010 - Nome: Yasin Id: 179 Idade: 2 Especie: Coelho Mutacoes: MutacaoC 
+NASCEU Ano: 2010 - Nome:  Dharan Id:  283 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2010 - Nome: Spagna Id: 184 Idade: 2 Especie: Coelho Mutacoes: MutacaoD 
+NASCEU Ano: 2010 - Nome:  Krohme Id:  284 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Shruti Id:  285 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Mayoori Id:  286 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Honoka Id:  287 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  RuPaul Id:  288 Idade:  0 Especie:  Coelho Mutações:  MutacaoE  
+NASCEU Ano: 2010 - Nome:  Electroshock Id:  289 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2010 - Nome: Kumar Id: 203 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2010 - Nome:  Eve Id:  290 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2010 - Nome: Euforia Id: 204 Idade: 1 Especie: Coelho Mutacoes: MutacaoD 
+NASCEU Ano: 2010 - Nome:  Headliner Id:  291 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+MORTE Ano: 2010 - Nome: Cher Id: 205 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2010 - Nome:  Tuotilo Id:  292 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  MutacaoB  
+MORTE Ano: 2010 - Nome: Swarnalatha Id: 206 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2010 - Nome:  Emilia Id:  293 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Tyla Id:  294 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+NASCEU Ano: 2010 - Nome:  Lemar Id:  295 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  MutacaoD  
+NASCEU Ano: 2010 - Nome:  Kelis Id:  296 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2010 - Nome:  Nagesh Id:  297 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Shagrath Id:  298 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  MutacaoF  
+NASCEU Ano: 2010 - Nome:  Speak Id:  299 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Webbie Id:  300 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+NASCEU Ano: 2010 - Nome:  Kwes Id:  301 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Bricktop Id:  302 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2010 - Nome: Heath Id: 217 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2010 - Nome:  Perla Id:  303 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Katsuni Id:  304 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2010 - Nome: Eilera Id: 220 Idade: 1 Especie: Coelho Mutacoes: MutacaoD 
+NASCEU Ano: 2010 - Nome:  Kollegah Id:  305 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Sharada Id:  306 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Monguito Id:  307 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Electroshock Id:  308 Idade:  0 Especie:  Coelho Mutações:  MutacaoE  
+NASCEU Ano: 2010 - Nome:  Alfio Id:  309 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Sharkula Id:  310 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Garbo Id:  311 Idade:  0 Especie:  Coelho Mutações:  MutacaoG  
+NASCEU Ano: 2010 - Nome:  Puntillita Id:  312 Idade:  0 Especie:  Coelho Mutações:  MutacaoA  MutacaoB  
+NASCEU Ano: 2010 - Nome:  Csézy Id:  313 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Raghav Id:  314 Idade:  0 Especie:  Coelho Mutações:  MutacaoF  
+NASCEU Ano: 2010 - Nome:  Vajramuni Id:  315 Idade:  0 Especie:  Coelho Mutações:  MutacaoC  MutacaoD  
+MORTE Ano: 2010 - Nome: Rojan Id: 232 Idade: 1 Especie: Coelho Mutacoes: MutacaoA MutacaoB 
+NASCEU Ano: 2010 - Nome:  Lomepal Id:  316 Idade:  0 Especie:  Coelho Mutações:  MutacaoH  
+NASCEU Ano: 2010 - Nome:  Nico Id:  317 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Naza Id:  318 Idade:  0 Especie:  Coelho Mutações:  MutacaoB  MutacaoF  
+NASCEU Ano: 2010 - Nome:  Soprano Id:  319 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2010 - Nome: Alberte Id: 237 Idade: 1 Especie: Coelho 
+NASCEU Ano: 2010 - Nome:  Lizzo Id:  320 Idade:  0 Especie:  Coelho Mutações:  MutacaoD  
+NASCEU Ano: 2010 - Nome:  Madeon Id:  321 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Eldee Id:  322 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Finneas Id:  323 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Frauenarzt Id:  324 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Sujatha Id:  325 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Algérino Id:  326 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  marhy Id:  327 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2010 - Nome:  Cronos Id:  328 Idade:  0 Especie:  Galo Mutações:  

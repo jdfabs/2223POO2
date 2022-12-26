@@ -829,16 +829,17 @@ public class Zoo {
         double rendimentosAnimais = 0;
         double rendimentoAnimal = 0;
         for (Animal animal : animais) {
+            rendimentoAnimal = 0;
             if (animal.getInstalacao() != null) { //se tiver instalação
-                rendimentoAnimal += 150*animal.getEspecie().getAtratividadeBase() * 2-(animal.getIdade()/animal.getEspecie().getEsperancaVida());
-
+                rendimentoAnimal += 150*animal.getEspecie().getAtratividadeBase() * (2 - (Double.valueOf(animal.getIdade())/Double.valueOf(animal.getEspecie().getEsperancaVida())));
                 if (animal.getMutacoesLista() != null) {
                     for (Mutacao mutacao : animal.getMutacoesLista()) {
                         rendimentoAnimal *= mutacao.getModAtract();
                     }
                 } 
+                rendimentosAnimais +=rendimentoAnimal;
             }
-            rendimentosAnimais +=rendimentoAnimal;
+            
         }
         return rendimentosAnimais;
     }
@@ -1371,12 +1372,13 @@ public class Zoo {
                 String dados = reader.nextLine();
                 linha = dados.split(" ");
                 try {
-                    System.out.println("Ano: " + linha[0] + " Id: " + linha[1] + " Nome: " + linha[2] + " Idade: " + linha[3] + " Especie: " + linha[4]);
+                    System.out.print("Ano: " + linha[0] + " Id: " + linha[1] + " Nome: " + linha[2] + " Idade: " + linha[3] + " Especie: " + linha[4]);
                     if (linha.length > 5) {
                         for (int i = 5; i < linha.length; i++) {
-                            System.out.println(" " + linha[i]);
+                            System.out.print(" " + linha[i]);
                         }
                     }
+                    System.out.println("");
                 } catch (Exception e) {
                     System.out.println("Ficheiro Obtitos corrupto, Cancelado");
                     return;

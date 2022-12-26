@@ -89,8 +89,8 @@ public class Animal {
 
     public double calculaPreco() {
         double preco = 50;
-        preco *= especie.getAtratividadeBase();
-        preco *= especie.getRaridade();
+        preco *= Math.pow(especie.getAtratividadeBase(),2);
+        preco *= Math.pow(especie.getRaridade(), 2);
         preco *= 2 - idade / Double.valueOf(especie.getEsperancaVida());
         
 

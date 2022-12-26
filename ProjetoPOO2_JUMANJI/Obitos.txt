@@ -1,7 +1,104 @@
-
-2000 1 Pitof 4 Cavalo  Mutações: MutacaoH 
-2000 3 Ginger 8 Serpente 
-2000 4 yukihiro 4 Coelho 
-2000 6 Anodajay 2 Rato  Mutações: MutacaoB 
-2000 8 Tsunku 1 Rato 
-2000 9 Sherine 1 Rato  Mutações: MutacaoD 
+2001 2 Beenzino 2 Rato  Mutações: MutacaoH 
+2001 3 Dugazon 2 Rato 
+2001 10 Tunisiano 3 Coelho  Mutações: MutacaoA 
+2001 11 Kraus 3 Rato  Mutações: MutacaoD 
+2001 14 Padmini 2 Rato 
+2001 15 Khotan 1 Rato 
+2001 11 Kraus 3 Rato  Mutações: MutacaoD 
+2002 18 Jędker 1 Rato 
+2002 21 Rufus 1 Rato 
+2002 25 Teru 2 Macaco 
+2002 25 Teru 2 Macaco 
+2003 19 Darina 2 Rato  Mutações: MutacaoG 
+2003 24 Janagaraj 3 Rato 
+2003 35 Chessman 1 Macaco 
+2003 35 Chessman 1 Macaco 
+2004 13 Vera-Ellen 15 Tigre 
+2004 16 Chakuza 4 Rato  Mutações: MutacaoE MutacaoH 
+2004 17 Awie 4 Rato 
+2004 20 Rajkiran 3 Rato  Mutações: MutacaoA 
+2004 22 Raffi 3 Rato  Mutações: MutacaoF 
+2004 23 Common 4 Rato  Mutações: MutacaoH 
+2004 27 Sivakumar 2 Rato 
+2004 30 Syria 2 Rato 
+2004 34 Yangpa 2 Rato 
+2004 48 Aidonia 2 Coelho  Mutações: MutacaoA 
+2004 48 Aidonia 2 Coelho  Mutações: MutacaoA 
+2001 50 Noa 6 Serpente  Mutações: MutacaoC 
+2001 50 Noa 6 Serpente  Mutações: MutacaoC 
+2000 52 Frankee 3 Coelho  Mutações: MutacaoC 
+2000 52 Frankee 3 Coelho  Mutações: MutacaoC 
+2002 53 Adeeb 2 Coelho  Mutações: MutacaoF 
+2001 54 Jungah 14 Vaca 
+2002 57 AiM 2 Rato  Mutações: MutacaoA 
+2002 58 Omarion 1 Vaca 
+2003 55 Nina 4 Rato  Mutações: MutacaoG MutacaoH 
+2001 60 Ali 1 Rato  Mutações: MutacaoA 
+2001 60 Ali 1 Rato  Mutações: MutacaoA 
+2003 63 Ravichandran 2 Rato  Mutações: MutacaoC 
+2003 65 Grock 1 Rato 
+2001 66 Sisqó 2 Rato  Mutações: MutacaoB MutacaoH 
+2001 66 Sisqó 2 Rato  Mutações: MutacaoB MutacaoH 
+2002 70 Ella 1 Coelho 
+2003 67 Scialpi 7 Coelho 
+2003 71 Angel 2 Coelho 
+2003 67 Scialpi 7 Coelho 
+2000 72 Elán 1 Coelho  Mutações: MutacaoE 
+2000 72 Elán 1 Coelho  Mutações: MutacaoE 
+2004 79 Haiducii 1 Coelho  Mutações: MutacaoC MutacaoD 
+2005 75 Yuna 3 Coelho  Mutações: MutacaoG 
+2005 77 Aṣa 2 Coelho 
+2005 83 Dharan 1 Coelho 
+2006 81 Cher 2 Coelho 
+2006 93 Syreeta 1 Coelho 
+2006 98 Fabio 1 Coelho  Mutações: MutacaoF 
+2007 80 Hallowicked 3 Coelho  Mutações: MutacaoH 
+2007 97 Pebbles 2 Coelho 
+2007 103 Emilio 1 Coelho 
+2007 109 Cláudya 1 Coelho 
+2007 113 Jibbs 1 Coelho 
+2008 73 Hero 8 Coelho 
+2008 74 Broery 7 Coelho 
+2008 76 Sumathi 6 Coelho  Mutações: MutacaoA MutacaoB 
+2008 82 Freeway 4 Coelho  Mutações: MutacaoB MutacaoF 
+2008 84 Jetta 4 Coelho  Mutações: MutacaoD 
+2008 85 Jasmine 4 Coelho 
+2008 87 Becky 3 Coelho 
+2008 106 Hümeyra 2 Coelho 
+2008 116 Tela 1 Coelho  Mutações: MutacaoA MutacaoB 
+2008 122 Mika 1 Coelho  Mutações: MutacaoB MutacaoF 
+2008 131 Bono 1 Coelho 
+2008 137 Temperamento 1 Coelho 
+2008 139 Seorak 1 Coelho  Mutações: MutacaoC MutacaoD 
+2008 140 Wallen 1 Coelho  Mutações: MutacaoH 
+2008 141 Leon 1 Coelho 
+2008 143 Jokeren 1 Coelho 
+2008 73 Hero 8 Coelho 
+2009 112 Busdriver 3 Coelho  Mutações: MutacaoE 
+2009 135 Griot 2 Coelho  Mutações: MutacaoG 
+2009 145 Taiji 2 Coelho 
+2009 153 Scarface 1 Coelho 
+2009 154 Dexter 1 Coelho 
+2009 168 Osez 1 Coelho 
+2009 169 Jadakiss 1 Coelho 
+2009 172 Juju 1 Coelho  Mutações: MutacaoE 
+2009 176 Sadayakko 1 Coelho  Mutações: MutacaoA 
+2009 182 Finneas 1 Coelho  Mutações: MutacaoB 
+2009 190 KENTA 1 Coelho 
+2009 194 Srinath 210 Dragão 
+2009 196 Roshini 1 Rato 
+2010 78 Ridan 7 Coelho  Mutações: MutacaoF 
+2010 86 Ginger 6 Coelho 
+2010 124 Azad 3 Coelho  Mutações: MutacaoD 
+2010 148 Sandrin 2 Coelho 
+2010 178 Kalpana 2 Coelho  Mutações: MutacaoF 
+2010 179 Yasin 2 Coelho  Mutações: MutacaoC 
+2010 184 Spagna 2 Coelho  Mutações: MutacaoD 
+2010 203 Kumar 1 Coelho 
+2010 204 Euforia 1 Coelho  Mutações: MutacaoD 
+2010 205 Cher 1 Coelho 
+2010 206 Swarnalatha 1 Coelho 
+2010 217 Heath 1 Coelho 
+2010 220 Eilera 1 Coelho  Mutações: MutacaoD 
+2010 232 Rojan 1 Coelho  Mutações: MutacaoA MutacaoB 
+2010 237 Alberte 1 Coelho 
