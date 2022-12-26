@@ -1,19 +1,31 @@
-COMPRA Ano: 2000 - Nome: Mavado Id: 1 Idade: 1 Especie: Rato Mutacoes: MutacaoF 
-COMPRA Ano: 2000 - Nome: K'naan Id: 2 Idade: 1 Especie: Rato Mutacoes: MutacaoC MutacaoH 
-COMPRA Ano: 2000 - Nome: Cibernético Id: 3 Idade: 0 Especie: Rato Mutacoes: MutacaoC MutacaoH 
-COMPRA Ano: 2000 - Nome: Tetsuya Id: 4 Idade: 3 Especie: Coelho Mutacoes: MutacaoB 
-COMPRA Ano: 2000 - Nome: Cho Id: 5 Idade: 0 Especie: Rato Mutacoes: 
-COMPRA Ano: 2000 - Nome: Gerardo Id: 6 Idade: 10 Especie: Cavalo Mutacoes: 
-COMPRA Ano: 2000 - Nome: Evidence Id: 7 Idade: 3 Especie: Coelho Mutacoes: 
-COMPRA Ano: 2000 - Nome: Adeva Id: 8 Idade: 3 Especie: Coelho Mutacoes: 
-COMPRA Ano: 2000 - Nome: Vajramuni Id: 9 Idade: 2 Especie: Coelho Mutacoes: 
-COMPRA Ano: 2000 - Nome: Cancerbero Id: 10 Idade: 1 Especie: Rato Mutacoes: 
-CONTRUÇÃO Ano: 2000 - ID: 0 Lotação: 5 
-CONTRUÇÃO Ano: 2000 - ID: 1 Lotação: 2 
-MOVER Ano: 2000 - ID_animal: 1 Nova_Instalação: 0 
-MOVER Ano: 2000 - ID_animal: 2 Nova_Instalação: 0 
-MOVER Ano: 2000 - ID_animal: 3 Nova_Instalação: 0 
-MOVER Ano: 2000 - ID_animal: 4 Nova_Instalação: 0 
-MOVER Ano: 2000 - ID_animal: 5 Nova_Instalação: 0 
-MOVER Ano: 2000 - ID_animal: 6 Nova_Instalação: 1 
-MOVER Ano: 2000 - ID_animal: 7 Nova_Instalação: 1 
+
+COMPRA Ano: 2000 - Nome: Chakri Id: 1 Idade: 17 Especie: Serpente Mutacoes: 
+COMPRA Ano: 2000 - Nome: Inez Id: 2 Idade: 0 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Pitof Id: 3 Idade: 2 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Janagaraj Id: 1 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Ivar Id: 1 Idade: 1 Especie: Coelho Mutacoes: MutacaoF 
+COMPRA Ano: 2000 - Nome: Pitof Id: 1 Idade: 3 Especie: Cavalo Mutacoes: MutacaoH 
+COMPRA Ano: 2000 - Nome: IU Id: 2 Idade: 12 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Ginger Id: 3 Idade: 7 Especie: Serpente Mutacoes: 
+COMPRA Ano: 2000 - Nome: yukihiro Id: 4 Idade: 3 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Maxwell Id: 5 Idade: 2 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2000 - Nome: Anodajay Id: 6 Idade: 1 Especie: Rato Mutacoes: MutacaoB 
+COMPRA Ano: 2000 - Nome: Paradime Id: 7 Idade: 0 Especie: Rato Mutacoes: MutacaoB 
+COMPRA Ano: 2000 - Nome: Tsunku Id: 8 Idade: 0 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Sherine Id: 9 Idade: 0 Especie: Rato Mutacoes: MutacaoD 
+COMPRA Ano: 2000 - Nome: Ua Id: 10 Idade: 1 Especie: Cavalo Mutacoes: 
+MORTE Ano: 2000 - Nome: Pitof Id: 1 Idade: 4 Especie: Cavalo Mutacoes: MutacaoH 
+MORTE Ano: 2000 - Nome: Ginger Id: 3 Idade: 8 Especie: Serpente 
+MORTE Ano: 2000 - Nome: yukihiro Id: 4 Idade: 4 Especie: Coelho 
+NASCEU Ano: 2000 - Nome:  Houston Id:  11 Idade:  0 Especie:  Coelho Mutações:  
+NASCEU Ano: 2000 - Nome:  Larry Id:  12 Idade:  0 Especie:  Coelho Mutações:  
+MORTE Ano: 2000 - Nome: Anodajay Id: 6 Idade: 2 Especie: Rato Mutacoes: MutacaoB 
+NASCEU Ano: 2000 - Nome:  Game Id:  13 Idade:  0 Especie:  Rato Mutações:  
+NASCEU Ano: 2000 - Nome:  Lach Id:  14 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2000 - Nome: Tsunku Id: 8 Idade: 1 Especie: Rato 
+NASCEU Ano: 2000 - Nome:  Jayabharathi Id:  15 Idade:  0 Especie:  Rato Mutações:  
+MORTE Ano: 2000 - Nome: Sherine Id: 9 Idade: 1 Especie: Rato Mutacoes: MutacaoD 
+NASCEU Ano: 2000 - Nome:  Pyruz Id:  16 Idade:  0 Especie:  Rato Mutações:  
+CONTRUÇÃO Ano: 2001 - ID: 0 Lotação: 3 
+MOVER Ano: 2001 - ID_animal: 10 Nova_Instalação: 0 
+CONTRUÇÃO Ano: 2001 - ID: 1 Lotação: 6 

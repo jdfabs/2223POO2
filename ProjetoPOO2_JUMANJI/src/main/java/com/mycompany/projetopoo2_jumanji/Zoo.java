@@ -234,9 +234,10 @@ public class Zoo {
         int opcao;
         boolean animalEscolhido = false;
         while (!animalEscolhido) {
+            
             try {
                 opcao = scan.nextInt();
-
+                
                 if (saldo >= animaisOpcoes.get(opcao - 1).calculaPreco()) { //se saldo > custo do animal escolhido
                     adicionarListaAnimais(animaisOpcoes.get(opcao - 1));
                     incrementaAnimalId();
@@ -267,7 +268,6 @@ public class Zoo {
 
             } catch (Exception e) {
                 System.out.println("Invalid input!");
-                
             }
         }
 
@@ -284,7 +284,10 @@ public class Zoo {
             i++;
         }
         System.out.println("Selecione o numero carateristica que quer:");
-        opcao = scan.nextInt();
+        try{
+            opcao = scan.nextInt();
+        
+        
 
         for (Especie especie : especies) { //procura especies com carateristica escolhida
             for (Carateristica carateristicaProcura : especie.getCarateristicas()) {
@@ -292,6 +295,10 @@ public class Zoo {
                     possiveisEspecies.add(especie);
                 }
             }
+        }
+        }
+        catch(Exception e){
+            System.out.println("Invalid input");
         }
         if (!possiveisEspecies.isEmpty()) {
             int randomEspecie = (int) (Math.random() * (possiveisEspecies.size() - 1)); //random especie das possiveis
@@ -367,7 +374,7 @@ public class Zoo {
             }
 
         }
-        System.out.println("Escolha o numero da empresa ou quaquer outra chave para cancelar:");
+        System.out.println("Escolha o numero da empresa ou qualquer outra chave para cancelar:");
         opcao = scan.next();
         int indice = 0;
         try {
