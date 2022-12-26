@@ -13,14 +13,14 @@ import java.util.List;
  * @author jdfab
  */
 public class Instalacao {
-    private int id;
+    private final int id;
     private int lotacao = 0;
-    private double custoRacao = 50;
-    private double custoCuidadores = 25;
-    private double custoManutencao = 100;
-    private List<Animal> animaisInstalacao = new ArrayList<>();
-    private List<Integer> animaisId = new ArrayList<>();
-    //private List<Integer> animalId = new ArrayList<>() ;
+    private final double custoRacao = 50;
+    private final double custoCuidadores = 25;
+    private final double custoManutencao = 100;
+    private final List<Animal> animaisInstalacao = new ArrayList<>();
+    private final List<Integer> animaisId = new ArrayList<>();
+
     
     
     public Instalacao(int id, int lotacao){
@@ -30,7 +30,7 @@ public class Instalacao {
     
     
     public Instalacao(int id, int lotacao, List<Integer> animalIds){
-        this.id=id;
+        this.id = id;
         this.lotacao = lotacao;
         for(Integer idInt :animalIds){
             animaisId.add(idInt);
@@ -51,32 +51,8 @@ public class Instalacao {
     public List<Animal> getAnimais(){
         return animaisInstalacao;
     }
-    public void addAnimalInstalacao(Animal animal){
-        if(this.lotacao < animaisInstalacao.size()){
-            this.animaisInstalacao.add(animal);
-        }
-        else{
-            while(animaisInstalacao.size() == this.lotacao){
-                for(Animal animalInstalacao: animaisInstalacao)
-                if(Math.random()*100+1 <50){
-                    System.out.println("Animal removido: " + animalInstalacao.getNome());
-                    animaisInstalacao.remove(animalInstalacao);
-                }
-            }
-            System.out.println("animal adicionado: "+ animal.getNome());
-            animaisInstalacao.add(animal);
-            
-        }
-    }
-    /*public int getAnimalID(){
-        return animalId;
-    }
-    public void setAnimalID(int id){
-        animalId = id;
-    }
-    public int getAnimalId(){
-        return animalId;
-    }*/
+ 
+
     
      public String getLotacaoString(){
          Integer lotacaoInt = lotacao;
@@ -96,5 +72,20 @@ public class Instalacao {
         return animaisId;
     }
 
-   
+      public void addAnimalInstalacao(Animal animal){
+        if(this.lotacao < animaisInstalacao.size()){
+            this.animaisInstalacao.add(animal);
+        }
+        else{
+            while(animaisInstalacao.size() == this.lotacao){
+                for(Animal animalInstalacao: animaisInstalacao)
+                if(Math.random()*100+1 <50){
+                    System.out.println("Animal removido: " + animalInstalacao.getNome());
+                    animaisInstalacao.remove(animalInstalacao);
+                }
+            }
+            animaisInstalacao.add(animal);
+            
+        }
+    }
 }

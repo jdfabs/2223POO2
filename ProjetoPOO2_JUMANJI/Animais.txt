@@ -1,0 +1,10 @@
+1 Mavado 1 Rato 0 MutacaoF 
+2 K'naan 1 Rato 0 MutacaoC MutacaoH 
+3 Cibernético 0 Rato 0 MutacaoC MutacaoH 
+4 Tetsuya 3 Coelho 0 MutacaoB 
+5 Cho 0 Rato 0 
+6 Gerardo 10 Cavalo 1 
+7 Evidence 3 Coelho 1 
+8 Adeva 3 Coelho -1 
+9 Vajramuni 2 Coelho -1 
+10 Cancerbero 1 Rato -1 

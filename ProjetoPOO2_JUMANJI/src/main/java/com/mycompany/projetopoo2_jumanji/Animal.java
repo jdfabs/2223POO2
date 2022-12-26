@@ -63,6 +63,9 @@ public class Animal {
     public Instalacao getInstalacao() {
         return instalacao;
     }
+     public List<Mutacao> getMutacoesLista() {
+        return mutacoes;
+    }
 
     public void setInstalacao(Instalacao instalacao) {
         this.instalacao = instalacao;
@@ -72,12 +75,12 @@ public class Animal {
         this.instalacao = null;
     }
 
+    
+
+   
+
     public void addMutacao(Mutacao mutacao) {
         this.mutacoes.add(mutacao);
-    }
-
-    public List<Mutacao> getMutacoesLista() {
-        return mutacoes;
     }
 
     public void incrementaIdade() {
@@ -88,13 +91,13 @@ public class Animal {
         double preco = 50;
         preco *= especie.getAtratividadeBase();
         preco *= especie.getRaridade();
-        preco *= 2-(idade/especie.getEsperancaVida());
+        preco *= 2 - idade / Double.valueOf(especie.getEsperancaVida());
         preco *= especie.getAtratividadeBase();
 
         return preco;
     }
 
-    public boolean CheckVida() {
+    public boolean checkVida() {
 
         int esperancaVida = this.getEspecie().getEsperancaVida();
         double racioIdadeEsperancaVida = (double) (idade / esperancaVida);
@@ -103,18 +106,18 @@ public class Animal {
         return probMorrer > random;
     }
 
-    public boolean CheckNascimento() {
-        return false;
+    public boolean checkNascimento() {
+        return Math.random() <= Double.valueOf(especie.getApetiteReprodutivo()) / 10;
     }
 
-    public void Morre(Zoo zoo) {
-        AdicionarObito(zoo);
+    public void morre(Zoo zoo) {
+        adicionarObito(zoo);
         if (instalacao != null) {
-            this.getInstalacao().getAnimais().remove(this);  
+            this.getInstalacao().getAnimais().remove(this);
         }
     }
 
-    public void AdicionarObito(Zoo zoo) {
+    public void adicionarObito(Zoo zoo) {
         try {
             FileWriter fw = new FileWriter("Obitos.txt", true);
             BufferedWriter bw = new BufferedWriter(fw);
@@ -157,7 +160,7 @@ public class Animal {
             }
         }
 
-        zoo.GuardaRegistoHistorico("MORTE", dados);
+        zoo.guardaRegistoHistorico("MORTE", dados);
 
     }
 
@@ -170,4 +173,5 @@ public class Animal {
 
         return atratividade;
     }
+
 }

@@ -10,8 +10,8 @@ package com.mycompany.projetopoo2_jumanji;
  */
 public class Mutacao {
 
-    private String nome;
-    private int modAtract;
+    private final String nome;
+    private final int modAtract;
 
     public Mutacao(String nome, int modAtract) {
         this.nome = nome;

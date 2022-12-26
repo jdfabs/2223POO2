@@ -9,9 +9,9 @@ package com.mycompany.projetopoo2_jumanji;
  * @author jdfab
  */
 public class Carateristica {
-    private String nome;
-    private double custos;
-    private String abilidade;
+    private final String nome;
+    private final double custos;
+    private final String abilidade;
     
     public Carateristica(String nome, double custos,String abilidade ){
      this.nome = nome;   
