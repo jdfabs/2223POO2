@@ -231,46 +231,52 @@ public class Zoo {
 
         }
         System.out.println("Qual animal é que deseja adquirir?");
-        int opcao;
-        boolean animalEscolhido = false;
-        while (!animalEscolhido) {
-            try {
-                opcao = scan.nextInt();
+        int opcao1;
+        try {
+            opcao1 = scan.nextInt();
+            if (opcao1 == 1 || opcao1 == 2 || opcao1 == 3) {
+                try {
+                    if (saldo >= animaisOpcoes.get(opcao1 - 1).calculaPreco()) { //se saldo > custo do animal escolhido
+                        adicionarListaAnimais(animaisOpcoes.get(opcao1 - 1));
+                        incrementaAnimalId();
+                        probMutacoes(animaisOpcoes.get(opcao1 - 1)); //ver se o animal vai ter mutações
+                        saldo -= animaisOpcoes.get(opcao1 - 1).calculaPreco();
+                        saldoUsadoAnimais += animaisOpcoes.get(opcao1 - 1).calculaPreco();
 
-                if (saldo >= animaisOpcoes.get(opcao - 1).calculaPreco()) { //se saldo > custo do animal escolhido
-                    adicionarListaAnimais(animaisOpcoes.get(opcao - 1));
-                    incrementaAnimalId();
-                    probMutacoes(animaisOpcoes.get(opcao - 1)); //ver se o animal vai ter mutações
-                    saldo -= animaisOpcoes.get(opcao - 1).calculaPreco();
-                    saldoUsadoAnimais += animaisOpcoes.get(opcao - 1).calculaPreco();
-
-                    ArrayList<String> dados = new ArrayList<>(); // recolhe informação para guardar no historico
-                    dados.add("Nome:");
-                    dados.add(animaisOpcoes.get(opcao - 1).getNome());
-                    dados.add("Id:");
-                    dados.add(animaisOpcoes.get(opcao - 1).getIdString());
-                    dados.add("Idade:");
-                    dados.add(animaisOpcoes.get(opcao - 1).getIdadeString());
-                    dados.add("Especie:");
-                    dados.add(animaisOpcoes.get(opcao - 1).getEspecie().getNome());
-                    dados.add("Mutacoes:");
-                    for (Mutacao mutacao : animaisOpcoes.get(opcao - 1).getMutacoesLista()) {
-                        dados.add(mutacao.getNome());
+                        ArrayList<String> dados = new ArrayList<>(); // recolhe informação para guardar no historico
+                        dados.add("Nome:");
+                        dados.add(animaisOpcoes.get(opcao1 - 1).getNome());
+                        dados.add("Id:");
+                        dados.add(animaisOpcoes.get(opcao1 - 1).getIdString());
+                        dados.add("Idade:");
+                        dados.add(animaisOpcoes.get(opcao1 - 1).getIdadeString());
+                        dados.add("Especie:");
+                        dados.add(animaisOpcoes.get(opcao1 - 1).getEspecie().getNome());
+                        dados.add("Mutacoes:");
+                        for (Mutacao mutacao : animaisOpcoes.get(opcao1 - 1).getMutacoesLista()) {
+                            dados.add(mutacao.getNome());
+                        }
+                        guardaRegistoHistorico("COMPRA", dados); //guardar no historico
+                        
+                    } else {
+                        System.out.println("Dinheiro insufeciente, cancelando");
+                        return;
                     }
-                    guardaRegistoHistorico("COMPRA", dados); //guardar no historico
-                    animalEscolhido= true;
-                }
-                else{
-                    System.out.println("Dinheiro insufeciente, cancelando");
+                } catch (Exception e) {
+                    System.out.println("Input invalido, cancelado!");
                     return;
+
                 }
-
-            } catch (Exception e) {
-                System.out.println("Invalid input!");
-                
             }
-        }
+            else {
+                System.out.println("Input invalido, cancelado!");
+                return;
+            }
+        } catch (Exception e) {
+            System.out.println("Input invalido, cancelado!");
+            return;
 
+        }
 
     }
 

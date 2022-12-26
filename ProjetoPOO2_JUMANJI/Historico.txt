@@ -17,3 +17,13 @@ MOVER Ano: 2000 - ID_animal: 4 Nova_Instalação: 0
 MOVER Ano: 2000 - ID_animal: 5 Nova_Instalação: 0 
 MOVER Ano: 2000 - ID_animal: 6 Nova_Instalação: 1 
 MOVER Ano: 2000 - ID_animal: 7 Nova_Instalação: 1 
+COMPRA Ano: 2000 - Nome: Pandora Id: 11 Idade: 0 Especie: Galo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Sylviac Id: 11 Idade: 12 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Mandaryna Id: 11 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Kajjanbai Id: 11 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Esham Id: 11 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Zarsanga Id: 11 Idade: 3 Especie: Cavalo Mutacoes: 
+COMPRA Ano: 2000 - Nome: Christophe Id: 11 Idade: 0 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Beans Id: 12 Idade: 1 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Natalia Id: 11 Idade: 0 Especie: Rato Mutacoes: 
+COMPRA Ano: 2000 - Nome: Karandash Id: 11 Idade: 1 Especie: Rato Mutacoes: 
