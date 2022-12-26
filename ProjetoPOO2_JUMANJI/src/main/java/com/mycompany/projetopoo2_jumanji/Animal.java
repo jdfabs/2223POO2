@@ -15,12 +15,12 @@ import java.util.List;
  * @author vigab
  */
 public class Animal {
-    protected int id;
-    protected String nome;
-    protected int idade;
-    protected Especie especie ;
-    protected Instalacao instalacao;  
-    protected List<Mutacao> mutacoes = new ArrayList<>();
+    private int id;
+    private String nome;
+    private int idade;
+    private Especie especie ;
+    private Instalacao instalacao;  
+    private List<Mutacao> mutacoes = new ArrayList<>();
     
 
    public Animal(int id, String nome, int idade, Especie especie) {
@@ -92,7 +92,7 @@ public class Animal {
         preco *= especie.getAtratividadeBase();
         preco *= especie.getRaridade();
         preco *= 2 - idade / Double.valueOf(especie.getEsperancaVida());
-        preco *= especie.getAtratividadeBase();
+        
 
         return preco;
     }
@@ -101,13 +101,14 @@ public class Animal {
 
         int esperancaVida = this.getEspecie().getEsperancaVida();
         double racioIdadeEsperancaVida = (double) (idade / esperancaVida);
-        double probMorrer = (Math.pow(((racioIdadeEsperancaVida - (0.5)) * (0.7)), 2) + .05);
+        //função matematica para ver se morre (chance media de morrer com idade 0, baixa se o animal estiver no "auge" da vida e muito alta se idade passar da esperança da vida (se animal tiver o dobro da esperança da vida chance é 100% ))
+        double probMorrer = (Math.pow(((racioIdadeEsperancaVida - (0.5)) * (0.7)), 2) + .05); 
         double random = Math.random();
         return probMorrer > random;
     }
 
     public boolean checkNascimento() {
-        return Math.random() <= Double.valueOf(especie.getApetiteReprodutivo()) / 10;
+        return Math.random() <= Double.valueOf(especie.getApetiteReprodutivo()) / 10; //por cada 1 de apetite reprodutivo na especie = 10% chance de ter bebé
     }
 
     public void morre(Zoo zoo) {

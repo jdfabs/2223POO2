@@ -14,13 +14,13 @@ import java.util.Scanner;
  */
 public class Especie {
 
-    protected int atratividadeBase;
-    protected String nome;
-    protected int raridade;
-    protected int esperacaVida;
-    protected int apetiteReprodutivo = 10;
-    protected List<Carateristica> carateristicas = new ArrayList<>();
-    protected Zoo zoo;
+    private String nome;
+    private int atratividadeBase;    
+    private int raridade;
+    private int esperacaVida;
+    private int apetiteReprodutivo = 10;
+    private List<Carateristica> carateristicas = new ArrayList<>();
+    private Zoo zoo;
 
     public Especie(int atratividade, String nome, int raridade, int esperancaVida, int apetiteReprodutivo, Zoo zoo) {
         this.atratividadeBase = atratividade;
@@ -82,13 +82,13 @@ public class Especie {
     }
 
     public final void setupCarateristicas() {
-        //Imprime carateristicas disponieis        
+           
         Scanner input = new Scanner(System.in);
         boolean escolhido = false;
         int opcao = -1;
         char opcaoChar;
         System.out.println("Carateristicas existentes:");
-        for (Carateristica carateristica : zoo.getCarateristicas()) {
+        for (Carateristica carateristica : zoo.getCarateristicas()) {//Imprime carateristicas disponieis     
             System.out.println("1 - " + carateristica.getNome());
         }
         System.out.println("Introduza a carateristica que quer adicionar ou [ZERO] para sair:");
@@ -107,19 +107,15 @@ public class Especie {
             }
         }
         escolhido = false;
-        carateristicas.add(zoo.getCarateristicas().get(opcao));
-        System.out.println("Carateristica adicionada. Adicionar mais carateristicas? [y/N]");
+        carateristicas.add(zoo.getCarateristicas().get(opcao)); //adiciona carateristica escolhida ao animal
+        System.out.println("Carateristica adicionada. Adicionar mais carateristicas? [y/N]"); 
         while (!escolhido) {
             opcaoChar = input.next().charAt(0);
             if (opcaoChar == 'y') {
                 setupCarateristicas();
-
             }
             return;
         }
     }
 
-    public void adicionaCarateristica(Carateristica carateristica) {
-        carateristicas.add(carateristica);
-    }
 }
