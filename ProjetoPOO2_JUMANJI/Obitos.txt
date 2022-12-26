@@ -1,0 +1,7 @@
+
+2000 1 Pitof 4 Cavalo  Mutações: MutacaoH 
+2000 3 Ginger 8 Serpente 
+2000 4 yukihiro 4 Coelho 
+2000 6 Anodajay 2 Rato  Mutações: MutacaoB 
+2000 8 Tsunku 1 Rato 
+2000 9 Sherine 1 Rato  Mutações: MutacaoD 
