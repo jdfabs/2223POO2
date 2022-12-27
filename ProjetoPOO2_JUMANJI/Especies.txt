@@ -1,12 +1,12 @@
-1 Rato 1 2 8 Noturno Nada Corre Herbivero Pequeno Roedor 
-3 Vaca 2 20 2 Grande Corre Herbivero Artiodactyla 
-9 Tigre 9 16 2 Grande Nada Corre Carnivoro Panthera 
-6 Coelho 3 4 8 Pequeno Herbivero 
-7 Serpente 5 20 3 Pequeno 
+1 Rato 1 2 5 Noturno Nada Corre Herbivero Pequeno Roedor 
+3 Vaca 2 20 1 Grande Corre Herbivero Artiodactyla 
+9 Tigre 9 16 1 Grande Nada Corre Carnivoro Panthera 
+6 Coelho 3 4 5 Pequeno Herbivero 
+7 Serpente 5 20 2 Pequeno 
 8 Cavalo 6 14 1 Grande Perissodactyla Herbivero 
 5 Cabra 3 10 2 Grande Herbivero Perissodactyla 
 7 Macaco 8 16 2 Grande Corre Carnivoro Herbivero Primate 
-3 Galo 2 4 7 Pequeno Corre Herbivero Galliformes 
-4 Cão 1 16 5 Pequeno Corre Nada Herbivero Pequeno Carnivora 
-2 Porco 2 12 3 Grande Carnivoro Herbivero Artiodactyla 
+3 Galo 2 4 4 Pequeno Corre Herbivero Galliformes 
+4 Cão 1 16 2 Pequeno Corre Nada Herbivero Pequeno Carnivora 
+2 Porco 2 12 2 Grande Carnivoro Herbivero Artiodactyla 
 10 Dragão 10 255 1 Grande Fake Noturno Corre Carnivoro Herbivero Voador 
