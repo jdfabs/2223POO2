@@ -136,7 +136,7 @@ public class Animal {
                 }
             }
 
-            //System.out.println("RIP: "+animal.getNome()+ ". Espécie: " +animal.getEspecie().getNome()+ ".Tinha "+ animal.getIdade()+ " anos.");
+            
             pw.flush();
             pw.close();
             bw.close();
@@ -161,7 +161,7 @@ public class Animal {
             }
         }
 
-        zoo.guardaRegistoHistorico("MORTE", dados);
+        zoo.getFileManager().guardaRegistoHistorico("MORTE", dados, zoo.getAno());
 
     }
 

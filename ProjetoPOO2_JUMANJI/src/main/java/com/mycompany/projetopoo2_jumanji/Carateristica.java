@@ -30,5 +30,6 @@ public class Carateristica {
     }
     public double getCustos(){
         return custos;
+        
     }
 }

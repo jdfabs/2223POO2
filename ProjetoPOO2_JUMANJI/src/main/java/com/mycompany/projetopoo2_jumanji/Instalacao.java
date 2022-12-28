@@ -74,7 +74,7 @@ public class Instalacao {
     }
 
     public void addAnimalInstalacao(Animal animal) { //adiciona determinado animal a esta instalação
-        if (this.lotacao < animaisInstalacao.size()) { //confere se há espaço
+        if (this.lotacao > animaisInstalacao.size()) { //confere se há espaço
             this.animaisInstalacao.add(animal);
         }
       
