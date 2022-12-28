@@ -123,7 +123,7 @@ public class Animal {
             FileWriter fw = new FileWriter("Obitos.txt", true);
             BufferedWriter bw = new BufferedWriter(fw);
             PrintWriter pw = new PrintWriter(bw);
-            fw.write("\n");
+            //fw.write("\n");
             fw.write(zoo.getAno() + " ");
             fw.write(this.getId() + " ");
             fw.write(this.getNome() + " ");

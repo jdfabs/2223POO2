@@ -50,7 +50,13 @@ public class Instalacao {
         return animaisInstalacao;
     }
  
+    public void addAnimalInstalacao(Animal animal) { //adiciona determinado animal a esta instalação
+        if (this.lotacao > animaisInstalacao.size()) { //confere se há espaço
+            this.animaisInstalacao.add(animal);
+        }
+      
 
+    }
     
      public String getLotacaoString(){
          Integer lotacaoInt = lotacao;
@@ -73,11 +79,4 @@ public class Instalacao {
         return animaisId;
     }
 
-    public void addAnimalInstalacao(Animal animal) { //adiciona determinado animal a esta instalação
-        if (this.lotacao > animaisInstalacao.size()) { //confere se há espaço
-            this.animaisInstalacao.add(animal);
-        }
-      
-
-    }
 }

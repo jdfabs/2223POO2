@@ -67,7 +67,7 @@ public class FileManager {
             zoo.setSaldo(Double. parseDouble((carregarAnoSaldo().get(1))));
             
         } catch (Exception e) {
-            System.out.println("An error occurred while loading data from files.");
+            System.out.println("Ocorreu um erro ao carregar os ficheiros.");
         }
 
     }
@@ -425,6 +425,10 @@ public class FileManager {
                 String dados = reader.nextLine();
                 linha = dados.split(" ");
                 try {
+                    for(int i = 0; i < linha.length; i++){
+                       System.out.println(linha[i]); 
+                    }
+                    
                     int id = Integer.parseInt(linha[0]);
                     int lotacao = Integer.parseInt(linha[1]);
 
@@ -432,6 +436,7 @@ public class FileManager {
                         for (int i = 2; i < linha.length; i++) {
                             animaisId.add(Integer.parseInt(linha[i]));
                         }
+                        
                     }
                     instalacao = new Instalacao(id, lotacao, animaisId);
                     instalacoes.add(instalacao);
@@ -439,13 +444,13 @@ public class FileManager {
                     System.out.println("Instalações ok");
                 } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
                     System.out.println("Ficheiro de instalações corrupto, Cancelado");
-                    return null;
+                    return instalacoes;
                 }
             }
         } catch (Exception e) {
             
             System.out.println("Erro");
-            return null;
+            return instalacoes;
         }
 
         return instalacoes;
@@ -512,7 +517,6 @@ public class FileManager {
             System.out.println("Ficheiro de instalações não encontrado");
             return null;
         }
- // Use a try-with-resources block to automatically close the Scanner object
         try (Scanner reader = new Scanner(ficheiro)) {
             
             while (reader.hasNextLine()) {
@@ -589,12 +593,13 @@ public class FileManager {
                 String dados = reader.nextLine();
                 linha = dados.split(" ");
                 try {
-                    System.out.println("Ano: " + linha[0] + " Id: " + linha[1] + " Nome: " + linha[2] + " Idade: " + linha[3] + " Especie: " + linha[4]);
+                    System.out.print("Ano: " + linha[0] + " Id: " + linha[1] + " Nome: " + linha[2] + " Idade: " + linha[3] + " Especie: " + linha[4]);
                     if (linha.length > 5) {
                         for (int i = 5; i < linha.length; i++) {
-                            System.out.println(" " + linha[i]);
+                            System.out.print(" " + linha[i]);
                         }
                     }
+                    System.out.println("");
                 } catch (ArrayIndexOutOfBoundsException e) {
                    
                     System.out.println("Ficheiro Obtitos corrupto, linha ignorada");

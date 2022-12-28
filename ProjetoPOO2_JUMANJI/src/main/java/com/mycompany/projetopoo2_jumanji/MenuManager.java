@@ -155,10 +155,12 @@ public class MenuManager {
                 System.out.print(" - ID dos Animais na instalação: ");
             }
             for (Animal animal : instalacao.getAnimais()) {
-                System.out.print( animal.getId());
+                System.out.print( animal.getId()+ " ");
             }
+            System.out.println(" ");
+            
         }
-        
+        System.out.println( " ");
     }
     
     public void listarEspecies(ArrayList<Especie> especies) {

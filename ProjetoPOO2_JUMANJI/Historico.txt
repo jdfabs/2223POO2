@@ -1,28 +1,29 @@
-COMPRA Ano: 2000 - Nome: Prince Id: 1 Idade: 0 Especie: Rato Mutacoes: 
-COMPRA Ano: 2000 - Nome: Numskull Id: 2 Idade: 7 Especie: Cavalo Mutacoes: MutacaoG 
-COMPRA Ano: 2000 - Nome: Saga Id: 3 Idade: 0 Especie: Rato Mutacoes: MutacaoG 
-COMPRA Ano: 2000 - Nome: Encore Id: 4 Idade: 12 Especie: Serpente Mutacoes: 
-COMPRA Ano: 2000 - Nome: Akala Id: 5 Idade: 1 Especie: Rato Mutacoes: 
-COMPRA Ano: 2000 - Nome: Damian Id: 6 Idade: 1 Especie: Coelho Mutacoes: Albino 
-CONTRUÇÃO Ano: 2000 - ID: 0 Lotação: 3 
-CONTRUÇÃO Ano: 2000 - ID: 1 Lotação: 5 
-MOVER Ano: 2000 - ID_animal: 1 Nova_Instalação: 0 
-MOVER Ano: 2000 - ID_animal: 2 Nova_Instalação: 0 
-MOVER Ano: 2000 - ID_animal: 3 Nova_Instalação: 0 
-MOVER Ano: 2000 - ID_animal: 4 Nova_Instalação: 1 
-MOVER Ano: 2000 - ID_animal: 5 Nova_Instalação: 1 
-MOVER Ano: 2000 - ID_animal: 6 Nova_Instalação: 1 
-MOVER Ano: 2000 - ID_animal: 2 Nova_Instalação: 1 
-RETIRAR_INSTALAÇÃO Ano: 2000 - ID_animal: 1  Nome_Animal:  Prince 
-MOVER Ano: 2000 - ID_animal: 4 Nova_Instalação: 0 
-COMPRA Ano: 2000 - Nome: Numskull Id: 7 Idade: 42 Especie: Dragão Mutacoes: MutacaoG 
-COMPRA Ano: 2000 - Nome: Aruray Id: 7 Idade: 49 Especie: Dragão Mutacoes: 
-COMPRA Ano: 2000 - Nome: Niarn Id: 8 Idade: 167 Especie: Dragão Mutacoes: Albino Quimerismo 
-COMPRA Ano: 2000 - Nome: Sandhya Id: 9 Idade: 52 Especie: Dragão Mutacoes: 
-COMPRA Ano: 2000 - Nome: Vamba Id: 10 Idade: 232 Especie: Dragão Mutacoes: 
-COMPRA Ano: 2000 - Nome: Conchita Id: 11 Idade: 211 Especie: Dragão Mutacoes: 
-COMPRA Ano: 2000 - Nome: Suvalakshmi Id: 12 Idade: 157 Especie: Dragão Mutacoes: 
-COMPRA Ano: 2000 - Nome: Mo'Nique Id: 13 Idade: 89 Especie: Dragão Mutacoes: 
-COMPRA Ano: 2000 - Nome: Amber Id: 14 Idade: 58 Especie: Dragão Mutacoes: 
-COMPRA Ano: 2000 - Nome: Awie Id: 15 Idade: 22 Especie: Dragão Mutacoes: MutacaoH MutacaoJ 
-COMPRA Ano: 2000 - Nome: Mahendran Id: 8 Idade: 132 Especie: Dragão Mutacoes: MutacaoG 
+
+CONTRUÇÃO Ano: 2002 - ID: 0 Lotação: 4 
+CONTRUÇÃO Ano: 2002 - ID: 1 Lotação: 13 
+CONTRUÇÃO Ano: 2002 - ID: 2 Lotação: 7 
+CONTRUÇÃO Ano: 2002 - ID: 3 Lotação: 14 
+CONTRUÇÃO Ano: 2002 - ID: 4 Lotação: 2 
+COMPRA Ano: 2002 - Nome: Nonchalant Id: 1 Idade: 1 Especie: Coelho Mutacoes: 
+COMPRA Ano: 2002 - Nome: Tiffany Id: 2 Idade: 5 Especie: Serpente Mutacoes: 
+COMPRA Ano: 2002 - Nome: Bahadoor Id: 3 Idade: 14 Especie: Serpente Mutacoes: 
+COMPRA Ano: 2002 - Nome: Gauge Id: 4 Idade: 0 Especie: Serpente Mutacoes: 
+CONTRUÇÃO Ano: 2002 - ID: 5 Lotação: 1 
+COMPRA Ano: 2002 - Nome: Mala Id: 5 Idade: 210 Especie: Dragão Mutacoes: Albino 
+FUJIU Ano: 2002 - Nome:  Tiffany Id:  2 Idade:  5 Especie:  Serpente Mutações:  
+FUJIU Ano: 2002 - Nome:  Mala Id:  5 Idade:  210 Especie:  Dragão Mutações:  Albino  
+COMPRA Ano: 2002 - Nome: Tuotilo Id: 6 Idade: 70 Especie: Dragão Mutacoes: Heterochromia MutacaoJ 
+COMPRA Ano: 2002 - Nome: Bentot Id: 7 Idade: 200 Especie: Dragão Mutacoes: MutacaoE MutacaoF 
+MOVER Ano: 2002 - ID_animal: 7 Nova_Instalação: 5 
+MOVER Ano: 2002 - ID_animal: 4 Nova_Instalação: 2 
+MOVER Ano: 2002 - ID_animal: 1 Nova_Instalação: 4 
+COMPRA Ano: 2002 - Nome: Pushead Id: 8 Idade: 15 Especie: Vaca Mutacoes: MutacaoD 
+COMPRA Ano: 2002 - Nome: Rock Id: 9 Idade: 0 Especie: Rato Mutacoes: MutacaoG 
+COMPRA Ano: 2002 - Nome: Govinda Id: 10 Idade: 94 Especie: Dragão Mutacoes: MutacaoF 
+COMPRA Ano: 2002 - Nome: Anna Id: 11 Idade: 14 Especie: Macaco Mutacoes: MutacaoF 
+COMPRA Ano: 2002 - Nome: Garbo Id: 12 Idade: 4 Especie: Cavalo Mutacoes: 
+MOVER Ano: 2002 - ID_animal: 11 Nova_Instalação: 4 
+RETIRAR_INSTALAÇÃO Ano: 2002 - ID_animal: 1  Nome_Animal:  Nonchalant 
+MOVER Ano: 2002 - ID_animal: 10 Nova_Instalação: 4 
+MOVER Ano: 2002 - ID_animal: 8 Nova_Instalação: 2 
+MOVER Ano: 2002 - ID_animal: 1 Nova_Instalação: 2 

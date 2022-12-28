@@ -78,6 +78,10 @@ public class Especie {
     public void aumentaAtratividade() {
         if (atratividadeBase < 10) {
             atratividadeBase += 1;
+            System.out.println("A atratividade dos " + nome + " aumentou para " + atratividadeBase);
+        }
+        else{
+            System.out.println("A atratividade deste animal ("+ nome +") já está no máximo");
         }
     }
 

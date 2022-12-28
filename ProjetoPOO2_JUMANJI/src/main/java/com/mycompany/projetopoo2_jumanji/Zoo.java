@@ -19,7 +19,6 @@ public class Zoo {
     private MenuManager menuManager = new MenuManager();
 
     private final Scanner scan = new Scanner(System.in);
-  
     private  ArrayList<Animal> animais = new ArrayList<>();
     private  ArrayList<Instalacao> instalacoes = new ArrayList();
     private  ArrayList<Especie> especies = new ArrayList();
@@ -444,7 +443,7 @@ public void startUp(){
         Instalacao instalacaoEscolhida;
         int idInstalacao;
         int idAnimalRemover;
-menuManager.printAnimais(animais);
+        menuManager.printAnimais(animais);
 
         System.out.println("Insira o id do Animal a mover: ");
         idAnimal = scan.nextInt();
@@ -516,7 +515,11 @@ menuManager.printAnimais(animais);
             instalacaoEscolhida.getAnimais().remove(animalRemover);
             animalRemover.setInstalacao();
         }
-
+            
+        if(animalEscolhido.getInstalacao()!= null){
+            animalEscolhido.getInstalacao().getAnimais().remove(animalEscolhido);
+            animalEscolhido.setInstalacao();
+        }
         instalacaoEscolhida.getAnimais().add(animalEscolhido);
 
         dados = new ArrayList<>(); //prepara dados para guardar no historico
@@ -587,7 +590,6 @@ menuManager.printAnimais(animais);
         for (Especie especie : especies) { //procura a especie correcta e aumenta atratividade
             if (especie.getNome().toLowerCase().equals(especieString)) {
                 especie.aumentaAtratividade();
-                System.out.println("A atratividade dos " + especie.getNome() + " aumentou para " + especie.getAtratividadeBase());
             }
         }
     }

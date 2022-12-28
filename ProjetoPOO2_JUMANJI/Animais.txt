@@ -1,8 +1,10 @@
-1 Prince 0 Rato -1 
-2 Numskull 7 Cavalo 1 MutacaoG 
-3 Saga 0 Rato 0 MutacaoG 
-4 Encore 12 Serpente 0 
-5 Akala 1 Rato 1 
-6 Damian 1 Coelho 1 Albino 
-7 Aruray 49 Dragão -1 
-8 Mahendran 132 Dragão -1 MutacaoG 
+1 Nonchalant 1 Coelho 2 
+3 Bahadoor 14 Serpente -1 
+4 Gauge 0 Serpente 2 
+6 Tuotilo 70 Dragão -1 Heterochromia MutacaoJ 
+7 Bentot 200 Dragão 5 MutacaoE MutacaoF 
+8 Pushead 15 Vaca 2 MutacaoD 
+9 Rock 0 Rato -1 MutacaoG 
+10 Govinda 94 Dragão 4 MutacaoF 
+11 Anna 14 Macaco 4 MutacaoF 
+12 Garbo 4 Cavalo -1 
