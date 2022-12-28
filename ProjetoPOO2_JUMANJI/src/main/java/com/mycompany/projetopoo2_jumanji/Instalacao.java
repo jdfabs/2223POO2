@@ -78,5 +78,18 @@ public class Instalacao {
     public List<Integer> getAnimaisId() {
         return animaisId;
     }
+    
+    public void atualizarAnimais(ArrayList<Animal> animais){
+        System.out.println(animaisId);
+        for(Integer id: animaisId){
+            for(Animal animal: animais){
+                if(animal.getId() == id){
+                    System.out.println(animal.getId());
+                    animaisInstalacao.add(animal);
+                }
+            }
+        }
+    }
+    
 
 }

@@ -51,17 +51,6 @@ public class FileManager {
             zoo.setInstalacoes(carregarInstalacoes());
             zoo.setAnimais(carregarAnimais(zoo.getEspecies(), zoo.getInstalacoes(), zoo.getMutacoes()));
             
-            for (Instalacao instalacao: zoo.getInstalacoes() ){
-                for(Integer id : instalacao.getAnimaisId()){
-                    for(Animal animal: zoo.getAnimais()){
-                        if(animal.getId() == id){
-                            instalacao.addAnimalInstalacao(animal);
-                            break;
-                        }
-                    }
-                    
-                }
-            }
             
             zoo.setAno(Integer. parseInt((carregarAnoSaldo().get(0))));
             zoo.setSaldo(Double. parseDouble((carregarAnoSaldo().get(1))));
@@ -424,10 +413,7 @@ public class FileManager {
             while (reader.hasNextLine()) {
                 String dados = reader.nextLine();
                 linha = dados.split(" ");
-                try {
-                    for(int i = 0; i < linha.length; i++){
-                       System.out.println(linha[i]); 
-                    }
+                try {      
                     
                     int id = Integer.parseInt(linha[0]);
                     int lotacao = Integer.parseInt(linha[1]);
@@ -438,10 +424,10 @@ public class FileManager {
                         }
                         
                     }
-                    instalacao = new Instalacao(id, lotacao, animaisId);
+                    instalacao = new Instalacao(id, lotacao, animaisId );
                     instalacoes.add(instalacao);
 
-                    System.out.println("Instalações ok");
+                  
                 } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
                     System.out.println("Ficheiro de instalações corrupto, Cancelado");
                     return instalacoes;

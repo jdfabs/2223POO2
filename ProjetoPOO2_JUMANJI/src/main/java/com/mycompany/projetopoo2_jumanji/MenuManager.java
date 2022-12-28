@@ -153,6 +153,7 @@ public class MenuManager {
             System.out.print("id: " + instalacao.getId() + " Lotação:" + instalacao.getLotacao());
             if(!instalacao.getAnimais().isEmpty()){
                 System.out.print(" - ID dos Animais na instalação: ");
+                
             }
             for (Animal animal : instalacao.getAnimais()) {
                 System.out.print( animal.getId()+ " ");
